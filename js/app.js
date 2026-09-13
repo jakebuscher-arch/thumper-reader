@@ -105,6 +105,10 @@ class ThumperApp {
         this.goToSpread(parseInt(match[1]));
       }
     });
+
+    window.addEventListener('resize', () => {
+      this.fitVerseText();
+    });
   }
 
   initFlipEngine() {
@@ -250,6 +254,71 @@ class ThumperApp {
     }
 
     this.highlightActiveTOC();
+    this.fitVerseText();
+  }
+
+  fitVerseText() {
+    const container = this.leftPageEl.querySelector('.page-verse-container');
+    if (!container) return;
+
+    const availableHeight = container.clientHeight;
+    const availableWidth = container.clientWidth;
+    if (availableHeight <= 0 || availableWidth <= 0) return;
+
+    const stanzas = Array.from(container.querySelectorAll('.stanza'));
+    const cap = container.querySelector('.illuminated-cap');
+    const capLetter = cap ? cap.querySelector('.cap-letter') : null;
+
+    // Helper to apply candidate font size, line-height, stanza gap, and drop-cap
+    const applyCandidate = (fontSize) => {
+      // Smooth interpolation:
+      // Small/dense spreads (~12-14px) get tighter line-height (1.23) and compact stanza gaps (2-3px)
+      // Large/light spreads (~17-21px) get generous line-height (1.40) and airy stanza gaps (8-12px)
+      const t = Math.max(0, Math.min(1, (fontSize - 11.0) / (20.0 - 11.0)));
+      const lh = (1.23 + t * 0.17).toFixed(3);
+      const stanzaMargin = (1.5 + t * 7.5).toFixed(1);
+
+      container.style.fontSize = fontSize.toFixed(2) + 'px';
+      container.style.lineHeight = lh;
+
+      for (let s = 0; s < stanzas.length; s++) {
+        stanzas[s].style.marginTop = s === 0 ? '0px' : `${stanzaMargin}px`;
+        stanzas[s].style.marginBottom = `${stanzaMargin}px`;
+      }
+
+      if (cap) {
+        const capSize = Math.round(fontSize * 2.15);
+        cap.style.width = capSize + 'px';
+        cap.style.height = capSize + 'px';
+        if (capLetter) {
+          capLetter.style.fontSize = Math.round(fontSize * 1.5) + 'px';
+        }
+      }
+    };
+
+    // Binary search for maximum font size that fits without any overflow
+    let low = 10.0;
+    let high = 22.0;
+    let bestSize = 10.5;
+
+    for (let i = 0; i < 14; i++) {
+      const mid = (low + high) / 2;
+      applyCandidate(mid);
+
+      // Check strictly against container bounds (within 1px tolerance)
+      const fits = (container.scrollHeight <= availableHeight + 1) && 
+                   (container.scrollWidth <= availableWidth + 1);
+
+      if (fits) {
+        bestSize = mid;
+        low = mid; // Fit! Try larger to fill more
+      } else {
+        high = mid; // Overflows, reduce
+      }
+    }
+
+    // Apply winning size
+    applyCandidate(bestSize);
   }
 
   renderTOC() {

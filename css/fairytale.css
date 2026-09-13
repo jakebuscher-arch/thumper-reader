@@ -88,7 +88,7 @@ body {
   position: relative;
   z-index: 5;
   height: 100%;
-  padding: 64px 52px 72px 52px;
+  padding: 54px 50px 68px 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -98,74 +98,77 @@ body {
 /* Page Header */
 .page-header {
   text-align: center;
-  margin-bottom: clamp(1px, 0.5vh, 4px);
+  margin-bottom: clamp(2px, 0.6vh, 6px);
   flex-shrink: 0;
 }
 
 .chapter-number {
   font-family: var(--font-display);
-  font-size: clamp(0.65rem, 1vh, 0.75rem);
+  font-size: clamp(0.7rem, 1.1vh, 0.82rem);
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--gold-dark);
-  margin-bottom: 1px;
+  margin-bottom: 2px;
 }
 
 .chapter-title {
   font-family: var(--font-serif);
-  font-size: clamp(0.95rem, 1.5vh, 1.15rem);
+  font-size: clamp(1.1rem, 1.8vh, 1.35rem);
   font-weight: 600;
   color: var(--ink-color);
   letter-spacing: 0.02em;
   font-style: italic;
 }
 
-/* Text Container & Stanzas: PERFECTLY CENTERED, NEVER CLIPPING TOP OR BOTTOM */
+/* Text Container & Stanzas: EXPANDED TO FILL PAGE ELEGANTLY WITHOUT OVERFLOW */
 .page-verse-container {
   flex: 1;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   width: 100%;
-  gap: clamp(2px, 0.5vh, 6px);
-  margin: 0;
-  min-height: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .stanza {
   position: relative;
   width: 100%;
   text-align: center;
-  margin: clamp(1px, 0.3vh, 3px) 0;
+  margin: 0;
 }
 
 .verse-line {
-  font-size: clamp(0.76rem, 1.34vh, 0.98rem);
-  line-height: 1.32;
+  font-size: 1em;
+  line-height: inherit;
   color: var(--ink-color);
-  font-weight: 500;
-  letter-spacing: 0.01em;
+  font-weight: 600;
+  letter-spacing: 0.028em;
+  word-spacing: 0.08em;
   position: relative;
   text-align: center;
   font-family: var(--font-serif);
+  white-space: normal;
 }
 
 /* Speaker Cue Badges */
 .speaker-badge {
-  display: block;
+  display: inline-block;
   font-family: var(--font-serif);
   font-style: italic;
-  font-weight: 600;
-  font-size: clamp(0.68rem, 1.05vh, 0.8rem);
+  font-weight: 700;
+  font-size: 0.82em;
   color: var(--gold-dark);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
   text-align: center;
-  margin-top: 1px;
-  margin-bottom: 0px;
-  line-height: 1.15;
+  margin: 1px auto;
+  line-height: 1.12;
 }
 
 /* First Line & Illuminated Medieval Initial Capital */
@@ -181,8 +184,8 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: clamp(28px, 3.6vh, 36px);
-  height: clamp(28px, 3.6vh, 36px);
+  width: clamp(36px, 4.6vh, 46px);
+  height: clamp(36px, 4.6vh, 46px);
   background: linear-gradient(135deg, #fdf8ec 0%, #faeacd 50%, #ecd6a2 100%);
   border: 1.5px solid var(--gold-dark);
   outline: 1px dashed var(--gold-primary);
@@ -191,14 +194,14 @@ body {
     0 2px 5px rgba(0, 0, 0, 0.2),
     inset 0 0 5px rgba(184, 138, 56, 0.3);
   border-radius: 3px;
-  margin-right: 3px;
+  margin-right: 4px;
   vertical-align: middle;
   flex-shrink: 0;
 }
 
 .cap-letter {
   font-family: var(--font-display);
-  font-size: clamp(1.2rem, 2.3vh, 1.55rem);
+  font-size: clamp(1.5rem, 2.8vh, 1.95rem);
   font-weight: 800;
   line-height: 1;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8), 1px 1px 2px rgba(0, 0, 0, 0.25);
@@ -214,7 +217,7 @@ body {
   font-variant: small-caps;
   font-weight: 700;
   letter-spacing: 0.06em;
-  font-size: 1.05em;
+  font-size: 1.1em;
   color: var(--ink-color);
 }
 
@@ -275,12 +278,13 @@ body {
 .art-plate-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  flex: 1;
+  min-height: 0;
   width: 100%;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 8px 12px 12px 12px;
+  padding: 6px 12px 10px 12px;
   box-sizing: border-box;
 }
 

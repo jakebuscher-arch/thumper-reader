@@ -117,10 +117,11 @@
 
 .book-container {
   position: relative;
-  width: 100%;
-  max-width: var(--book-width);
   height: 100%;
   max-height: var(--book-height);
+  aspect-ratio: 1.52 / 1;
+  max-width: min(var(--book-width), 100%);
+  width: auto;
   display: flex;
   box-shadow: 
     0 25px 60px -10px rgba(0, 0, 0, 0.75),
@@ -502,8 +503,10 @@
 
   .book-container {
     flex-direction: column;
-    max-width: 580px;
+    max-width: 520px;
+    width: 100%;
     height: 100%;
+    aspect-ratio: auto;
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
   }
 
@@ -537,33 +540,35 @@
   }
 
   .page-content {
-    padding: 28px 24px 20px 24px;
+    padding: 44px 32px 52px 32px;
   }
 
   .chapter-title {
     font-size: 1.15rem;
   }
 
-  .verse-line {
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
-
   .art-image-frame {
-    max-height: 56vh;
+    max-height: 60vh;
   }
 
   .top-toolbar {
     height: 48px;
-    padding: 0 12px;
+    padding: 0 8px;
   }
 
-  .series-title {
-    font-size: 0.65rem;
+  .toolbar-left,
+  .toolbar-right {
+    gap: 6px;
   }
 
-  .current-book-label {
-    font-size: 0.95rem;
+  .toolbar-left .tool-btn,
+  .toolbar-right .tool-btn {
+    padding: 4px 8px;
+    font-size: 0.72rem;
+  }
+
+  .toolbar-center {
+    display: none;
   }
 
   .bottom-bar {
