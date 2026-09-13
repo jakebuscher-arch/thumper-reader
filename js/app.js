@@ -7,18 +7,22 @@ class ThumperApp {
     this.books = window.THUMPER_COLLECTION || [];
     this.spreads = [];
     this.currentSpreadIndex = 0;
-    this.mobileView = 'text'; // 'text' or 'art' for mobile view
+    this.phoneSubPage = 0; // 0 = Words (.left-page), 1 = Art (.right-page)
 
     this.initSpreads();
     this.initDOM();
     this.initFlipEngine();
     this.renderTOC();
     
-    // Check URL hash first (e.g. #spread=15)
+    // Check URL hash first (e.g. #spread=15 or #spread=15&page=art)
     const hash = window.location.hash;
     const match = hash.match(/spread=(\d+)/);
+    const pageMatch = hash.match(/page=(text|art)/);
     if (match) {
       this.currentSpreadIndex = Math.min(Math.max(0, parseInt(match[1])), this.spreads.length - 1);
+      if (pageMatch && pageMatch[1] === 'art') {
+        this.phoneSubPage = 1;
+      }
     } else {
       // Restore saved reading position
       const saved = localStorage.getItem('thumper_reading_spread');
@@ -28,6 +32,80 @@ class ThumperApp {
     }
 
     this.renderCurrentSpread();
+  }
+
+  isPhone() {
+    return window.innerWidth <= 680;
+  }
+
+  canAdvanceNext() {
+    if (this.isPhone()) {
+      return (this.currentSpreadIndex < this.totalSpreads - 1) || (this.phoneSubPage === 0);
+    }
+    return this.currentSpreadIndex < this.totalSpreads - 1;
+  }
+
+  canAdvancePrev() {
+    if (this.isPhone()) {
+      return (this.currentSpreadIndex > 0) || (this.phoneSubPage === 1);
+    }
+    return this.currentSpreadIndex > 0;
+  }
+
+  nextPage() {
+    if (this.isPhone()) {
+      if (this.phoneSubPage === 0) {
+        this.phoneSubPage = 1;
+        this.updateLocationHash();
+        this.renderCurrentSpread();
+        return true;
+      } else {
+        if (this.currentSpreadIndex < this.totalSpreads - 1) {
+          this.currentSpreadIndex++;
+          this.phoneSubPage = 0;
+          this.updateLocationHash();
+          this.renderCurrentSpread();
+          return true;
+        }
+        return false;
+      }
+    } else {
+      if (this.currentSpreadIndex < this.totalSpreads - 1) {
+        this.currentSpreadIndex++;
+        this.updateLocationHash();
+        this.renderCurrentSpread();
+        return true;
+      }
+      return false;
+    }
+  }
+
+  prevPage() {
+    if (this.isPhone()) {
+      if (this.phoneSubPage === 1) {
+        this.phoneSubPage = 0;
+        this.updateLocationHash();
+        this.renderCurrentSpread();
+        return true;
+      } else {
+        if (this.currentSpreadIndex > 0) {
+          this.currentSpreadIndex--;
+          this.phoneSubPage = 1;
+          this.updateLocationHash();
+          this.renderCurrentSpread();
+          return true;
+        }
+        return false;
+      }
+    } else {
+      if (this.currentSpreadIndex > 0) {
+        this.currentSpreadIndex--;
+        this.updateLocationHash();
+        this.renderCurrentSpread();
+        return true;
+      }
+      return false;
+    }
   }
 
   initSpreads() {
@@ -64,13 +142,19 @@ class ThumperApp {
     this.btnTOC = document.getElementById('btnTOC');
     this.btnCloseTOC = document.getElementById('btnCloseTOC');
     this.btnFullscreen = document.getElementById('btnFullscreen');
-    this.btnMobileSwitch = document.getElementById('btnMobileSwitch');
+
+    this.updateSliderRange();
 
     if (this.progressSlider) {
-      this.progressSlider.min = 0;
-      this.progressSlider.max = this.totalSpreads - 1;
       this.progressSlider.addEventListener('input', (e) => {
-        this.goToSpread(parseInt(e.target.value));
+        const val = parseInt(e.target.value);
+        if (this.isPhone()) {
+          const spread = Math.floor(val / 2);
+          const sub = val % 2;
+          this.goToSpread(spread, sub);
+        } else {
+          this.goToSpread(val, 0);
+        }
       });
     }
 
@@ -93,20 +177,19 @@ class ThumperApp {
       });
     }
 
-    if (this.btnMobileSwitch) {
-      this.btnMobileSwitch.addEventListener('click', () => {
-        this.toggleMobileView();
-      });
-    }
-
     window.addEventListener('hashchange', () => {
       const match = window.location.hash.match(/spread=(\d+)/);
+      const pageMatch = window.location.hash.match(/page=(text|art)/);
       if (match) {
-        this.goToSpread(parseInt(match[1]));
+        const idx = parseInt(match[1]);
+        const sub = pageMatch && pageMatch[1] === 'art' ? 1 : 0;
+        this.goToSpread(idx, sub);
       }
     });
 
     window.addEventListener('resize', () => {
+      this.updateSliderRange();
+      this.renderCurrentSpread();
       this.fitVerseText();
     });
   }
@@ -115,25 +198,33 @@ class ThumperApp {
     this.flipEngine = new window.PageFlipEngine(this);
   }
 
-  toggleMobileView() {
-    if (this.mobileView === 'text') {
-      this.mobileView = 'art';
-      this.bookContainer.classList.remove('show-text');
-      this.bookContainer.classList.add('show-art');
-      this.btnMobileSwitch.innerHTML = '📜 View Words';
+  updateSliderRange() {
+    if (!this.progressSlider) return;
+    if (this.isPhone()) {
+      this.progressSlider.min = 0;
+      this.progressSlider.max = this.totalSpreads * 2 - 1;
+      this.progressSlider.value = this.currentSpreadIndex * 2 + this.phoneSubPage;
     } else {
-      this.mobileView = 'text';
-      this.bookContainer.classList.remove('show-art');
-      this.bookContainer.classList.add('show-text');
-      this.btnMobileSwitch.innerHTML = '🖼️ View Art';
+      this.progressSlider.min = 0;
+      this.progressSlider.max = this.totalSpreads - 1;
+      this.progressSlider.value = this.currentSpreadIndex;
     }
   }
 
-  goToSpread(index) {
+  updateLocationHash() {
+    if (this.isPhone()) {
+      window.location.hash = `spread=${this.currentSpreadIndex}&page=${this.phoneSubPage === 0 ? 'text' : 'art'}`;
+    } else {
+      window.location.hash = `spread=${this.currentSpreadIndex}`;
+    }
+  }
+
+  goToSpread(index, subPage = 0) {
     if (index < 0 || index >= this.totalSpreads) return;
     this.currentSpreadIndex = index;
+    this.phoneSubPage = subPage;
     localStorage.setItem('thumper_reading_spread', index);
-    window.location.hash = `spread=${index}`;
+    this.updateLocationHash();
     this.renderCurrentSpread();
   }
 
@@ -148,11 +239,18 @@ class ThumperApp {
     if (this.bookLabelEl) {
       this.bookLabelEl.innerText = `Book ${bnum}: ${spread.bookTitle}`;
     }
+    
+    this.updateSliderRange();
+
     if (this.pageIndicatorEl) {
-      this.pageIndicatorEl.innerText = `Spread ${spread.spreadNumber} of ${this.totalSpreads}`;
-    }
-    if (this.progressSlider) {
-      this.progressSlider.value = this.currentSpreadIndex;
+      if (this.isPhone()) {
+        const pageNum = this.currentSpreadIndex * 2 + this.phoneSubPage + 1;
+        const totalPages = this.totalSpreads * 2;
+        const pageType = this.phoneSubPage === 0 ? 'Words' : 'Art';
+        this.pageIndicatorEl.innerText = `Page ${pageNum} of ${totalPages} · ${pageType}`;
+      } else {
+        this.pageIndicatorEl.innerText = `Spread ${spread.spreadNumber} of ${this.totalSpreads}`;
+      }
     }
 
     // Set Book Theme Attributes
@@ -277,10 +375,17 @@ class ThumperApp {
       </div>
     `;
 
-    // Ensure mobile view class
-    if (window.innerWidth <= 900) {
-      this.bookContainer.classList.remove('show-text', 'show-art');
-      this.bookContainer.classList.add(this.mobileView === 'text' ? 'show-text' : 'show-art');
+    // Set Phone subpage visibility
+    if (this.isPhone()) {
+      if (this.phoneSubPage === 0) {
+        this.bookContainer.classList.add('phone-view-words');
+        this.bookContainer.classList.remove('phone-view-art');
+      } else {
+        this.bookContainer.classList.add('phone-view-art');
+        this.bookContainer.classList.remove('phone-view-words');
+      }
+    } else {
+      this.bookContainer.classList.remove('phone-view-words', 'phone-view-art');
     }
 
     this.highlightActiveTOC();
@@ -288,11 +393,42 @@ class ThumperApp {
   }
 
   fitVerseText() {
-    // Single uniform classic serif scale across all spreads (no per-spread jumping)
     const container = this.leftPageEl.querySelector('.page-verse-container');
     if (!container) return;
-    container.style.fontSize = '';
-    container.style.lineHeight = '';
+
+    // Reset styles to baseline
+    container.style.removeProperty('font-size');
+    container.style.removeProperty('line-height');
+    const stanzas = container.querySelectorAll('.stanza');
+    stanzas.forEach(st => st.style.removeProperty('margin-bottom'));
+    const dividers = container.querySelectorAll('.dialogue-opening-divider');
+    dividers.forEach(d => d.style.removeProperty('margin-bottom'));
+
+    const availableHeight = container.clientHeight;
+    if (availableHeight <= 0) return;
+
+    // If content exceeds container on laptop or phone, scale down gently to fit perfectly
+    if (container.scrollHeight > availableHeight) {
+      const currentSize = parseFloat(window.getComputedStyle(container).fontSize);
+      const scale = (availableHeight - 6) / container.scrollHeight;
+      let fittedSize = Math.max(9.5, Math.floor(currentSize * scale * 10) / 10);
+      container.style.setProperty('font-size', fittedSize + 'px', 'important');
+      container.style.setProperty('line-height', '1.24', 'important');
+      stanzas.forEach(st => {
+        st.style.setProperty('margin-bottom', Math.max(2, Math.floor(6 * scale)) + 'px', 'important');
+      });
+      if (scale < 0.95) {
+        dividers.forEach(d => d.style.setProperty('margin-bottom', '1px', 'important'));
+      }
+
+      // Refine if still overflowing due to wrapping variations
+      let attempts = 0;
+      while (container.scrollHeight > availableHeight && fittedSize > 9.0 && attempts < 10) {
+        fittedSize = Math.max(9.0, Math.round((fittedSize - 0.3) * 10) / 10);
+        container.style.setProperty('font-size', fittedSize + 'px', 'important');
+        attempts++;
+      }
+    }
   }
 
   renderTOC() {

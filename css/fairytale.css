@@ -83,12 +83,12 @@ body {
   border-bottom-left-radius: 0;
 }
 
-/* Page Inner Content Container - Half-inch (~36-46px) clear buffer inside borders */
+/* Page Inner Content Container - Half-inch (~42-50px) clear buffer inside borders */
 .page-content {
   position: relative;
   z-index: 5;
   height: 100%;
-  padding: clamp(34px, 4.2vh, 44px) clamp(36px, 4vw, 50px) clamp(38px, 4.6vh, 48px) clamp(36px, 4vw, 50px);
+  padding: clamp(40px, 4.8vh, 48px) clamp(42px, 4.5vw, 50px) clamp(42px, 5.0vh, 50px) clamp(42px, 4.5vw, 50px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -114,7 +114,7 @@ body {
 
 .chapter-title {
   font-family: var(--font-serif);
-  font-size: clamp(1.1rem, 1.8vh, 1.35rem);
+  font-size: clamp(1.15rem, 1.9vh, 1.42rem);
   font-weight: 600;
   color: var(--ink-color);
   letter-spacing: 0.02em;
@@ -136,7 +136,7 @@ body {
   opacity: 0.8;
 }
 
-/* Text Container & Stanzas: EXPANDED TO FILL PAGE ELEGANTLY WITHOUT OVERFLOW */
+/* Text Container & Stanzas: EXPANDED TO FILL PAGE ELEGANTLY WITH ~1/2 INCH MARGINS */
 .page-verse-container {
   flex: 1;
   min-height: 0;
@@ -150,8 +150,8 @@ body {
   margin: 0 auto;
   overflow: hidden;
   box-sizing: border-box;
-  font-size: clamp(13.2px, 1.62vh, 15.2px);
-  line-height: clamp(1.30, 1.4vh, 1.40);
+  font-size: clamp(15.8px, 2.05vh, 18.4px);
+  line-height: clamp(1.36, 1.48vh, 1.46);
 }
 
 .stanza {
@@ -159,7 +159,7 @@ body {
   width: 100%;
   text-align: center;
   margin-top: 0;
-  margin-bottom: clamp(4px, 0.9vh, 9px);
+  margin-bottom: clamp(6px, 1.2vh, 14px);
 }
 
 .stanza:last-child {
@@ -278,8 +278,8 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: clamp(36px, 4.6vh, 46px);
-  height: clamp(36px, 4.6vh, 46px);
+  width: clamp(42px, 5.2vh, 52px);
+  height: clamp(42px, 5.2vh, 52px);
   background: 
     radial-gradient(circle at 35% 35%, #fffbf0 0%, #faecd0 40%, #e6cb92 100%);
   border: 1.8px solid var(--gold-dark);
@@ -310,7 +310,7 @@ body {
 
 .cap-letter {
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 2.8vh, 1.95rem);
+  font-size: clamp(1.8rem, 3.2vh, 2.35rem);
   font-weight: 800;
   line-height: 1;
   text-shadow: 

@@ -72,7 +72,13 @@ class PageFlipEngine {
 
   flipNext() {
     if (this.isAnimating) return;
-    if (this.app.currentSpreadIndex >= this.app.totalSpreads - 1) return;
+
+    // Check if we can advance
+    const canAdvance = (typeof this.app.canAdvanceNext === 'function') 
+      ? this.app.canAdvanceNext() 
+      : (this.app.currentSpreadIndex < this.app.totalSpreads - 1);
+
+    if (!canAdvance) return;
 
     this.isAnimating = true;
     if (window.pageAudio) window.pageAudio.playPageTurn();
@@ -83,17 +89,23 @@ class PageFlipEngine {
     }
 
     setTimeout(() => {
-      this.app.goToSpread(this.app.currentSpreadIndex + 1);
+      this.app.nextPage();
       if (flipLeaf) {
         flipLeaf.className = 'page-flip-leaf';
       }
       this.isAnimating = false;
-    }, 450);
+    }, 380);
   }
 
   flipPrev() {
     if (this.isAnimating) return;
-    if (this.app.currentSpreadIndex <= 0) return;
+
+    // Check if we can go back
+    const canGoBack = (typeof this.app.canAdvancePrev === 'function')
+      ? this.app.canAdvancePrev()
+      : (this.app.currentSpreadIndex > 0);
+
+    if (!canGoBack) return;
 
     this.isAnimating = true;
     if (window.pageAudio) window.pageAudio.playPageTurn();
@@ -104,12 +116,12 @@ class PageFlipEngine {
     }
 
     setTimeout(() => {
-      this.app.goToSpread(this.app.currentSpreadIndex - 1);
+      this.app.prevPage();
       if (flipLeaf) {
         flipLeaf.className = 'page-flip-leaf';
       }
       this.isAnimating = false;
-    }, 450);
+    }, 380);
   }
 }
 
