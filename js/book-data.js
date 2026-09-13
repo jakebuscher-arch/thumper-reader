@@ -158,7 +158,7 @@ window.THUMPER_COLLECTION = [
           "title": "The imagined flight",
           "brief": "An imagined Frumper flies above the farm fence beneath the night sky, with carrot rows and berry bushes below. Keep the scene visibly dreamlike. The farm is empty of people; an ambiguous winged-rabbit shadow may cross a distant wall.",
           "cast": "Frumper as imagined by Thumper",
-          "image": "assets/images/Frumper Flying Sky.png",
+          "image": "assets/images/B01-S02-thumper-imagines.png",
           "theologicalNote": "Imagining a winged rabbit: the intellect conceives possibilities that exceed ordinary woodland nature."
         }
       },

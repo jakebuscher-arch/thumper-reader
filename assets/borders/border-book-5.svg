@@ -1,102 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="none" width="100%" height="100%">
 <defs>
-  <linearGradient id="emerald-b5" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="#3b7d65"/>
-    <stop offset="50%" stop-color="#1b4d3e"/>
-    <stop offset="100%" stop-color="#0c2b22"/>
-  </linearGradient>
-  <linearGradient id="gold-b5" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="#fcedb6"/>
-    <stop offset="50%" stop-color="#caa442"/>
-    <stop offset="100%" stop-color="#7a5a17"/>
-  </linearGradient>
-  <linearGradient id="reed-b5" x1="0%" y1="0%" x2="0%" y2="100%">
-    <stop offset="0%" stop-color="#735233"/>
-    <stop offset="50%" stop-color="#4d3319"/>
-    <stop offset="100%" stop-color="#2d1c0c"/>
-  </linearGradient>
-  <!-- Reusable Cattail -->
-  <g id="cattail-b5">
-    <!-- Stem -->
-    <line x1="0" y1="-20" x2="0" y2="20" stroke="url(#emerald-b5)" stroke-width="1.8"/>
-    <!-- Cattail brown head -->
-    <rect x="-3" y="-12" width="6" height="24" rx="3" fill="url(#reed-b5)" stroke="url(#gold-b5)" stroke-width="0.5"/>
-    <!-- Spike tip -->
-    <line x1="0" y1="-12" x2="0" y2="-18" stroke="url(#reed-b5)" stroke-width="1"/>
-  </g>
-  <!-- Reusable Golden Scarab Beetle -->
-  <g id="scarab-b5">
-    <!-- Outer gold shell / wings -->
-    <ellipse cx="0" cy="0" rx="9" ry="12" fill="url(#gold-b5)" stroke="#543b10" stroke-width="0.8"/>
-    <!-- Wing divider -->
-    <line x1="0" y1="-7" x2="0" y2="12" stroke="#543b10" stroke-width="0.7"/>
-    <!-- Pronotum (head shield) -->
-    <path d="M -7,-6 C -7,-11 7,-11 7,-6 Z" fill="url(#emerald-b5)" stroke="#543b10" stroke-width="0.6"/>
-    <!-- Head -->
-    <circle cx="0" cy="-10" r="2.5" fill="url(#gold-b5)"/>
-  </g>
-  <!-- Corner Cartouche with Scarab & Water Lily -->
-  <g id="corner-scarab-b5">
-    <rect x="18" y="18" width="58" height="58" rx="5" fill="none" stroke="url(#emerald-b5)" stroke-width="2.5"/>
-    <circle cx="47" cy="47" r="20" fill="none" stroke="url(#gold-b5)" stroke-width="1.2"/>
-    <circle cx="47" cy="47" r="16" fill="none" stroke="url(#emerald-b5)" stroke-width="0.8" stroke-dasharray="2,3"/>
-    <use href="#scarab-b5" transform="translate(47,47) scale(0.95)"/>
-  </g>
-</defs>
-<rect x="18" y="18" width="764" height="964" rx="6" fill="none" stroke="url(#emerald-b5)" stroke-width="2.5"/>
-<rect x="46" y="46" width="708" height="908" rx="4" fill="none" stroke="url(#gold-b5)" stroke-width="1.2" stroke-dasharray="8,4"/>
-<use href="#corner-scarab-b5" x="0" y="0"/>
-<use href="#corner-scarab-b5" x="800" y="0" transform="scale(-1, 1)"/>
-<use href="#corner-scarab-b5" x="0" y="1000" transform="scale(1, -1)"/>
-<use href="#corner-scarab-b5" x="800" y="1000" transform="scale(-1, -1)"/>
-<path d="M 32,70 Q 39 47.5, 32 70 Q 25 92.5, 32 115 Q 39 137.5, 32 160 Q 25 182.5, 32 205 Q 39 227.5, 32 250 Q 25 272.5, 32 295 Q 39 317.5, 32 340 Q 25 362.5, 32 385 Q 39 407.5, 32 430 Q 25 452.5, 32 475 Q 39 497.5, 32 520 Q 25 542.5, 32 565 Q 39 587.5, 32 610 Q 25 632.5, 32 655 Q 39 677.5, 32 700 Q 25 722.5, 32 745 Q 39 767.5, 32 790 Q 25 812.5, 32 835 Q 39 857.5, 32 880 Q 25 902.5, 32 925" fill="none" stroke="url(#emerald-b5)" stroke-width="2.8" stroke-linecap="round"/>
-<path d="M 32,70 Q 27 47.5, 32 70 Q 37 92.5, 32 115 Q 27 137.5, 32 160 Q 37 182.5, 32 205 Q 27 227.5, 32 250 Q 37 272.5, 32 295 Q 27 317.5, 32 340 Q 37 362.5, 32 385 Q 27 407.5, 32 430 Q 37 452.5, 32 475 Q 27 497.5, 32 520 Q 37 542.5, 32 565 Q 27 587.5, 32 610 Q 37 632.5, 32 655 Q 27 677.5, 32 700 Q 37 722.5, 32 745 Q 27 767.5, 32 790 Q 37 812.5, 32 835 Q 27 857.5, 32 880 Q 37 902.5, 32 925" fill="none" stroke="url(#gold-b5)" stroke-width="1.2" stroke-linecap="round"/>
-<path d="M 768,70 Q 761 47.5, 768 70 Q 775 92.5, 768 115 Q 761 137.5, 768 160 Q 775 182.5, 768 205 Q 761 227.5, 768 250 Q 775 272.5, 768 295 Q 761 317.5, 768 340 Q 775 362.5, 768 385 Q 761 407.5, 768 430 Q 775 452.5, 768 475 Q 761 497.5, 768 520 Q 775 542.5, 768 565 Q 761 587.5, 768 610 Q 775 632.5, 768 655 Q 761 677.5, 768 700 Q 775 722.5, 768 745 Q 761 767.5, 768 790 Q 775 812.5, 768 835 Q 761 857.5, 768 880 Q 775 902.5, 768 925" fill="none" stroke="url(#emerald-b5)" stroke-width="2.8" stroke-linecap="round"/>
-<path d="M 768,70 Q 773 47.5, 768 70 Q 763 92.5, 768 115 Q 773 137.5, 768 160 Q 763 182.5, 768 205 Q 773 227.5, 768 250 Q 763 272.5, 768 295 Q 773 317.5, 768 340 Q 763 362.5, 768 385 Q 773 407.5, 768 430 Q 763 452.5, 768 475 Q 773 497.5, 768 520 Q 763 542.5, 768 565 Q 773 587.5, 768 610 Q 763 632.5, 768 655 Q 773 677.5, 768 700 Q 763 722.5, 768 745 Q 773 767.5, 768 790 Q 763 812.5, 768 835 Q 773 857.5, 768 880 Q 763 902.5, 768 925" fill="none" stroke="url(#gold-b5)" stroke-width="1.2" stroke-linecap="round"/>
-<use href="#scarab-b5" transform="translate(32,160) scale(0.85)"/>
-<use href="#scarab-b5" transform="translate(768,160) scale(0.85)"/>
-<use href="#cattail-b5" transform="translate(32,205) rotate(15) scale(0.9)"/>
-<use href="#cattail-b5" transform="translate(768,205) rotate(-15) scale(0.9)"/>
-<use href="#cattail-b5" transform="translate(32,340) rotate(-15) scale(0.9)"/>
-<use href="#cattail-b5" transform="translate(768,340) rotate(15) scale(0.9)"/>
-<use href="#scarab-b5" transform="translate(32,385) scale(0.85)"/>
-<use href="#scarab-b5" transform="translate(768,385) scale(0.85)"/>
-<use href="#cattail-b5" transform="translate(32,475) rotate(15) scale(0.9)"/>
-<use href="#cattail-b5" transform="translate(768,475) rotate(-15) scale(0.9)"/>
-<use href="#cattail-b5" transform="translate(32,610) rotate(-15) scale(0.9)"/>
-<use href="#cattail-b5" transform="translate(768,610) rotate(15) scale(0.9)"/>
-<use href="#scarab-b5" transform="translate(32,610) scale(0.85)"/>
-<use href="#scarab-b5" transform="translate(768,610) scale(0.85)"/>
-<use href="#cattail-b5" transform="translate(32,745) rotate(15) scale(0.9)"/>
-<use href="#cattail-b5" transform="translate(768,745) rotate(-15) scale(0.9)"/>
-<use href="#scarab-b5" transform="translate(32,835) scale(0.85)"/>
-<use href="#scarab-b5" transform="translate(768,835) scale(0.85)"/>
-<use href="#cattail-b5" transform="translate(32,880) rotate(-15) scale(0.9)"/>
-<use href="#cattail-b5" transform="translate(768,880) rotate(15) scale(0.9)"/>
-<path d="M 70,32 Q 47.5 38, 70 32 Q 92.5 26, 115 32 Q 137.5 38, 160 32 Q 182.5 26, 205 32 Q 227.5 38, 250 32 Q 272.5 26, 295 32 Q 317.5 38, 340 32 Q 362.5 26, 385 32 Q 407.5 38, 430 32 Q 452.5 26, 475 32 Q 497.5 38, 520 32 Q 542.5 26, 565 32 Q 587.5 38, 610 32 Q 632.5 26, 655 32 Q 677.5 38, 700 32" fill="none" stroke="url(#emerald-b5)" stroke-width="2.6" stroke-linecap="round"/>
-<path d="M 70,32 Q 47.5 28, 70 32 Q 92.5 36, 115 32 Q 137.5 28, 160 32 Q 182.5 36, 205 32 Q 227.5 28, 250 32 Q 272.5 36, 295 32 Q 317.5 28, 340 32 Q 362.5 36, 385 32 Q 407.5 28, 430 32 Q 452.5 36, 475 32 Q 497.5 28, 520 32 Q 542.5 36, 565 32 Q 587.5 28, 610 32 Q 632.5 36, 655 32 Q 677.5 28, 700 32" fill="none" stroke="url(#gold-b5)" stroke-width="1.2" stroke-linecap="round"/>
-<path d="M 70,968 Q 47.5 962, 70 968 Q 92.5 974, 115 968 Q 137.5 962, 160 968 Q 182.5 974, 205 968 Q 227.5 962, 250 968 Q 272.5 974, 295 968 Q 317.5 962, 340 968 Q 362.5 974, 385 968 Q 407.5 962, 430 968 Q 452.5 974, 475 968 Q 497.5 962, 520 968 Q 542.5 974, 565 968 Q 587.5 962, 610 968 Q 632.5 974, 655 968 Q 677.5 962, 700 968" fill="none" stroke="url(#emerald-b5)" stroke-width="2.6" stroke-linecap="round"/>
-<path d="M 70,968 Q 47.5 972, 70 968 Q 92.5 964, 115 968 Q 137.5 972, 160 968 Q 182.5 964, 205 968 Q 227.5 972, 250 968 Q 272.5 964, 295 968 Q 317.5 972, 340 968 Q 362.5 964, 385 968 Q 407.5 972, 430 968 Q 452.5 964, 475 968 Q 497.5 972, 520 968 Q 542.5 964, 565 968 Q 587.5 972, 610 968 Q 632.5 964, 655 968 Q 677.5 972, 700 968" fill="none" stroke="url(#gold-b5)" stroke-width="1.2" stroke-linecap="round"/>
-<use href="#cattail-b5" transform="translate(115,32) rotate(80) scale(0.85)"/>
-<use href="#cattail-b5" transform="translate(115,968) rotate(-80) scale(0.85)"/>
-<use href="#cattail-b5" transform="translate(250,32) rotate(80) scale(0.85)"/>
-<use href="#cattail-b5" transform="translate(250,968) rotate(-80) scale(0.85)"/>
-<use href="#cattail-b5" transform="translate(385,32) rotate(80) scale(0.85)"/>
-<use href="#cattail-b5" transform="translate(385,968) rotate(-80) scale(0.85)"/>
-<use href="#cattail-b5" transform="translate(520,32) rotate(80) scale(0.85)"/>
-<use href="#cattail-b5" transform="translate(520,968) rotate(-80) scale(0.85)"/>
-<use href="#cattail-b5" transform="translate(655,32) rotate(80) scale(0.85)"/>
-<use href="#cattail-b5" transform="translate(655,968) rotate(-80) scale(0.85)"/>
-<g transform="translate(400, 32)">
-          <rect x="-42" y="-12" width="84" height="24" rx="4" fill="#faf6ea" stroke="url(#gold-b5)" stroke-width="1.8"/>
-          <use href="#scarab-b5" x="0" y="0" transform="scale(1.1)"/>
-          <circle cx="-25" cy="0" r="3" fill="url(#emerald-b5)"/>
-          <circle cx="25" cy="0" r="3" fill="url(#emerald-b5)"/>
-        </g>
-<g transform="translate(400, 968)">
-          <rect x="-42" y="-12" width="84" height="24" rx="4" fill="#faf6ea" stroke="url(#gold-b5)" stroke-width="1.8"/>
-          <use href="#scarab-b5" x="0" y="0" transform="scale(1.1)"/>
-          <circle cx="-25" cy="0" r="3" fill="url(#emerald-b5)"/>
-          <circle cx="25" cy="0" r="3" fill="url(#emerald-b5)"/>
-        </g>
+      <linearGradient id="sepia-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#b88a38"/>
+        <stop offset="100%" stop-color="#694d1b"/>
+      </linearGradient>
+      <!-- Renaissance Corner Scroll Bracket -->
+      <g id="corner-renaissance">
+        <path d="M 22,70 C 22,40 40,22 70,22" fill="none" stroke="url(#sepia-gold)" stroke-width="2.2"/>
+        <path d="M 26,70 C 26,44 44,26 70,26" fill="none" stroke="url(#sepia-gold)" stroke-width="0.8"/>
+        <!-- Classical Spiral Finial -->
+        <path d="M 22,70 C 22,78 14,80 14,74 C 14,68 20,68 22,70 Z" fill="url(#sepia-gold)"/>
+        <path d="M 70,22 C 78,22 80,14 74,14 C 68,14 68,20 70,22 Z" fill="url(#sepia-gold)"/>
+        <!-- Central Corner Laurel Leaf -->
+        <path d="M 38,38 C 45,30 54,32 50,42 C 42,50 30,45 38,38 Z" fill="#425c38" stroke="url(#sepia-gold)" stroke-width="0.6"/>
+        <circle cx="38" cy="38" r="3" fill="url(#sepia-gold)"/>
+      </g>
+      <!-- Center Crown / Palmette -->
+      <g id="center-palmette">
+        <path d="M 0,-10 C -8,-2 -15,4 0,10 C 15,4 8,-2 0,-10 Z" fill="#425c38" stroke="url(#sepia-gold)" stroke-width="0.8"/>
+        <circle cx="0" cy="0" r="3.5" fill="url(#sepia-gold)"/>
+        <path d="M -25,0 Q -10,-8 0,0 Q 10,-8 25,0" fill="none" stroke="url(#sepia-gold)" stroke-width="1.2"/>
+      </g>
+    </defs>
+<rect x="22" y="22" width="756" height="956" rx="6" fill="none" stroke="url(#sepia-gold)" stroke-width="1.8"/>
+<rect x="30" y="30" width="740" height="940" rx="3" fill="none" stroke="url(#sepia-gold)" stroke-width="0.6"/>
+<rect x="42" y="42" width="716" height="916" fill="none" stroke="url(#sepia-gold)" stroke-width="0.8" stroke-dasharray="6,4"/>
+<use href="#corner-renaissance" x="0" y="0"/>
+<use href="#corner-renaissance" transform="translate(800, 0) scale(-1, 1)"/>
+<use href="#corner-renaissance" transform="translate(0, 1000) scale(1, -1)"/>
+<use href="#corner-renaissance" transform="translate(800, 1000) scale(-1, -1)"/>
+<use href="#center-palmette" x="400" y="22"/>
+<use href="#center-palmette" x="400" y="978" transform="scale(1, -1)"/>
+<use href="#center-palmette" x="22" y="500" transform="rotate(90)"/>
+<use href="#center-palmette" x="778" y="500" transform="rotate(-90)"/>
 </svg>
