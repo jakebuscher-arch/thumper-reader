@@ -63,7 +63,6 @@ class ThumperApp {
     this.btnNext = document.getElementById('btnNext');
     this.btnTOC = document.getElementById('btnTOC');
     this.btnCloseTOC = document.getElementById('btnCloseTOC');
-    this.btnAudio = document.getElementById('btnAudio');
     this.btnFullscreen = document.getElementById('btnFullscreen');
     this.btnMobileSwitch = document.getElementById('btnMobileSwitch');
 
@@ -81,14 +80,6 @@ class ThumperApp {
     if (this.btnTOC) this.btnTOC.addEventListener('click', () => this.openTOC());
     if (this.btnCloseTOC) this.btnCloseTOC.addEventListener('click', () => this.closeTOC());
     if (this.tocOverlay) this.tocOverlay.addEventListener('click', () => this.closeTOC());
-
-    if (this.btnAudio) {
-      this.btnAudio.addEventListener('click', () => {
-        const muted = window.pageAudio.toggleMute();
-        this.btnAudio.innerHTML = muted ? '🔇 Sound Off' : '🔊 Sound On';
-        this.btnAudio.classList.toggle('active', !muted);
-      });
-    }
 
     if (this.btnFullscreen) {
       this.btnFullscreen.addEventListener('click', () => {
@@ -183,9 +174,26 @@ class ThumperApp {
 
         if (isFirstLine) {
           isFirstLine = false;
+          const initialLetter = page.initialLetter;
+          const restOfFirstLine = page.firstLineRest;
+          const prefix = page.initialPrefix || '';
+          
+          const firstSpaceIdx = restOfFirstLine.indexOf(' ');
+          let firstWordRest = '';
+          let remainingLine = '';
+          if (firstSpaceIdx !== -1) {
+            firstWordRest = restOfFirstLine.substring(0, firstSpaceIdx);
+            remainingLine = restOfFirstLine.substring(firstSpaceIdx + 1);
+          } else {
+            firstWordRest = restOfFirstLine;
+            remainingLine = '';
+          }
+
           verseHtml += `
-            <div class="illuminated-initial-crest">${page.initialLetter}</div>
-            <div class="verse-line first-verse-line">${this.escapeHtml(line)}</div>
+            <div class="verse-line first-verse-line">
+              ${prefix ? `<span class="first-line-prefix">${this.escapeHtml(prefix)}</span>` : ''}
+              <span class="illuminated-cap"><span class="cap-letter">${initialLetter}</span></span><span class="first-word-rest">${this.escapeHtml(firstWordRest)}</span>${remainingLine ? ` <span class="first-line-remaining">${this.escapeHtml(remainingLine)}</span>` : ''}
+            </div>
           `;
         } else {
           verseHtml += `<div class="verse-line">${this.escapeHtml(line)}</div>`;

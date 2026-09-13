@@ -83,26 +83,28 @@ body {
   border-bottom-left-radius: 0;
 }
 
-/* Page Inner Content Container - Carefully tuned so text NEVER touches borders */
+/* Page Inner Content Container - Half-inch (~40px) clear buffer inside borders */
 .page-content {
   position: relative;
   z-index: 5;
   height: 100%;
-  padding: clamp(32px, 5vh, 48px) clamp(36px, 5.5vw, 68px) clamp(24px, 3.5vh, 36px) clamp(36px, 5.5vw, 68px);
+  padding: 34px 42px 28px 42px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 /* Page Header */
 .page-header {
   text-align: center;
-  margin-bottom: clamp(2px, 0.8vh, 6px);
+  margin-bottom: clamp(1px, 0.5vh, 4px);
+  flex-shrink: 0;
 }
 
 .chapter-number {
   font-family: var(--font-display);
-  font-size: clamp(0.68rem, 1.1vh, 0.78rem);
+  font-size: clamp(0.65rem, 1vh, 0.75rem);
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -112,14 +114,14 @@ body {
 
 .chapter-title {
   font-family: var(--font-serif);
-  font-size: clamp(1.05rem, 1.8vh, 1.25rem);
+  font-size: clamp(0.95rem, 1.5vh, 1.15rem);
   font-weight: 600;
   color: var(--ink-color);
   letter-spacing: 0.02em;
   font-style: italic;
 }
 
-/* Text Container & Stanzas: CENTER-JUSTIFIED & FIT PERFECTLY */
+/* Text Container & Stanzas: PERFECTLY CENTERED, NEVER CLIPPING TOP OR BOTTOM */
 .page-verse-container {
   flex: 1;
   display: flex;
@@ -128,18 +130,21 @@ body {
   align-items: center;
   text-align: center;
   width: 100%;
-  gap: clamp(4px, 0.9vh, 8px);
+  gap: clamp(2px, 0.5vh, 6px);
+  margin: 0;
+  min-height: 0;
 }
 
 .stanza {
   position: relative;
   width: 100%;
   text-align: center;
+  margin: clamp(1px, 0.3vh, 3px) 0;
 }
 
 .verse-line {
-  font-size: clamp(0.78rem, 1.38vh, 0.96rem);
-  line-height: 1.36;
+  font-size: clamp(0.76rem, 1.34vh, 0.98rem);
+  line-height: 1.32;
   color: var(--ink-color);
   font-weight: 500;
   letter-spacing: 0.01em;
@@ -154,46 +159,92 @@ body {
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 600;
-  font-size: clamp(0.75rem, 1.2vh, 0.88rem);
+  font-size: clamp(0.68rem, 1.05vh, 0.8rem);
   color: var(--gold-dark);
   letter-spacing: 0.03em;
   text-align: center;
-  margin-top: 2px;
-  margin-bottom: 1px;
+  margin-top: 1px;
+  margin-bottom: 0px;
+  line-height: 1.15;
 }
 
-/* Illuminated Initial Emblem (Centered above opening line) */
-.illuminated-initial-crest {
+/* First Line & Illuminated Medieval Initial Capital */
+.first-verse-line {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0 4px;
+}
+
+.illuminated-cap {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: clamp(26px, 3.6vh, 32px);
-  height: clamp(26px, 3.6vh, 32px);
-  background: linear-gradient(135deg, #faf3e1 0%, #eddab3 100%);
+  width: clamp(28px, 3.6vh, 36px);
+  height: clamp(28px, 3.6vh, 36px);
+  background: linear-gradient(135deg, #fdf8ec 0%, #faeacd 50%, #ecd6a2 100%);
   border: 1.5px solid var(--gold-dark);
   outline: 1px dashed var(--gold-primary);
-  outline-offset: -2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  outline-offset: -2.5px;
+  box-shadow: 
+    0 2px 5px rgba(0, 0, 0, 0.2),
+    inset 0 0 5px rgba(184, 138, 56, 0.3);
   border-radius: 3px;
-  margin-bottom: 3px;
-  color: var(--green-accent);
-  font-family: var(--font-display);
-  font-size: clamp(1.05rem, 2vh, 1.3rem);
-  font-weight: 700;
+  margin-right: 3px;
+  vertical-align: middle;
+  flex-shrink: 0;
 }
 
-[data-book="1"] .illuminated-initial-crest { color: #2e4a2e; }
-[data-book="2"] .illuminated-initial-crest { color: #78531d; }
-[data-book="3"] .illuminated-initial-crest { color: #405c36; }
-[data-book="4"] .illuminated-initial-crest { color: #8a2f1e; }
-[data-book="5"] .illuminated-initial-crest { color: #164e3c; }
+.cap-letter {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.3vh, 1.55rem);
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8), 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+[data-book="1"] .cap-letter { color: #204b20; }
+[data-book="2"] .cap-letter { color: #6e4612; }
+[data-book="3"] .cap-letter { color: #3b5428; }
+[data-book="4"] .cap-letter { color: #8e2716; }
+[data-book="5"] .cap-letter { color: #12533c; }
+
+.first-word-rest {
+  font-variant: small-caps;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: 1.05em;
+  color: var(--ink-color);
+}
+
+.first-line-prefix {
+  font-family: var(--font-display);
+  font-size: 1.15em;
+  color: var(--gold-dark);
+  margin-right: 2px;
+}
+
+.version-badge {
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: rgba(196, 157, 72, 0.25);
+  color: var(--gold-light);
+  border: 1px solid var(--gold-dark);
+  margin-left: 6px;
+  vertical-align: middle;
+  letter-spacing: 0.05em;
+}
 
 /* Page Footer / Folio */
 .page-footer {
   text-align: center;
-  margin-top: 4px;
+  margin-top: 3px;
   font-family: var(--font-display);
-  font-size: clamp(0.72rem, 1.1vh, 0.82rem);
+  font-size: clamp(0.7rem, 1.1vh, 0.8rem);
   color: var(--ink-muted);
   letter-spacing: 0.1em;
   display: flex;
@@ -201,6 +252,7 @@ body {
   align-items: center;
   padding-top: 2px;
   border-top: 1px solid rgba(191, 161, 95, 0.2);
+  flex-shrink: 0;
 }
 
 .folio-book-label {
@@ -217,7 +269,7 @@ body {
 
 /* =======================================================
    RIGHT PAGE: ILLUMINATION PICTURE PLATE
-   CLEANLY FRAMED WITH COMFORTABLE MARGINS
+   NEATLY FRAMED INSIDE ORNATE BORDERS WITH HALF-INCH BUFFER
    NO TEXT OR CAPTIONS UNDERNEATH THE IMAGE!
    ======================================================= */
 .art-plate-container {
@@ -228,14 +280,14 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4px 6px;
+  padding: 42px 42px 36px 42px;
+  box-sizing: border-box;
 }
 
 .art-image-frame {
   position: relative;
   width: 100%;
   height: 100%;
-  max-height: calc(100% - 10px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -246,10 +298,18 @@ body {
   outline: 1px solid rgba(229, 205, 142, 0.45);
   outline-offset: -3px;
   box-shadow: 
-    0 10px 28px rgba(0, 0, 0, 0.4),
+    0 8px 24px rgba(0, 0, 0, 0.4),
     inset 0 0 10px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  margin: auto;
+  box-sizing: border-box;
+}
+
+.art-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
 }
 
 .art-image-frame img {

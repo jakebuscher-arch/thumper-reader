@@ -978,7 +978,7 @@ window.THUMPER_COLLECTION = [
           "title": "A commotion at the clock shop",
           "brief": "Thumper and Frumper stand among celebrating rabbits outside Hedgehog’s shop. Hedgehog peers out with skepticism. Keep all three at plausible relative scale, using their original references.",
           "cast": "Thumper; Frumper; Hedgehog; ordinary rabbits",
-          "image": "assets/images/Hedgehog.png",
+          "image": "assets/images/B02-S01-commotion-clockshop.png",
           "theologicalNote": "Witnessing the miraculous: wonder awakens the question of mechanical vs. divine origin."
         }
       },
@@ -1128,7 +1128,7 @@ window.THUMPER_COLLECTION = [
           "title": "Questions at lunch",
           "brief": "Thumper and Frumper sit across a cottage table with carrots and butter. Thumper is troubled and Frumper attentive. They are adult male friends. Hedgehog is absent.",
           "cast": "Thumper; Frumper only",
-          "image": "assets/images/Frumper .png",
+          "image": "assets/images/B02-S03-lunch-table.png",
           "theologicalNote": "Frumper’s serene wisdom: the transcendent artisan who is not merely another gear in the machine."
         }
       },
@@ -1213,7 +1213,7 @@ window.THUMPER_COLLECTION = [
           "title": "Go learn the craft",
           "brief": "Frumper talks with Thumper over the remains of lunch, gesturing toward the distant clock shop through the window. The exchange is between equals, with encouragement rather than a parental pose.",
           "cast": "Thumper; Frumper only",
-          "image": "assets/images/Thumper .png",
+          "image": "assets/images/B02-S03-lunch-table.png",
           "theologicalNote": "Apprenticeship in order: understanding creation by participating in craftsmanship."
         }
       },
@@ -1388,7 +1388,7 @@ window.THUMPER_COLLECTION = [
           "title": "Tiny gears and imperfect eyesight",
           "brief": "Thumper and Hedgehog study a clock movement beneath a magnifying glass. A bird beyond the window is blurred by distance. Emphasize Hedgehog’s skilled close work; do not add Frumper to the room.",
           "cast": "Thumper; Hedgehog only",
-          "image": "assets/images/Hedgehog.png",
+          "image": "assets/images/B02-S06-magnifying-gears.png",
           "theologicalNote": "Imperfect sight and fine adjustments: human reason studying the intricate order of the cosmos."
         }
       },
@@ -1559,7 +1559,7 @@ window.THUMPER_COLLECTION = [
           "title": "Where motion begins",
           "brief": "Hedgehog winds a spring as Thumper watches its connection to the clock gears. Focus on the mechanism and the two adult craftsmen in thoughtful discussion.",
           "cast": "Thumper; Hedgehog only",
-          "image": "assets/images/Hedgehog.png",
+          "image": "assets/images/B02-S06-magnifying-gears.png",
           "theologicalNote": "Aquinas’s First Way: whatever is moved must be moved by another; the chain requires an Unmoved Mover."
         }
       },
@@ -3916,7 +3916,7 @@ window.THUMPER_COLLECTION = [
           "title": "The weasel is released",
           "brief": "Sina uncoils and slips toward the river as the relieved weasel kneels beside the tree. Thumper stands firm, having finished his argument. The next scam can remain out of frame.",
           "cast": "Thumper; Sina; one weasel",
-          "image": "assets/images/Thumper .png",
+          "image": "assets/images/B05-S05-weasel-released.png",
           "theologicalNote": "The impossibility of infinite regress: dependent causes must terminate in a Self-Existent Being."
         }
       },
@@ -4254,7 +4254,7 @@ window.THUMPER_COLLECTION = [
           "title": "The swindlers flee",
           "brief": "Sina emerges from the river as the weasels retreat and the crowd rallies behind Hedgehog. Broken beetle containers and scattered belongings show the cost of the deception without glorifying the brawl.",
           "cast": "Hedgehog; Sina; fleeing weasels; ordinary rabbits",
-          "image": "assets/images/Hedgehog.png",
+          "image": "assets/images/B05-sina-black-snake.png",
           "theologicalNote": "The dispersal of lies: falsehood melts away when confronted by steadfast metaphysical reality."
         }
       },

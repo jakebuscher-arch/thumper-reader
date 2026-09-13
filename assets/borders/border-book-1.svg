@@ -1,69 +1,97 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
-  <defs>
-    <linearGradient id="gold-metal-b1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#e2c882"/>
-      <stop offset="50%" stop-color="#b88a38"/>
-      <stop offset="100%" stop-color="#8c6224"/>
-    </linearGradient>
-    <linearGradient id="green-vine-b1" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#42613b"/>
-      <stop offset="50%" stop-color="#2e472a"/>
-      <stop offset="100%" stop-color="#42613b"/>
-    </linearGradient>
-    <!-- Corner Baroque Rosette -->
-    <g id="corner-b1">
-      <rect x="24" y="24" width="70" height="70" fill="none" stroke="url(#gold-metal-b1)" stroke-width="1.8" rx="3"/>
-      <circle cx="59" cy="59" r="26" fill="none" stroke="url(#gold-metal-b1)" stroke-width="1.5"/>
-      <circle cx="59" cy="59" r="21" fill="none" stroke="#2e472a" stroke-width="1" stroke-dasharray="3,3"/>
-      <!-- Rosette petals -->
-      <path d="M 59,42 C 53,49 53,55 59,59 C 65,55 65,49 59,42 Z" fill="#d97d7d" stroke="#8c2e2e" stroke-width="0.8"/>
-      <path d="M 59,76 C 53,69 53,63 59,59 C 65,63 65,69 59,76 Z" fill="#d97d7d" stroke="#8c2e2e" stroke-width="0.8"/>
-      <path d="M 42,59 C 49,53 55,53 59,59 C 55,65 49,65 42,59 Z" fill="#d97d7d" stroke="#8c2e2e" stroke-width="0.8"/>
-      <path d="M 76,59 C 69,53 63,53 59,59 C 63,65 69,65 76,59 Z" fill="#d97d7d" stroke="#8c2e2e" stroke-width="0.8"/>
-      <circle cx="59" cy="59" r="4.5" fill="url(#gold-metal-b1)"/>
-    </g>
-  </defs>
-
-  <!-- Outer Structural Bands (strictly on perimeter margins) -->
-  <rect x="24" y="24" width="752" height="952" rx="6" fill="none" stroke="url(#gold-metal-b1)" stroke-width="2.5"/>
-  <rect x="32" y="32" width="736" height="936" rx="4" fill="none" stroke="url(#green-vine-b1)" stroke-width="1.5"/>
-  <rect x="40" y="40" width="720" height="920" rx="3" fill="none" stroke="url(#gold-metal-b1)" stroke-width="1" stroke-dasharray="5,4"/>
-
-  <!-- Four Anchored Corners -->
-  <use href="#corner-b1" x="0" y="0"/>
-  <use href="#corner-b1" x="800" y="0" transform="scale(-1, 1)"/>
-  <use href="#corner-b1" x="0" y="1000" transform="scale(1, -1)"/>
-  <use href="#corner-b1" x="800" y="1000" transform="scale(-1, -1)"/>
-
-  <!-- Left Margin Continuous Vine Ribbon -->
-  <path d="M 32,94 C 28,200 36,300 32,400 C 28,500 36,600 32,700 C 28,800 36,850 32,906" fill="none" stroke="url(#green-vine-b1)" stroke-width="3" stroke-linecap="round"/>
-  <path d="M 32,94 C 36,200 28,300 36,400 C 40,500 28,600 36,700 C 40,800 28,850 36,906" fill="none" stroke="url(#gold-metal-b1)" stroke-width="1.2" stroke-linecap="round"/>
-
-  <!-- Right Margin Continuous Vine Ribbon -->
-  <path d="M 768,94 C 772,200 764,300 768,400 C 772,500 764,600 768,700 C 772,800 764,850 768,906" fill="none" stroke="url(#green-vine-b1)" stroke-width="3" stroke-linecap="round"/>
-  <path d="M 768,94 C 764,200 772,300 764,400 C 760,500 772,600 764,700 C 760,800 772,850 764,906" fill="none" stroke="url(#gold-metal-b1)" stroke-width="1.2" stroke-linecap="round"/>
-
-  <!-- Top Margin Continuous Vine Ribbon -->
-  <path d="M 94,32 C 200,28 300,36 400,32 C 500,28 600,36 706,32" fill="none" stroke="url(#green-vine-b1)" stroke-width="2.5"/>
-  <path d="M 94,32 C 200,36 300,28 400,36 C 500,40 600,28 706,32" fill="none" stroke="url(#gold-metal-b1)" stroke-width="1"/>
-
-  <!-- Bottom Margin Continuous Vine Ribbon -->
-  <path d="M 94,968 C 200,972 300,964 400,968 C 500,972 600,964 706,968" fill="none" stroke="url(#green-vine-b1)" stroke-width="2.5"/>
-  <path d="M 94,968 C 200,964 300,972 400,964 C 500,960 600,972 706,968" fill="none" stroke="url(#gold-metal-b1)" stroke-width="1"/>
-
-  <!-- Top Header Centerpiece Cartouche -->
-  <g transform="translate(400, 32)">
-    <polygon points="0,-12 34,0 0,12 -34,0" fill="#fbf7ee" stroke="url(#gold-metal-b1)" stroke-width="1.8"/>
-    <circle cx="0" cy="0" r="4" fill="#2e472a"/>
-    <circle cx="-14" cy="0" r="2.5" fill="#d97d7d"/>
-    <circle cx="14" cy="0" r="2.5" fill="#d97d7d"/>
+<defs>
+  <linearGradient id="gold-b1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#f5e1a4"/>
+    <stop offset="50%" stop-color="#c4973b"/>
+    <stop offset="100%" stop-color="#7a5418"/>
+  </linearGradient>
+  <linearGradient id="vine-b1" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#4a6b3e"/>
+    <stop offset="50%" stop-color="#2c4c23"/>
+    <stop offset="100%" stop-color="#1e3816"/>
+  </linearGradient>
+  <linearGradient id="rose-b1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#f09696"/>
+    <stop offset="50%" stop-color="#c94b4b"/>
+    <stop offset="100%" stop-color="#801a1a"/>
+  </linearGradient>
+  <!-- Reusable Leaf -->
+  <g id="leaf-b1">
+    <path d="M 0,0 C 3,6 10,7 15,0 C 10,-6 3,-5 0,0 Z" fill="url(#vine-b1)" stroke="#1e3816" stroke-width="0.6"/>
+    <line x1="0" y1="0" x2="13" y2="0" stroke="url(#gold-b1)" stroke-width="0.5"/>
   </g>
-
-  <!-- Bottom Footer Centerpiece Cartouche -->
-  <g transform="translate(400, 968)">
-    <polygon points="0,-12 34,0 0,12 -34,0" fill="#fbf7ee" stroke="url(#gold-metal-b1)" stroke-width="1.8"/>
-    <circle cx="0" cy="0" r="4" fill="#2e472a"/>
-    <circle cx="-14" cy="0" r="2.5" fill="#d97d7d"/>
-    <circle cx="14" cy="0" r="2.5" fill="#d97d7d"/>
+  <!-- Reusable Wild Rose -->
+  <g id="rose-b1-flower">
+    <circle cx="0" cy="0" r="14" fill="#fdfbf7" stroke="url(#gold-b1)" stroke-width="1.2"/>
+    <path d="M 0,-12 C -4,-6 -8,-6 -12,0 C -6,4 -6,8 0,12 C 6,8 6,4 12,0 C 8,-6 4,-6 0,-12 Z" fill="url(#rose-b1)" opacity="0.85"/>
+    <circle cx="0" cy="0" r="5" fill="url(#gold-b1)" stroke="#5e4219" stroke-width="0.6"/>
+    <circle cx="0" cy="0" r="2.5" fill="#fdfbf7"/>
   </g>
+  <!-- Tendril curl -->
+  <g id="tendril-b1">
+    <path d="M 0,0 C 6,4 10,12 8,18 C 6,24 -2,22 -3,17 C -4,12 2,9 6,12" fill="none" stroke="url(#gold-b1)" stroke-width="1.1" stroke-linecap="round"/>
+  </g>
+</defs>
+<rect x="18" y="18" width="764" height="964" rx="6" fill="none" stroke="url(#gold-b1)" stroke-width="2"/>
+<rect x="46" y="46" width="708" height="908" rx="4" fill="none" stroke="url(#gold-b1)" stroke-width="1" stroke-dasharray="6,4"/>
+<path d="M 32,60 Q 32.0 40.0, 32 60 Q 32.0 80.0, 32 100 Q 32.0 120.0, 32 140 Q 32.0 160.0, 32 180 Q 31.999999999999996 200.0, 32 220 Q 32.00000000000001 240.0, 32 260 Q 31.999999999999996 280.0, 32 300 Q 32.00000000000001 320.0, 32 340 Q 31.999999999999993 360.0, 32 380 Q 32.00000000000001 400.0, 32 420 Q 31.999999999999993 440.0, 32 460 Q 32.000000000000036 480.0, 32 500 Q 31.99999999999999 520.0, 32 540 Q 31.999999999999986 560.0, 32 580 Q 31.99999999999999 600.0, 32 620 Q 32.000000000000036 640.0, 32 660 Q 31.999999999999986 680.0, 32 700 Q 31.99999999999999 720.0, 32 740 Q 31.999999999999986 760.0, 32 780 Q 32.00000000000004 800.0, 32 820 Q 31.999999999999982 840.0, 32 860 Q 31.999999999999993 880.0, 32 900 Q 31.999999999999932 920.0, 32 940" fill="none" stroke="url(#vine-b1)" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M 32,60 Q 32.0 40.0, 32 60 Q 32.0 80.0, 32 100 Q 32.0 120.0, 32 140 Q 31.999999999999996 160.0, 32 180 Q 32.0 200.0, 32 220 Q 31.999999999999996 240.0, 32 260 Q 32.00000000000001 280.0, 32 300 Q 31.999999999999993 320.0, 32 340 Q 32.00000000000001 360.0, 32 380 Q 31.999999999999993 400.0, 32 420 Q 32.00000000000001 440.0, 32 460 Q 31.999999999999964 480.0, 32 500 Q 32.00000000000001 520.0, 32 540 Q 32.000000000000014 560.0, 32 580 Q 32.000000000000014 600.0, 32 620 Q 31.99999999999996 640.0, 32 660 Q 32.000000000000014 680.0, 32 700 Q 32.00000000000001 720.0, 32 740 Q 32.000000000000014 760.0, 32 780 Q 31.999999999999957 800.0, 32 820 Q 32.000000000000014 840.0, 32 860 Q 32.00000000000001 880.0, 32 900 Q 32.00000000000007 920.0, 32 940" fill="none" stroke="url(#gold-b1)" stroke-width="1.4" stroke-linecap="round"/>
+<use href="#leaf-b1" transform="translate(32,140) rotate(40) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(32,220) rotate(-40) scale(1.1)"/>
+<use href="#tendril-b1" transform="translate(32,220) scale(-1, 1)"/>
+<use href="#leaf-b1" transform="translate(32,300) rotate(40) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(32,380) rotate(-40) scale(1.1)"/>
+<use href="#tendril-b1" transform="translate(32,380) scale(1, 1)"/>
+<use href="#leaf-b1" transform="translate(32,460) rotate(40) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(32,540) rotate(-40) scale(1.1)"/>
+<use href="#tendril-b1" transform="translate(32,540) scale(-1, 1)"/>
+<use href="#leaf-b1" transform="translate(32,620) rotate(40) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(32,700) rotate(-40) scale(1.1)"/>
+<use href="#tendril-b1" transform="translate(32,700) scale(1, 1)"/>
+<use href="#leaf-b1" transform="translate(32,780) rotate(40) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(32,860) rotate(-40) scale(1.1)"/>
+<use href="#tendril-b1" transform="translate(32,860) scale(-1, 1)"/>
+<path d="M 768,60 Q 768.0 40.0, 768 60 Q 768.0 80.0, 768 100 Q 768.0 120.0, 768 140 Q 768.0 160.0, 768 180 Q 768.0 200.0, 768 220 Q 768.0 240.0, 768 260 Q 768.0 280.0, 768 300 Q 768.0 320.0, 768 340 Q 768.0 360.0, 768 380 Q 768.0 400.0, 768 420 Q 768.0 440.0, 768 460 Q 768.0 480.0, 768 500 Q 768.0 520.0, 768 540 Q 768.0 560.0, 768 580 Q 768.0 600.0, 768 620 Q 768.0 640.0, 768 660 Q 768.0 680.0, 768 700 Q 768.0 720.0, 768 740 Q 768.0 760.0, 768 780 Q 768.0 800.0, 768 820 Q 768.0 840.0, 768 860 Q 768.0 880.0, 768 900 Q 767.9999999999999 920.0, 768 940" fill="none" stroke="url(#vine-b1)" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M 768,60 Q 768.0 40.0, 768 60 Q 768.0 80.0, 768 100 Q 768.0 120.0, 768 140 Q 768.0 160.0, 768 180 Q 768.0 200.0, 768 220 Q 768.0 240.0, 768 260 Q 768.0 280.0, 768 300 Q 768.0 320.0, 768 340 Q 768.0 360.0, 768 380 Q 768.0 400.0, 768 420 Q 768.0 440.0, 768 460 Q 768.0 480.0, 768 500 Q 768.0 520.0, 768 540 Q 768.0 560.0, 768 580 Q 768.0 600.0, 768 620 Q 768.0 640.0, 768 660 Q 768.0 680.0, 768 700 Q 768.0 720.0, 768 740 Q 768.0 760.0, 768 780 Q 768.0 800.0, 768 820 Q 768.0 840.0, 768 860 Q 768.0 880.0, 768 900 Q 768.0000000000001 920.0, 768 940" fill="none" stroke="url(#gold-b1)" stroke-width="1.4" stroke-linecap="round"/>
+<use href="#leaf-b1" transform="translate(768,140) rotate(220) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(768,220) rotate(140) scale(1.1)"/>
+<use href="#tendril-b1" transform="translate(768,220) scale(1, 1)"/>
+<use href="#leaf-b1" transform="translate(768,300) rotate(220) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(768,380) rotate(140) scale(1.1)"/>
+<use href="#tendril-b1" transform="translate(768,380) scale(-1, 1)"/>
+<use href="#leaf-b1" transform="translate(768,460) rotate(220) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(768,540) rotate(140) scale(1.1)"/>
+<use href="#tendril-b1" transform="translate(768,540) scale(1, 1)"/>
+<use href="#leaf-b1" transform="translate(768,620) rotate(220) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(768,700) rotate(140) scale(1.1)"/>
+<use href="#tendril-b1" transform="translate(768,700) scale(-1, 1)"/>
+<use href="#leaf-b1" transform="translate(768,780) rotate(220) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(768,860) rotate(140) scale(1.1)"/>
+<use href="#tendril-b1" transform="translate(768,860) scale(1, 1)"/>
+<path d="M 60,32 Q 41.0 32.0, 60 32 Q 79.0 32.0, 98 32 Q 117.0 32.0, 136 32 Q 155.0 32.0, 174 32 Q 193.0 31.999999999999996, 212 32 Q 231.0 32.00000000000001, 250 32 Q 269.0 31.999999999999996, 288 32 Q 307.0 32.00000000000001, 326 32 Q 345.0 31.999999999999993, 364 32 Q 383.0 32.00000000000001, 402 32 Q 421.0 31.999999999999993, 440 32 Q 459.0 32.00000000000003, 478 32 Q 497.0 31.999999999999993, 516 32 Q 535.0 31.99999999999999, 554 32 Q 573.0 31.99999999999999, 592 32 Q 611.0 32.000000000000036, 630 32 Q 649.0 31.99999999999999, 668 32 Q 687.0 31.999999999999993, 706 32" fill="none" stroke="url(#vine-b1)" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M 60,32 Q 41.0 32.0, 60 32 Q 79.0 32.0, 98 32 Q 117.0 32.0, 136 32 Q 155.0 31.999999999999996, 174 32 Q 193.0 32.0, 212 32 Q 231.0 31.999999999999996, 250 32 Q 269.0 32.00000000000001, 288 32 Q 307.0 31.999999999999996, 326 32 Q 345.0 32.00000000000001, 364 32 Q 383.0 31.999999999999993, 402 32 Q 421.0 32.00000000000001, 440 32 Q 459.0 31.99999999999997, 478 32 Q 497.0 32.00000000000001, 516 32 Q 535.0 32.000000000000014, 554 32 Q 573.0 32.00000000000001, 592 32 Q 611.0 31.999999999999968, 630 32 Q 649.0 32.000000000000014, 668 32 Q 687.0 32.00000000000001, 706 32" fill="none" stroke="url(#gold-b1)" stroke-width="1.4" stroke-linecap="round"/>
+<use href="#leaf-b1" transform="translate(136,32) rotate(-50) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(212,32) rotate(50) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(288,32) rotate(-50) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(364,32) rotate(50) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(440,32) rotate(-50) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(516,32) rotate(50) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(592,32) rotate(-50) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(668,32) rotate(50) scale(1.1)"/>
+<path d="M 60,968 Q 41.0 968.0, 60 968 Q 79.0 968.0, 98 968 Q 117.0 968.0, 136 968 Q 155.0 968.0, 174 968 Q 193.0 968.0, 212 968 Q 231.0 968.0, 250 968 Q 269.0 968.0, 288 968 Q 307.0 968.0, 326 968 Q 345.0 968.0, 364 968 Q 383.0 968.0, 402 968 Q 421.0 968.0, 440 968 Q 459.0 968.0, 478 968 Q 497.0 968.0, 516 968 Q 535.0 968.0, 554 968 Q 573.0 968.0, 592 968 Q 611.0 968.0, 630 968 Q 649.0 968.0, 668 968 Q 687.0 968.0, 706 968" fill="none" stroke="url(#vine-b1)" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M 60,968 Q 41.0 968.0, 60 968 Q 79.0 968.0, 98 968 Q 117.0 968.0, 136 968 Q 155.0 968.0, 174 968 Q 193.0 968.0, 212 968 Q 231.0 968.0, 250 968 Q 269.0 968.0, 288 968 Q 307.0 968.0, 326 968 Q 345.0 968.0, 364 968 Q 383.0 968.0, 402 968 Q 421.0 968.0, 440 968 Q 459.0 968.0, 478 968 Q 497.0 968.0, 516 968 Q 535.0 968.0, 554 968 Q 573.0 968.0, 592 968 Q 611.0 968.0, 630 968 Q 649.0 968.0, 668 968 Q 687.0 968.0, 706 968" fill="none" stroke="url(#gold-b1)" stroke-width="1.4" stroke-linecap="round"/>
+<use href="#leaf-b1" transform="translate(136,968) rotate(130) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(212,968) rotate(-130) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(288,968) rotate(130) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(364,968) rotate(-130) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(440,968) rotate(130) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(516,968) rotate(-130) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(592,968) rotate(130) scale(1.1)"/>
+<use href="#leaf-b1" transform="translate(668,968) rotate(-130) scale(1.1)"/>
+<use href="#rose-b1-flower" x="32" y="32"/>
+<use href="#rose-b1-flower" x="768" y="32"/>
+<use href="#rose-b1-flower" x="32" y="968"/>
+<use href="#rose-b1-flower" x="768" y="968"/>
+<use href="#rose-b1-flower" x="400" y="32" transform="scale(1.2) translate(-66, -5)"/>
+<use href="#rose-b1-flower" x="400" y="968" transform="scale(1.2) translate(-66, -161)"/>
 </svg>
