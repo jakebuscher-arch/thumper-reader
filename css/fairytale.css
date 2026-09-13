@@ -121,6 +121,21 @@ body {
   font-style: italic;
 }
 
+.header-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  line-height: 1;
+}
+
+.header-fleuron {
+  font-size: 0.68rem;
+  color: var(--gold-dark);
+  letter-spacing: 0.28em;
+  opacity: 0.8;
+}
+
 /* Text Container & Stanzas: EXPANDED TO FILL PAGE ELEGANTLY WITHOUT OVERFLOW */
 .page-verse-container {
   flex: 1;
@@ -157,7 +172,57 @@ body {
   white-space: normal;
 }
 
-/* Speaker Cue Badges */
+/* Rubricated Alternating Stanza Initials (Inspired by Historical Manuscripts) */
+.rubricated-cap {
+  font-family: var(--font-display);
+  font-size: 1.22em;
+  font-weight: 700;
+  line-height: 0.88;
+  margin-right: 1.5px;
+  display: inline-block;
+  vertical-align: baseline;
+  transition: color 0.2s ease;
+}
+
+.verse-quote-prefix {
+  font-family: var(--font-serif);
+  font-size: 1.1em;
+  color: var(--gold-dark);
+  margin-right: 1px;
+}
+
+/* Historical Medieval Manuscript Pigments */
+.stanza-cap-1 {
+  /* Vermilion / Cinnabar Red */
+  color: #a62b2b;
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.7);
+}
+
+.stanza-cap-2 {
+  /* Ultramarine / Lapis Lazuli Blue */
+  color: #1b4d82;
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.7);
+}
+
+.stanza-cap-3 {
+  /* Verdigris / Deep Forest Green */
+  color: #24582c;
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.7);
+}
+
+.stanza-cap-4 {
+  /* Burnished Gold Leaf / Rich Ochre */
+  color: #92691a;
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.7);
+}
+
+.stanza-cap-0 {
+  /* Tyrian Purple / Imperial Madder Crimson */
+  color: #84234c;
+  text-shadow: 0.5px 0.5px 0 rgba(255, 255, 255, 0.7);
+}
+
+/* Speaker Cue Badges with Calligraphic Fleurons */
 .speaker-badge {
   display: inline-block;
   font-family: var(--font-serif);
@@ -165,13 +230,21 @@ body {
   font-weight: 700;
   font-size: 0.82em;
   color: var(--gold-dark);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   text-align: center;
   margin: 1px auto;
   line-height: 1.12;
 }
 
-/* First Line & Illuminated Medieval Initial Capital */
+.speaker-badge .fleuron {
+  font-style: normal;
+  font-size: 0.85em;
+  color: var(--gold-primary);
+  opacity: 0.85;
+  margin: 0 3px;
+}
+
+/* First Line & Illuminated Medieval Initial Capital (Showcase Gilded Tile) */
 .first-verse-line {
   display: flex;
   align-items: baseline;
@@ -186,17 +259,32 @@ body {
   justify-content: center;
   width: clamp(36px, 4.6vh, 46px);
   height: clamp(36px, 4.6vh, 46px);
-  background: linear-gradient(135deg, #fdf8ec 0%, #faeacd 50%, #ecd6a2 100%);
-  border: 1.5px solid var(--gold-dark);
-  outline: 1px dashed var(--gold-primary);
-  outline-offset: -2.5px;
+  background: 
+    radial-gradient(circle at 35% 35%, #fffbf0 0%, #faecd0 40%, #e6cb92 100%);
+  border: 1.8px solid var(--gold-dark);
+  outline: 1.5px solid var(--gold-primary);
+  outline-offset: -3px;
   box-shadow: 
-    0 2px 5px rgba(0, 0, 0, 0.2),
-    inset 0 0 5px rgba(184, 138, 56, 0.3);
-  border-radius: 3px;
+    0 3px 8px rgba(0, 0, 0, 0.25),
+    inset 0 0 6px rgba(184, 138, 56, 0.4),
+    inset 0 1px 2px rgba(255, 255, 255, 0.8);
+  border-radius: 3.5px;
   margin-right: 4px;
   vertical-align: middle;
   flex-shrink: 0;
+  position: relative;
+}
+
+.illuminated-cap::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border: 0.8px solid rgba(196, 157, 72, 0.5);
+  border-radius: 5px;
+  pointer-events: none;
 }
 
 .cap-letter {
@@ -204,14 +292,16 @@ body {
   font-size: clamp(1.5rem, 2.8vh, 1.95rem);
   font-weight: 800;
   line-height: 1;
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8), 1px 1px 2px rgba(0, 0, 0, 0.25);
+  text-shadow: 
+    1px 1px 0 rgba(255, 255, 255, 0.9),
+    1px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
-[data-book="1"] .cap-letter { color: #204b20; }
-[data-book="2"] .cap-letter { color: #6e4612; }
-[data-book="3"] .cap-letter { color: #3b5428; }
-[data-book="4"] .cap-letter { color: #8e2716; }
-[data-book="5"] .cap-letter { color: #12533c; }
+[data-book="1"] .cap-letter { color: #1e4b1e; }
+[data-book="2"] .cap-letter { color: #724712; }
+[data-book="3"] .cap-letter { color: #3b5624; }
+[data-book="4"] .cap-letter { color: #942516; }
+[data-book="5"] .cap-letter { color: #14523a; }
 
 .first-word-rest {
   font-variant: small-caps;

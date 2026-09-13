@@ -25,6 +25,28 @@
         <path d="M 110,22 C 125,20 135,28 130,35 C 125,42 118,38 122,32" fill="none" stroke="url(#gold-leaf-5)" stroke-width="0.9" stroke-linecap="round"/>
         <path d="M 22,110 C 20,125 28,135 35,130 C 42,125 38,118 32,122" fill="none" stroke="url(#gold-leaf-5)" stroke-width="0.9" stroke-linecap="round"/>
       </g>
+    
+      <!-- Perched Woodland Songbird Silhouette (Inspired by Pater Noster / Morgan MS) -->
+      <g id="perched-songbird">
+        <!-- Feet clasping the golden tendril branch -->
+        <path d="M -1,4 L 1,7 M 2,4 L 3,7" stroke="#704d16" stroke-width="1" stroke-linecap="round"/>
+        <!-- Long Tail feathers sweeping downwards -->
+        <path d="M -7,4 L -18,14 C -19,16 -17,17 -15,16 L -5,7 Z" fill="#223a19" stroke="#13240d" stroke-width="0.5"/>
+        <!-- Main Body & Plumed Back -->
+        <path d="M 8,-6 C 9,-3 8,2 3,5 C -2,7 -7,5 -9,3 C -9,0 -7,-3 -4,-6 C 0,-9 6,-8 8,-6 Z" fill="#35542b" stroke="#1a2e15" stroke-width="0.6"/>
+        <!-- Folded Wing with fine gold feather edging -->
+        <path d="M 0,-4 C -4,-2 -7,1 -9,4 C -6,3 -3,1 0,-2 Z" fill="#203617" stroke="url(#gold-leaf-5)" stroke-width="0.5"/>
+        <!-- Golden-ochre breast plumage -->
+        <path d="M 7,-6 C 8,-2 6,2 2,4 C 5,2 7,-1 7,-5 Z" fill="#c99130" opacity="0.85"/>
+        <!-- Head & Crown -->
+        <path d="M 5,-7 C 6,-11 9,-11 11,-8 C 11,-6 8,-5 5,-7 Z" fill="#35542b" stroke="#1a2e15" stroke-width="0.5"/>
+        <!-- Slender Beak -->
+        <path d="M 11,-8 L 15,-7.5 L 11,-6.5 Z" fill="#d4af37" stroke="#704d16" stroke-width="0.4"/>
+        <!-- Alert Eye with light glint -->
+        <circle cx="8.5" cy="-8" r="0.9" fill="#111111"/>
+        <circle cx="8.7" cy="-8.2" r="0.3" fill="#ffffff"/>
+      </g>
+
     </defs>
 <rect x="22" y="22" width="756" height="956" rx="6" fill="none" stroke="url(#gold-leaf-5)" stroke-width="1.8"/>
 <rect x="30" y="30" width="740" height="940" rx="4" fill="none" stroke="#2c4c23" stroke-width="0.8" opacity="0.7"/>
@@ -49,4 +71,8 @@
           <circle cx="0" cy="0" r="4" fill="#d97575" stroke="url(#gold-leaf-5)" stroke-width="0.8"/>
           <circle cx="0" cy="0" r="1.8" fill="url(#gold-leaf-5)"/>
         </g>
+
+  <!-- Book 3 Woodland Songbirds Perched on Upper Tendril Branches -->
+  <use href="#perched-songbird" x="127" y="27"/>
+  <use href="#perched-songbird" transform="translate(673, 27) scale(-1, 1)"/>
 </svg>

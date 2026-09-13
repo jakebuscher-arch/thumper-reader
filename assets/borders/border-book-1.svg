@@ -34,6 +34,32 @@
     <line x1="0" y1="0" x2="5.5" y2="0" stroke="#a87a3a" stroke-width="0.4"/>
   </g>
 
+
+  <!-- Storybook Young Rabbit Silhouette nestled in lower foliage -->
+  <g id="storybook-bunny">
+    <!-- Soft shadow ground -->
+    <ellipse cx="0" cy="1" rx="13" ry="3.5" fill="#a87a3a" opacity="0.25"/>
+    <!-- Hindquarters / Body -->
+    <path d="M -7,0 C -11,-2 -13,-8 -10,-14 C -7,-19 0,-18 5,-13 C 8,-10 9,-4 7,0 Z" fill="#fffdfa" stroke="#7a5d28" stroke-width="0.8"/>
+    <!-- Hind leg flank -->
+    <path d="M -5,0 C -8,-3 -6,-9 -2,-9 C 2,-9 3,-3 1,0 Z" fill="#f5eee0" stroke="#7a5d28" stroke-width="0.5"/>
+    <!-- Fluffy round tail -->
+    <circle cx="-10" cy="-6" r="2.8" fill="#ffffff" stroke="#7a5d28" stroke-width="0.5"/>
+    <!-- Head & Muzzle -->
+    <path d="M 4,-12 C 4,-16 7,-20 12,-19 C 15,-18 16,-14 14,-11 C 12,-8 7,-8 4,-12 Z" fill="#fffdfa" stroke="#7a5d28" stroke-width="0.8"/>
+    <!-- Cute snout tip -->
+    <circle cx="14.2" cy="-14" r="0.9" fill="#c98a8a"/>
+    <!-- Alert eye with glint -->
+    <circle cx="10.2" cy="-15.5" r="1.1" fill="#3d2817"/>
+    <circle cx="10.5" cy="-15.8" r="0.4" fill="#ffffff"/>
+    <!-- Front paws folded gracefully -->
+    <path d="M 3,-3 C 5,-2 7,0 6,0 L 2,0 Z" fill="#f5eee0" stroke="#7a5d28" stroke-width="0.5"/>
+    <!-- Upright Rabbit Ears -->
+    <path d="M 6,-18 C 5,-23 4,-30 8,-31 C 11,-30 9,-23 8,-17 Z" fill="#fffdfa" stroke="#7a5d28" stroke-width="0.7"/>
+    <path d="M 6.8,-19 C 6,-23 5.5,-29 7.8,-30 C 9.2,-29 8.2,-23 7.8,-18 Z" fill="#ebd0d0" opacity="0.75"/>
+    <path d="M 3,-17 C 1,-22 0,-28 3,-29 C 5,-28 5,-22 5,-16 Z" fill="#f3ede2" stroke="#7a5d28" stroke-width="0.6"/>
+  </g>
+
 </defs>
 <rect x="22" y="22" width="756" height="956" rx="3" fill="none" stroke="#a87a3a" stroke-width="1.2"/>
 <rect x="62" y="62" width="676" height="876" rx="2" fill="none" stroke="#a87a3a" stroke-width="0.8"/>
@@ -402,4 +428,14 @@
 <use href="#corner-rosette" x="758" y="42"/>
 <use href="#corner-rosette" x="42" y="958"/>
 <use href="#corner-rosette" x="758" y="958"/>
+
+  <!-- Book 1 Storybook Bunnies Nestled in Lower Vine Foliage -->
+  <use href="#storybook-bunny" x="43" y="912"/>
+  <use href="#storybook-bunny" transform="translate(757, 912) scale(-1, 1)"/>
+
+  <!-- Golden Dewdrop Sparkles along Side Vines -->
+  <circle cx="42" cy="275" r="2.2" fill="#fff8db" stroke="#a87a3a" stroke-width="0.6"/>
+  <circle cx="758" cy="275" r="2.2" fill="#fff8db" stroke="#a87a3a" stroke-width="0.6"/>
+  <circle cx="42" cy="725" r="2.2" fill="#fff8db" stroke="#a87a3a" stroke-width="0.6"/>
+  <circle cx="758" cy="725" r="2.2" fill="#fff8db" stroke="#a87a3a" stroke-width="0.6"/>
 </svg>

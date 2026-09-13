@@ -9,21 +9,31 @@
       <g id="rinceau-branch">
         <!-- Delicate hairline pen tendril -->
         <path d="M 0,0 C 8,-6 14,-14 10,-22 C 6,-30 -4,-26 -3,-18 C -2,-10 6,-8 12,-12" fill="none" stroke="#241e17" stroke-width="0.7"/>
-        <!-- Golden Bezant (sparkling gold disc with radiating pen hair) -->
+        <!-- Golden Bezant with authentic Gothic manuscript illuminated radiating sparks -->
         <circle cx="10" cy="-22" r="3.2" fill="url(#gold-leaf)" stroke="#8c681b" stroke-width="0.5"/>
-        <path d="M 6,-22 L 4,-24 M 14,-22 L 16,-20 M 10,-26 L 10,-28" stroke="#241e17" stroke-width="0.5"/>
+        <path d="M 6,-22 L 3,-23 M 14,-22 L 17,-21 M 10,-26 L 10,-29 M 10,-18 L 10,-15 M 13,-25 L 16,-28 M 7,-19 L 4,-16" stroke="#8c681b" stroke-width="0.45"/>
+        <circle cx="16" cy="-28" r="0.6" fill="url(#gold-leaf)"/>
+        <circle cx="4" cy="-16" r="0.6" fill="url(#gold-leaf)"/>
         <!-- Tri-lobe ivy leaf -->
         <path d="M -3,-18 C -8,-22 -14,-18 -12,-12 C -10,-8 -5,-12 -3,-18 Z" fill="#2d5a36" stroke="#17351d" stroke-width="0.5"/>
       </g>
-      <!-- Corner Gothic Quadrilobe -->
+      <!-- Corner Gothic Quadrilobe with Cathedral Rose Tracery -->
       <g id="gothic-quadrilobe">
         <rect x="20" y="20" width="36" height="36" rx="4" fill="#8c2e2e" stroke="url(#gold-leaf)" stroke-width="1.8"/>
-        <!-- 4 intersecting lobes -->
+        <!-- 4 intersecting lobes with gothic trefoil cusps -->
         <circle cx="38" cy="26" r="6" fill="url(#gold-leaf)"/>
+        <circle cx="38" cy="26" r="3.2" fill="none" stroke="#8c2e2e" stroke-width="0.6"/>
         <circle cx="38" cy="50" r="6" fill="url(#gold-leaf)"/>
+        <circle cx="38" cy="50" r="3.2" fill="none" stroke="#8c2e2e" stroke-width="0.6"/>
         <circle cx="26" cy="38" r="6" fill="url(#gold-leaf)"/>
+        <circle cx="26" cy="38" r="3.2" fill="none" stroke="#8c2e2e" stroke-width="0.6"/>
         <circle cx="50" cy="38" r="6" fill="url(#gold-leaf)"/>
-        <circle cx="38" cy="38" r="5" fill="#fcf9f2" stroke="#8c2e2e" stroke-width="0.8"/>
+        <circle cx="50" cy="38" r="3.2" fill="none" stroke="#8c2e2e" stroke-width="0.6"/>
+        <!-- Center Roundel with Gothic 4-leaf Rose Window -->
+        <circle cx="38" cy="38" r="5.5" fill="#fdfbf7" stroke="#8c2e2e" stroke-width="0.8"/>
+        <path d="M 38,34 C 36.5,36 36.5,40 38,42 C 39.5,40 39.5,36 38,34 Z" fill="#8c2e2e"/>
+        <path d="M 34,38 C 36,36.5 40,36.5 42,38 C 40,39.5 36,39.5 34,38 Z" fill="#8c2e2e"/>
+        <circle cx="38" cy="38" r="1.4" fill="url(#gold-leaf)"/>
       </g>
     </defs>
 <rect x="26" y="26" width="748" height="948" fill="none" stroke="url(#gold-leaf)" stroke-width="4.5"/>

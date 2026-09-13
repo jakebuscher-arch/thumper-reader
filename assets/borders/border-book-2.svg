@@ -15,12 +15,38 @@
         <path d="M 28,28 C 36,36 45,33 48,28 C 45,38 38,45 28,48 C 33,45 36,36 28,28 Z" fill="url(#gold-bright)"/>
         <circle cx="28" cy="28" r="3.5" fill="url(#gold-bright)"/>
         <path d="M 20,20 Q 35,35 55,25 Q 35,35 25,55" fill="none" stroke="url(#gold-bright)" stroke-width="1.2"/>
+        <!-- Corner Escapement Wheel Accents -->
+        <circle cx="34" cy="34" r="5.5" fill="none" stroke="url(#gold-bright)" stroke-width="0.6"/>
+        <circle cx="34" cy="34" r="1.8" fill="url(#gold-bright)"/>
+        <path d="M 34,28.5 L 35,27 M 39.5,34 L 41,35 M 34,39.5 L 33,41 M 28.5,34 L 27,33" stroke="url(#gold-bright)" stroke-width="0.7"/>
       </g>
       <!-- Edge Fleuron Rosette -->
       <g id="edge-rosette">
         <circle cx="0" cy="0" r="3" fill="url(#gold-bright)"/>
         <polygon points="0,-7 2,-2 7,0 2,2 0,7 -2,2 -7,0 -2,-2" fill="url(#gold-bright)"/>
       </g>
+    
+      <!-- Ornate Victorian Clockwork Escapement Medallion -->
+      <g id="escapement-medallion">
+        <!-- Victorian flanking scroll tendrils -->
+        <path d="M -9,0 C -16,-6 -24,-4 -22,4 C -20,10 -14,8 -11,2" fill="none" stroke="url(#gold-bright)" stroke-width="0.9"/>
+        <path d="M 9,0 C 16,-6 24,-4 22,4 C 20,10 14,8 11,2" fill="none" stroke="url(#gold-bright)" stroke-width="0.9"/>
+        <circle cx="-22" cy="4" r="1.4" fill="url(#gold-bright)"/>
+        <circle cx="22" cy="4" r="1.4" fill="url(#gold-bright)"/>
+        <!-- Outer Gear Ring (12 Ratchet Teeth) -->
+        <circle cx="0" cy="0" r="8.5" fill="none" stroke="url(#gold-bright)" stroke-width="1.1"/>
+        <circle cx="0" cy="0" r="6.2" fill="none" stroke="url(#gold-bright)" stroke-width="0.5"/>
+        <!-- 12 Clockwork Escapement Teeth -->
+        <path d="M 0,-8.5 L 1.2,-10.8 L 0,-10.5 M 4.3,-7.4 L 6.2,-9.2 L 4.8,-8.4 M 7.4,-4.3 L 9.8,-5.2 L 8.6,-4.2 M 8.5,0 L 10.8,1.2 L 10.5,0 M 7.4,4.3 L 9.2,6.2 L 8.4,4.8 M 4.3,7.4 L 5.2,9.8 L 4.2,8.6 M 0,8.5 L -1.2,10.8 L 0,10.5 M -4.3,7.4 L -6.2,9.2 L -4.8,8.4 M -7.4,4.3 L -9.8,5.2 L -8.6,4.2 M -8.5,0 L -10.8,-1.2 L -10.5,-0 M -7.4,-4.3 L -9.2,-6.2 L -8.4,-4.8 M -4.3,-7.4 L -5.2,-9.8 L -4.2,-8.6" stroke="url(#gold-bright)" stroke-width="0.85" fill="none"/>
+        <!-- 4 Slender Wheel Spokes -->
+        <line x1="-6.2" y1="0" x2="6.2" y2="0" stroke="url(#gold-bright)" stroke-width="0.75"/>
+        <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="url(#gold-bright)" stroke-width="0.75"/>
+        <!-- Center Jewel Hub -->
+        <circle cx="0" cy="0" r="2.8" fill="url(#gold-bright)" stroke="#543b10" stroke-width="0.4"/>
+        <circle cx="0" cy="0" r="1.1" fill="#fff0bd"/>
+        <circle cx="0" cy="0" r="0.5" fill="#422e0a"/>
+      </g>
+
     </defs>
 <rect x="18" y="18" width="764" height="964" rx="4" fill="none" stroke="url(#gold-bright)" stroke-width="2.5"/>
 <rect x="25" y="25" width="750" height="950" rx="3" fill="none" stroke="url(#gold-bright)" stroke-width="0.8"/>
@@ -34,10 +60,10 @@
 <use href="#edge-rosette" x="200" y="970"/>
 <use href="#edge-rosette" x="30" y="250"/>
 <use href="#edge-rosette" x="770" y="250"/>
-<use href="#edge-rosette" x="400" y="30"/>
-<use href="#edge-rosette" x="400" y="970"/>
-<use href="#edge-rosette" x="30" y="500"/>
-<use href="#edge-rosette" x="770" y="500"/>
+<use href="#escapement-medallion" x="400" y="30"/>
+<use href="#escapement-medallion" x="400" y="970" transform="scale(1, -1)"/>
+<use href="#escapement-medallion" x="30" y="500" transform="rotate(90 30 500)"/>
+<use href="#escapement-medallion" x="770" y="500" transform="rotate(-90 770 500)"/>
 <use href="#edge-rosette" x="600" y="30"/>
 <use href="#edge-rosette" x="600" y="970"/>
 <use href="#edge-rosette" x="30" y="750"/>

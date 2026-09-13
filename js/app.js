@@ -168,12 +168,12 @@ class ThumperApp {
     let globalLineIdx = 0;
     let isFirstLine = true;
 
-    page.stanzas.forEach((stanza) => {
+    page.stanzas.forEach((stanza, stanzaIdx) => {
       verseHtml += `<div class="stanza">`;
-      stanza.lines.forEach((line) => {
+      stanza.lines.forEach((line, lineIdx) => {
         const speaker = page.speakerBefore ? page.speakerBefore[String(globalLineIdx)] : null;
         if (speaker) {
-          verseHtml += `<div class="speaker-badge">${this.escapeHtml(speaker)}</div>`;
+          verseHtml += `<div class="speaker-badge"><span class="fleuron">❧</span> ${this.escapeHtml(speaker)} <span class="fleuron">☙</span></div>`;
         }
 
         if (isFirstLine) {
@@ -199,6 +199,18 @@ class ThumperApp {
               <span class="illuminated-cap"><span class="cap-letter">${initialLetter}</span></span><span class="first-word-rest">${this.escapeHtml(firstWordRest)}</span>${remainingLine ? ` <span class="first-line-remaining">${this.escapeHtml(remainingLine)}</span>` : ''}
             </div>
           `;
+        } else if (lineIdx === 0 && stanzaIdx > 0) {
+          // Rubricated illuminated capital for each subsequent stanza opening line
+          const match = line.match(/^([“"']?)([A-Za-z])(.*)$/);
+          if (match) {
+            const quotePrefix = match[1];
+            const capLetter = match[2];
+            const rest = match[3];
+            const colorClass = `stanza-cap-${stanzaIdx % 5}`;
+            verseHtml += `<div class="verse-line">${quotePrefix ? `<span class="verse-quote-prefix">${this.escapeHtml(quotePrefix)}</span>` : ''}<span class="rubricated-cap ${colorClass}">${this.escapeHtml(capLetter)}</span>${this.escapeHtml(rest)}</div>`;
+          } else {
+            verseHtml += `<div class="verse-line">${this.escapeHtml(line)}</div>`;
+          }
         } else {
           verseHtml += `<div class="verse-line">${this.escapeHtml(line)}</div>`;
         }
@@ -214,6 +226,7 @@ class ThumperApp {
         <div class="page-header">
           <div class="chapter-number">Chapter ${page.chapter}</div>
           <div class="chapter-title">${this.escapeHtml(page.chapterTitle)}</div>
+          <div class="header-divider"><span class="header-fleuron">❧ ❖ ☙</span></div>
         </div>
 
         <div class="page-verse-container">
