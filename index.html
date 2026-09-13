@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="The Complete Five-Book Thumper Series: An interactive illuminated fairy tale reader with realistic 3D page turns for tablet, phone, and desktop.">
+  <title>The Complete Thumper Series — Interactive Fairy Tale Reader</title>
+  
+  <link rel="stylesheet" href="css/fairytale.css">
+  <link rel="stylesheet" href="css/book.css">
+</head>
+<body>
+
+  <div class="reader-wrapper">
+    <!-- Top Toolbar -->
+    <header class="top-toolbar">
+      <div class="toolbar-left">
+        <button id="btnTOC" class="tool-btn" title="Open Table of Contents">
+          <span>☰</span> <span>Contents</span>
+        </button>
+        <button id="btnMobileSwitch" class="tool-btn mobile-switch-btn" title="Switch between words and picture">
+          🖼️ View Art
+        </button>
+      </div>
+
+      <div class="toolbar-center">
+        <span class="series-title">The Thumper Series</span>
+        <span id="currentBookLabel" class="current-book-label">Book 1: Finding God on a Dreary Day</span>
+      </div>
+
+      <div class="toolbar-right">
+        <button id="btnAudio" class="tool-btn active" title="Toggle Page Turn Sound">
+          🔊 Sound On
+        </button>
+        <button id="btnFullscreen" class="tool-btn" title="Toggle Fullscreen">
+          ⛶ Fullscreen
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Book Stage -->
+    <main class="book-stage" id="bookStage">
+      <!-- Click / Tap zones on margins -->
+      <div id="navPrev" class="page-nav-zone page-nav-prev" title="Turn to previous page">
+        <div class="nav-arrow">‹</div>
+      </div>
+
+      <div id="bookContainer" class="book-container show-text" data-book="1">
+        <!-- Center Book Spine / Shadow -->
+        <div class="book-spine"></div>
+
+        <!-- Left Page: Verses & Illuminated Initial -->
+        <div id="leftPage" class="page left-page">
+          <!-- Dynamically populated by app.js -->
+        </div>
+
+        <!-- Right Page: Illustration & Theology Note -->
+        <div id="rightPage" class="page right-page">
+          <!-- Dynamically populated by app.js -->
+        </div>
+
+        <!-- 3D Page Turn Layer -->
+        <div id="pageFlipLeaf" class="page-flip-leaf"></div>
+      </div>
+
+      <div id="navNext" class="page-nav-zone page-nav-next" title="Turn to next page">
+        <div class="nav-arrow">›</div>
+      </div>
+    </main>
+
+    <!-- Bottom Navigation & Progress Bar -->
+    <footer class="bottom-bar">
+      <button id="btnPrev" class="tool-btn" title="Previous Page">
+        ‹ Previous
+      </button>
+
+      <div class="progress-container">
+        <input type="range" id="progressSlider" class="progress-slider" min="0" max="52" value="0" aria-label="Page Progress">
+        <span id="pageIndicator" class="page-indicator">Spread 1 of 53</span>
+      </div>
+
+      <button id="btnNext" class="tool-btn" title="Next Page">
+        Next ›
+      </button>
+    </footer>
+  </div>
+
+  <!-- Table of Contents Slide-over Drawer -->
+  <div id="tocOverlay" class="toc-overlay"></div>
+  <aside id="tocDrawer" class="toc-drawer">
+    <div class="toc-header">
+      <h2 class="toc-title">Table of Contents</h2>
+      <button id="btnCloseTOC" class="toc-close-btn" title="Close Contents">✕</button>
+    </div>
+    <div id="tocContent" class="toc-content">
+      <!-- Dynamically populated by app.js -->
+    </div>
+  </aside>
+
+  <!-- Application Scripts -->
+  <script src="js/book-data.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/page-flip.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

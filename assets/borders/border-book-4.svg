@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ember-b4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c95b28"/>
+      <stop offset="50%" stop-color="#8c2e1b"/>
+      <stop offset="100%" stop-color="#3b150f"/>
+    </linearGradient>
+    <linearGradient id="dark-stone-b4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#422e2a"/>
+      <stop offset="100%" stop-color="#211513"/>
+    </linearGradient>
+    <!-- Corner Gothic Arch -->
+    <g id="corner-b4">
+      <rect x="24" y="24" width="70" height="70" fill="none" stroke="url(#dark-stone-b4)" stroke-width="2.5" rx="2"/>
+      <path d="M 32,86 C 32,50 50,32 86,32" fill="none" stroke="url(#ember-b4)" stroke-width="2"/>
+      <circle cx="59" cy="59" r="20" fill="none" stroke="#d4af37" stroke-width="1" stroke-dasharray="3,3"/>
+      <!-- Flame jewel -->
+      <polygon points="59,48 64,59 59,70 54,59" fill="#d9682b" stroke="#d4af37" stroke-width="0.8"/>
+    </g>
+  </defs>
+
+  <!-- Deep Subterranean Perimeter Bands -->
+  <rect x="24" y="24" width="752" height="952" rx="4" fill="none" stroke="url(#dark-stone-b4)" stroke-width="3"/>
+  <rect x="32" y="32" width="736" height="936" rx="2" fill="none" stroke="url(#ember-b4)" stroke-width="1.8"/>
+  <rect x="40" y="40" width="720" height="920" fill="none" stroke="#d4af37" stroke-width="1" stroke-dasharray="6,6"/>
+
+  <!-- Four Gothic Corners -->
+  <use href="#corner-b4" x="0" y="0"/>
+  <use href="#corner-b4" x="800" y="0" transform="scale(-1, 1)"/>
+  <use href="#corner-b4" x="0" y="1000" transform="scale(1, -1)"/>
+  <use href="#corner-b4" x="800" y="1000" transform="scale(-1, -1)"/>
+
+  <!-- Left Margin Root System -->
+  <path d="M 32,94 C 26,250 38,450 32,650 C 26,800 38,850 32,906" fill="none" stroke="url(#dark-stone-b4)" stroke-width="3"/>
+  <path d="M 32,94 C 36,250 28,450 36,650 C 38,800 28,850 36,906" fill="none" stroke="url(#ember-b4)" stroke-width="1.4"/>
+
+  <!-- Right Margin Root System -->
+  <path d="M 768,94 C 774,250 762,450 768,650 C 774,800 762,850 768,906" fill="none" stroke="url(#dark-stone-b4)" stroke-width="3"/>
+  <path d="M 768,94 C 764,250 772,450 764,650 C 762,800 772,850 764,906" fill="none" stroke="url(#ember-b4)" stroke-width="1.4"/>
+
+  <!-- Top Margin -->
+  <line x1="94" y1="32" x2="706" y2="32" stroke="url(#dark-stone-b4)" stroke-width="2.5"/>
+  <!-- Bottom Margin -->
+  <line x1="94" y1="968" x2="706" y2="968" stroke="url(#dark-stone-b4)" stroke-width="2.5"/>
+
+  <!-- Top Center Torch Cartouche -->
+  <g transform="translate(400, 32)">
+    <rect x="-40" y="-10" width="80" height="20" rx="3" fill="#fbf7ee" stroke="url(#dark-stone-b4)" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="5" fill="#d9682b" stroke="#d4af37" stroke-width="1"/>
+    <circle cx="-22" cy="0" r="2.5" fill="#d4af37"/>
+    <circle cx="22" cy="0" r="2.5" fill="#d4af37"/>
+  </g>
+
+  <!-- Bottom Center Cartouche -->
+  <g transform="translate(400, 968)">
+    <rect x="-40" y="-10" width="80" height="20" rx="3" fill="#fbf7ee" stroke="url(#dark-stone-b4)" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="5" fill="#d9682b" stroke="#d4af37" stroke-width="1"/>
+    <circle cx="-22" cy="0" r="2.5" fill="#d4af37"/>
+    <circle cx="22" cy="0" r="2.5" fill="#d4af37"/>
+  </g>
+</svg>

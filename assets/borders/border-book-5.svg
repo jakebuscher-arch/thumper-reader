@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="emerald-b5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a6953"/>
+      <stop offset="50%" stop-color="#184535"/>
+      <stop offset="100%" stop-color="#0e2b21"/>
+    </linearGradient>
+    <linearGradient id="gold-b5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5df9d"/>
+      <stop offset="50%" stop-color="#c99e38"/>
+      <stop offset="100%" stop-color="#8c6b1b"/>
+    </linearGradient>
+    <!-- Corner Scarab Cartouche -->
+    <g id="corner-b5">
+      <rect x="24" y="24" width="70" height="70" fill="none" stroke="url(#emerald-b5)" stroke-width="2.2" rx="4"/>
+      <circle cx="59" cy="59" r="26" fill="none" stroke="url(#gold-b5)" stroke-width="1.5"/>
+      <circle cx="59" cy="59" r="21" fill="none" stroke="url(#emerald-b5)" stroke-width="1" stroke-dasharray="3,3"/>
+      <!-- Water lily center -->
+      <path d="M 51,62 C 49,54 55,50 59,48 C 63,50 69,54 67,62 Z" fill="#fbf7ee" stroke="url(#gold-b5)" stroke-width="0.8"/>
+      <circle cx="59" cy="58" r="3" fill="url(#gold-b5)"/>
+    </g>
+  </defs>
+
+  <!-- Emerald & Gold Structural Bands -->
+  <rect x="24" y="24" width="752" height="952" rx="6" fill="none" stroke="url(#emerald-b5)" stroke-width="2.8"/>
+  <rect x="32" y="32" width="736" height="936" rx="4" fill="none" stroke="url(#gold-b5)" stroke-width="1.4"/>
+  <rect x="40" y="40" width="720" height="920" rx="2" fill="none" stroke="url(#emerald-b5)" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- Four Regal Corners -->
+  <use href="#corner-b5" x="0" y="0"/>
+  <use href="#corner-b5" x="800" y="0" transform="scale(-1, 1)"/>
+  <use href="#corner-b5" x="0" y="1000" transform="scale(1, -1)"/>
+  <use href="#corner-b5" x="800" y="1000" transform="scale(-1, -1)"/>
+
+  <!-- Left Margin Reed Flourish -->
+  <path d="M 32,94 C 28,250 36,450 32,650 C 28,800 36,850 32,906" fill="none" stroke="url(#emerald-b5)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 32,94 C 36,250 28,450 36,650 C 40,800 28,850 36,906" fill="none" stroke="url(#gold-b5)" stroke-width="1.2"/>
+
+  <!-- Right Margin Reed Flourish -->
+  <path d="M 768,94 C 772,250 764,450 768,650 C 772,800 764,850 768,906" fill="none" stroke="url(#emerald-b5)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 768,94 C 764,250 772,450 764,650 C 760,800 772,850 764,906" fill="none" stroke="url(#gold-b5)" stroke-width="1.2"/>
+
+  <!-- Top Margin -->
+  <line x1="94" y1="32" x2="706" y2="32" stroke="url(#emerald-b5)" stroke-width="2.5"/>
+  <!-- Bottom Margin -->
+  <line x1="94" y1="968" x2="706" y2="968" stroke="url(#emerald-b5)" stroke-width="2.5"/>
+
+  <!-- Top Center Scarab Cartouche -->
+  <g transform="translate(400, 32)">
+    <polygon points="0,-12 36,0 0,12 -36,0" fill="#fbf7ee" stroke="url(#gold-b5)" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="4.5" fill="url(#emerald-b5)"/>
+    <circle cx="-15" cy="0" r="2.5" fill="url(#gold-b5)"/>
+    <circle cx="15" cy="0" r="2.5" fill="url(#gold-b5)"/>
+  </g>
+
+  <!-- Bottom Center Cartouche -->
+  <g transform="translate(400, 968)">
+    <polygon points="0,-12 36,0 0,12 -36,0" fill="#fbf7ee" stroke="url(#gold-b5)" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="4.5" fill="url(#emerald-b5)"/>
+    <circle cx="-15" cy="0" r="2.5" fill="url(#gold-b5)"/>
+    <circle cx="15" cy="0" r="2.5" fill="url(#gold-b5)"/>
+  </g>
+</svg>

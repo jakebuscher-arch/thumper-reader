@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gold-metal-b1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2c882"/>
+      <stop offset="50%" stop-color="#b88a38"/>
+      <stop offset="100%" stop-color="#8c6224"/>
+    </linearGradient>
+    <linearGradient id="green-vine-b1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#42613b"/>
+      <stop offset="50%" stop-color="#2e472a"/>
+      <stop offset="100%" stop-color="#42613b"/>
+    </linearGradient>
+    <!-- Corner Baroque Rosette -->
+    <g id="corner-b1">
+      <rect x="24" y="24" width="70" height="70" fill="none" stroke="url(#gold-metal-b1)" stroke-width="1.8" rx="3"/>
+      <circle cx="59" cy="59" r="26" fill="none" stroke="url(#gold-metal-b1)" stroke-width="1.5"/>
+      <circle cx="59" cy="59" r="21" fill="none" stroke="#2e472a" stroke-width="1" stroke-dasharray="3,3"/>
+      <!-- Rosette petals -->
+      <path d="M 59,42 C 53,49 53,55 59,59 C 65,55 65,49 59,42 Z" fill="#d97d7d" stroke="#8c2e2e" stroke-width="0.8"/>
+      <path d="M 59,76 C 53,69 53,63 59,59 C 65,63 65,69 59,76 Z" fill="#d97d7d" stroke="#8c2e2e" stroke-width="0.8"/>
+      <path d="M 42,59 C 49,53 55,53 59,59 C 55,65 49,65 42,59 Z" fill="#d97d7d" stroke="#8c2e2e" stroke-width="0.8"/>
+      <path d="M 76,59 C 69,53 63,53 59,59 C 63,65 69,65 76,59 Z" fill="#d97d7d" stroke="#8c2e2e" stroke-width="0.8"/>
+      <circle cx="59" cy="59" r="4.5" fill="url(#gold-metal-b1)"/>
+    </g>
+  </defs>
+
+  <!-- Outer Structural Bands (strictly on perimeter margins) -->
+  <rect x="24" y="24" width="752" height="952" rx="6" fill="none" stroke="url(#gold-metal-b1)" stroke-width="2.5"/>
+  <rect x="32" y="32" width="736" height="936" rx="4" fill="none" stroke="url(#green-vine-b1)" stroke-width="1.5"/>
+  <rect x="40" y="40" width="720" height="920" rx="3" fill="none" stroke="url(#gold-metal-b1)" stroke-width="1" stroke-dasharray="5,4"/>
+
+  <!-- Four Anchored Corners -->
+  <use href="#corner-b1" x="0" y="0"/>
+  <use href="#corner-b1" x="800" y="0" transform="scale(-1, 1)"/>
+  <use href="#corner-b1" x="0" y="1000" transform="scale(1, -1)"/>
+  <use href="#corner-b1" x="800" y="1000" transform="scale(-1, -1)"/>
+
+  <!-- Left Margin Continuous Vine Ribbon -->
+  <path d="M 32,94 C 28,200 36,300 32,400 C 28,500 36,600 32,700 C 28,800 36,850 32,906" fill="none" stroke="url(#green-vine-b1)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 32,94 C 36,200 28,300 36,400 C 40,500 28,600 36,700 C 40,800 28,850 36,906" fill="none" stroke="url(#gold-metal-b1)" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Right Margin Continuous Vine Ribbon -->
+  <path d="M 768,94 C 772,200 764,300 768,400 C 772,500 764,600 768,700 C 772,800 764,850 768,906" fill="none" stroke="url(#green-vine-b1)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 768,94 C 764,200 772,300 764,400 C 760,500 772,600 764,700 C 760,800 772,850 764,906" fill="none" stroke="url(#gold-metal-b1)" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Top Margin Continuous Vine Ribbon -->
+  <path d="M 94,32 C 200,28 300,36 400,32 C 500,28 600,36 706,32" fill="none" stroke="url(#green-vine-b1)" stroke-width="2.5"/>
+  <path d="M 94,32 C 200,36 300,28 400,36 C 500,40 600,28 706,32" fill="none" stroke="url(#gold-metal-b1)" stroke-width="1"/>
+
+  <!-- Bottom Margin Continuous Vine Ribbon -->
+  <path d="M 94,968 C 200,972 300,964 400,968 C 500,972 600,964 706,968" fill="none" stroke="url(#green-vine-b1)" stroke-width="2.5"/>
+  <path d="M 94,968 C 200,964 300,972 400,964 C 500,960 600,972 706,968" fill="none" stroke="url(#gold-metal-b1)" stroke-width="1"/>
+
+  <!-- Top Header Centerpiece Cartouche -->
+  <g transform="translate(400, 32)">
+    <polygon points="0,-12 34,0 0,12 -34,0" fill="#fbf7ee" stroke="url(#gold-metal-b1)" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="4" fill="#2e472a"/>
+    <circle cx="-14" cy="0" r="2.5" fill="#d97d7d"/>
+    <circle cx="14" cy="0" r="2.5" fill="#d97d7d"/>
+  </g>
+
+  <!-- Bottom Footer Centerpiece Cartouche -->
+  <g transform="translate(400, 968)">
+    <polygon points="0,-12 34,0 0,12 -34,0" fill="#fbf7ee" stroke="url(#gold-metal-b1)" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="4" fill="#2e472a"/>
+    <circle cx="-14" cy="0" r="2.5" fill="#d97d7d"/>
+    <circle cx="14" cy="0" r="2.5" fill="#d97d7d"/>
+  </g>
+</svg>

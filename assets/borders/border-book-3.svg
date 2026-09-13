@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bark-b3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#784c28"/>
+      <stop offset="50%" stop-color="#4d2e14"/>
+      <stop offset="100%" stop-color="#2b1807"/>
+    </linearGradient>
+    <linearGradient id="leaf-b3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#597a4d"/>
+      <stop offset="100%" stop-color="#385230"/>
+    </linearGradient>
+    <!-- Corner Acorn Cartouche -->
+    <g id="corner-b3">
+      <rect x="24" y="24" width="70" height="70" fill="none" stroke="url(#bark-b3)" stroke-width="2.2" rx="4"/>
+      <circle cx="59" cy="59" r="26" fill="none" stroke="url(#bark-b3)" stroke-width="1.4"/>
+      <circle cx="59" cy="59" r="21" fill="none" stroke="url(#leaf-b3)" stroke-width="1" stroke-dasharray="3,3"/>
+      <!-- Acorn icon inside corner -->
+      <path d="M 53,55 C 53,50 65,50 65,55 Z" fill="#4d2e14" stroke="#b88a38" stroke-width="0.8"/>
+      <path d="M 54,55 C 54,64 59,68 59,69 C 59,68 64,64 64,55 Z" fill="#8c5a2b" stroke="#b88a38" stroke-width="0.8"/>
+      <circle cx="59" cy="47" r="2.5" fill="#b88a38"/>
+    </g>
+  </defs>
+
+  <!-- Solid Oak Perimeter Bands -->
+  <rect x="24" y="24" width="752" height="952" rx="6" fill="none" stroke="url(#bark-b3)" stroke-width="3"/>
+  <rect x="32" y="32" width="736" height="936" rx="4" fill="none" stroke="url(#leaf-b3)" stroke-width="1.6"/>
+  <rect x="40" y="40" width="720" height="920" rx="2" fill="none" stroke="#b88a38" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- Four Oak Corners -->
+  <use href="#corner-b3" x="0" y="0"/>
+  <use href="#corner-b3" x="800" y="0" transform="scale(-1, 1)"/>
+  <use href="#corner-b3" x="0" y="1000" transform="scale(1, -1)"/>
+  <use href="#corner-b3" x="800" y="1000" transform="scale(-1, -1)"/>
+
+  <!-- Left Margin Oak Bough -->
+  <path d="M 32,94 C 28,250 36,450 32,650 C 28,800 36,850 32,906" fill="none" stroke="url(#bark-b3)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 32,94 C 36,250 28,450 36,650 C 40,800 28,850 36,906" fill="none" stroke="url(#leaf-b3)" stroke-width="1.2"/>
+
+  <!-- Right Margin Oak Bough -->
+  <path d="M 768,94 C 772,250 764,450 768,650 C 772,800 764,850 768,906" fill="none" stroke="url(#bark-b3)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 768,94 C 764,250 772,450 764,650 C 760,800 772,850 764,906" fill="none" stroke="url(#leaf-b3)" stroke-width="1.2"/>
+
+  <!-- Top Margin Bough -->
+  <path d="M 94,32 C 250,28 450,36 650,32 L 706,32" fill="none" stroke="url(#bark-b3)" stroke-width="2.5"/>
+
+  <!-- Bottom Margin Bough -->
+  <path d="M 94,968 C 250,972 450,964 650,968 L 706,968" fill="none" stroke="url(#bark-b3)" stroke-width="2.5"/>
+
+  <!-- Top Center Measuring Rod Emblem -->
+  <g transform="translate(400, 32)">
+    <rect x="-50" y="-9" width="100" height="18" rx="3" fill="#fbf7ee" stroke="url(#bark-b3)" stroke-width="1.6"/>
+    <line x1="-35" y1="-4" x2="-35" y2="4" stroke="url(#bark-b3)" stroke-width="1"/>
+    <line x1="0" y1="-6" x2="0" y2="6" stroke="#b88a38" stroke-width="2"/>
+    <line x1="35" y1="-4" x2="35" y2="4" stroke="url(#bark-b3)" stroke-width="1"/>
+  </g>
+
+  <!-- Bottom Center Emblem -->
+  <g transform="translate(400, 968)">
+    <rect x="-50" y="-9" width="100" height="18" rx="3" fill="#fbf7ee" stroke="url(#bark-b3)" stroke-width="1.6"/>
+    <line x1="-35" y1="-4" x2="-35" y2="4" stroke="url(#bark-b3)" stroke-width="1"/>
+    <line x1="0" y1="-6" x2="0" y2="6" stroke="#b88a38" stroke-width="2"/>
+    <line x1="35" y1="-4" x2="35" y2="4" stroke="url(#bark-b3)" stroke-width="1"/>
+  </g>
+</svg>
