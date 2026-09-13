@@ -150,7 +150,7 @@ body {
   margin: 0 auto;
   overflow: hidden;
   box-sizing: border-box;
-  font-size: clamp(15.8px, 2.05vh, 18.4px);
+  font-size: clamp(19.0px, 2.46vh, 22.1px);
   line-height: clamp(1.36, 1.48vh, 1.46);
 }
 
