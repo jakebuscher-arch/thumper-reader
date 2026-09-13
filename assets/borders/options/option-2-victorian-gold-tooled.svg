@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="none" width="100%" height="100%">
+<defs>
+      <linearGradient id="gold-bright" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#fff0bd"/>
+        <stop offset="35%" stop-color="#d4af37"/>
+        <stop offset="70%" stop-color="#aa8024"/>
+        <stop offset="100%" stop-color="#6e4f0f"/>
+      </linearGradient>
+      <!-- Victorian Fleuron Corner -->
+      <g id="fleuron-corner">
+        <!-- Outer corner bracket -->
+        <path d="M 20,44 L 20,20 L 44,20" fill="none" stroke="url(#gold-bright)" stroke-width="2"/>
+        <path d="M 25,52 L 25,25 L 52,25" fill="none" stroke="url(#gold-bright)" stroke-width="0.8"/>
+        <!-- Ornate Acanthus Fleuron -->
+        <path d="M 28,28 C 36,36 45,33 48,28 C 45,38 38,45 28,48 C 33,45 36,36 28,28 Z" fill="url(#gold-bright)"/>
+        <circle cx="28" cy="28" r="3.5" fill="url(#gold-bright)"/>
+        <path d="M 20,20 Q 35,35 55,25 Q 35,35 25,55" fill="none" stroke="url(#gold-bright)" stroke-width="1.2"/>
+      </g>
+      <!-- Edge Fleuron Rosette -->
+      <g id="edge-rosette">
+        <circle cx="0" cy="0" r="3" fill="url(#gold-bright)"/>
+        <polygon points="0,-7 2,-2 7,0 2,2 0,7 -2,2 -7,0 -2,-2" fill="url(#gold-bright)"/>
+      </g>
+    </defs>
+<rect x="18" y="18" width="764" height="964" rx="4" fill="none" stroke="url(#gold-bright)" stroke-width="2.5"/>
+<rect x="25" y="25" width="750" height="950" rx="3" fill="none" stroke="url(#gold-bright)" stroke-width="0.8"/>
+<rect x="36" y="36" width="728" height="928" rx="2" fill="none" stroke="url(#gold-bright)" stroke-width="1.5"/>
+<rect x="42" y="42" width="716" height="916" rx="1" fill="none" stroke="url(#gold-bright)" stroke-width="0.6" stroke-dasharray="4,4"/>
+<use href="#fleuron-corner" x="0" y="0"/>
+<use href="#fleuron-corner" transform="translate(800, 0) scale(-1, 1)"/>
+<use href="#fleuron-corner" transform="translate(0, 1000) scale(1, -1)"/>
+<use href="#fleuron-corner" transform="translate(800, 1000) scale(-1, -1)"/>
+<use href="#edge-rosette" x="200" y="30"/>
+<use href="#edge-rosette" x="200" y="970"/>
+<use href="#edge-rosette" x="30" y="250"/>
+<use href="#edge-rosette" x="770" y="250"/>
+<use href="#edge-rosette" x="400" y="30"/>
+<use href="#edge-rosette" x="400" y="970"/>
+<use href="#edge-rosette" x="30" y="500"/>
+<use href="#edge-rosette" x="770" y="500"/>
+<use href="#edge-rosette" x="600" y="30"/>
+<use href="#edge-rosette" x="600" y="970"/>
+<use href="#edge-rosette" x="30" y="750"/>
+<use href="#edge-rosette" x="770" y="750"/>
+</svg>

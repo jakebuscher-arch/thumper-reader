@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="none" width="100%" height="100%">
+<defs>
+      <linearGradient id="ink-woodcut" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3b3126"/>
+        <stop offset="100%" stop-color="#241d16"/>
+      </linearGradient>
+      <!-- Corner Acanthus Leaf Scroll -->
+      <g id="corner-woodcut">
+        <path d="M 16,16 L 80,16 Q 50,20 40,40 Q 20,50 16,80 Z" fill="url(#ink-woodcut)" opacity="0.15"/>
+        <path d="M 20,20 C 35,20 65,25 75,45 C 55,42 45,55 42,75 C 25,65 20,35 20,20 Z" fill="url(#ink-woodcut)"/>
+        <!-- Fine woodcut vein cuts (white lines) -->
+        <path d="M 22,22 Q 40,35 60,42" fill="none" stroke="#fcf9f2" stroke-width="1.2"/>
+        <path d="M 22,22 Q 35,40 40,65" fill="none" stroke="#fcf9f2" stroke-width="1.2"/>
+        <path d="M 32,28 Q 45,30 52,38" fill="none" stroke="#fcf9f2" stroke-width="0.8"/>
+        <path d="M 28,32 Q 30,45 38,52" fill="none" stroke="#fcf9f2" stroke-width="0.8"/>
+        <!-- Corner rosette -->
+        <circle cx="28" cy="28" r="5" fill="#c49d48"/>
+        <circle cx="28" cy="28" r="2" fill="#241d16"/>
+      </g>
+      <!-- Repeating Foliate Ribbon Module for Edges -->
+      <g id="leaf-module-h">
+        <path d="M 0,26 C 15,18 25,34 40,26 C 25,32 15,20 0,26 Z" fill="url(#ink-woodcut)"/>
+        <path d="M 0,26 Q 20,26 40,26" fill="none" stroke="#c49d48" stroke-width="0.8"/>
+        <!-- Small berry cluster -->
+        <circle cx="20" cy="21" r="2.2" fill="#c49d48"/>
+        <circle cx="23" cy="23" r="1.8" fill="#8c2e2e"/>
+      </g>
+      <g id="leaf-module-v">
+        <path d="M 26,0 C 18,15 34,25 26,40 C 32,25 20,15 26,0 Z" fill="url(#ink-woodcut)"/>
+        <path d="M 26,0 Q 26,20 26,40" fill="none" stroke="#c49d48" stroke-width="0.8"/>
+        <circle cx="21" cy="20" r="2.2" fill="#c49d48"/>
+        <circle cx="23" cy="23" r="1.8" fill="#8c2e2e"/>
+      </g>
+    </defs>
+<rect x="18" y="18" width="764" height="964" rx="2" fill="none" stroke="url(#ink-woodcut)" stroke-width="3"/>
+<rect x="23" y="23" width="754" height="954" rx="1" fill="none" stroke="#c49d48" stroke-width="0.8"/>
+<rect x="38" y="38" width="724" height="924" fill="none" stroke="url(#ink-woodcut)" stroke-width="1.4"/>
+<rect x="42" y="42" width="716" height="916" fill="none" stroke="#c49d48" stroke-width="0.6" stroke-dasharray="3,3"/>
+<use href="#corner-woodcut" x="0" y="0"/>
+<use href="#corner-woodcut" transform="translate(800, 0) scale(-1, 1)"/>
+<use href="#corner-woodcut" transform="translate(0, 1000) scale(1, -1)"/>
+<use href="#corner-woodcut" transform="translate(800, 1000) scale(-1, -1)"/>
+<use href="#leaf-module-h" transform="translate(75, 4)"/>
+<use href="#leaf-module-h" transform="translate(75, 946) scale(1, -1)"/>
+<use href="#leaf-module-h" transform="translate(115, 4)"/>
+<use href="#leaf-module-h" transform="translate(115, 946) scale(1, -1)"/>
+<use href="#leaf-module-h" transform="translate(155, 4)"/>
+<use href="#leaf-module-h" transform="translate(155, 946) scale(1, -1)"/>
+<use href="#leaf-module-h" transform="translate(195, 4)"/>
+<use href="#leaf-module-h" transform="translate(195, 946) scale(1, -1)"/>
+<use href="#leaf-module-h" transform="translate(235, 4)"/>
+<use href="#leaf-module-h" transform="translate(235, 946) scale(1, -1)"/>
+<use href="#leaf-module-h" transform="translate(275, 4)"/>
+<use href="#leaf-module-h" transform="translate(275, 946) scale(1, -1)"/>
+<use href="#leaf-module-h" transform="translate(315, 4)"/>
+<use href="#leaf-module-h" transform="translate(315, 946) scale(1, -1)"/>
+<use href="#leaf-module-h" transform="translate(355, 4)"/>
+<use href="#leaf-module-h" transform="translate(355, 946) scale(1, -1)"/>
+<use href="#leaf-module-h" transform="translate(395, 4)"/>
+<use href="#leaf-module-h" transform="translate(395, 946) scale(1, -1)"/>
+<use href="#leaf-module-h" transform="translate(435, 4)"/>
+<use href="#leaf-module-h" transform="translate(435, 946) scale(1, -1)"/>
+<use href="#leaf-module-h" transform="translate(475, 4)"/>
+<use href="#leaf-module-h" transform="translate(475, 946) scale(1, -1)"/>
+<use href="#leaf-module-h" transform="translate(515, 4)"/>
+<use href="#leaf-module-h" transform="translate(515, 946) scale(1, -1)"/>
+<use href="#leaf-module-h" transform="translate(555, 4)"/>
+<use href="#leaf-module-h" transform="translate(555, 946) scale(1, -1)"/>
+<use href="#leaf-module-h" transform="translate(595, 4)"/>
+<use href="#leaf-module-h" transform="translate(595, 946) scale(1, -1)"/>
+<use href="#leaf-module-h" transform="translate(635, 4)"/>
+<use href="#leaf-module-h" transform="translate(635, 946) scale(1, -1)"/>
+<use href="#leaf-module-h" transform="translate(675, 4)"/>
+<use href="#leaf-module-h" transform="translate(675, 946) scale(1, -1)"/>
+<use href="#leaf-module-h" transform="translate(715, 4)"/>
+<use href="#leaf-module-h" transform="translate(715, 946) scale(1, -1)"/>
+<use href="#leaf-module-v" transform="translate(4, 75)"/>
+<use href="#leaf-module-v" transform="translate(746, 75) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 115)"/>
+<use href="#leaf-module-v" transform="translate(746, 115) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 155)"/>
+<use href="#leaf-module-v" transform="translate(746, 155) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 195)"/>
+<use href="#leaf-module-v" transform="translate(746, 195) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 235)"/>
+<use href="#leaf-module-v" transform="translate(746, 235) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 275)"/>
+<use href="#leaf-module-v" transform="translate(746, 275) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 315)"/>
+<use href="#leaf-module-v" transform="translate(746, 315) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 355)"/>
+<use href="#leaf-module-v" transform="translate(746, 355) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 395)"/>
+<use href="#leaf-module-v" transform="translate(746, 395) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 435)"/>
+<use href="#leaf-module-v" transform="translate(746, 435) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 475)"/>
+<use href="#leaf-module-v" transform="translate(746, 475) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 515)"/>
+<use href="#leaf-module-v" transform="translate(746, 515) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 555)"/>
+<use href="#leaf-module-v" transform="translate(746, 555) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 595)"/>
+<use href="#leaf-module-v" transform="translate(746, 595) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 635)"/>
+<use href="#leaf-module-v" transform="translate(746, 635) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 675)"/>
+<use href="#leaf-module-v" transform="translate(746, 675) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 715)"/>
+<use href="#leaf-module-v" transform="translate(746, 715) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 755)"/>
+<use href="#leaf-module-v" transform="translate(746, 755) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 795)"/>
+<use href="#leaf-module-v" transform="translate(746, 795) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 835)"/>
+<use href="#leaf-module-v" transform="translate(746, 835) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 875)"/>
+<use href="#leaf-module-v" transform="translate(746, 875) scale(-1, 1)"/>
+<use href="#leaf-module-v" transform="translate(4, 915)"/>
+<use href="#leaf-module-v" transform="translate(746, 915) scale(-1, 1)"/>
+<g transform="translate(400, 30)">
+          <rect x="-35" y="-9" width="70" height="18" rx="2" fill="#fcf9f2" stroke="url(#ink-woodcut)" stroke-width="1.4"/>
+          <circle cx="0" cy="0" r="3.5" fill="#c49d48"/>
+          <circle cx="-20" cy="0" r="2" fill="url(#ink-woodcut)"/>
+          <circle cx="20" cy="0" r="2" fill="url(#ink-woodcut)"/>
+        </g>
+<g transform="translate(400, 970)">
+          <rect x="-35" y="-9" width="70" height="18" rx="2" fill="#fcf9f2" stroke="url(#ink-woodcut)" stroke-width="1.4"/>
+          <circle cx="0" cy="0" r="3.5" fill="#c49d48"/>
+          <circle cx="-20" cy="0" r="2" fill="url(#ink-woodcut)"/>
+          <circle cx="20" cy="0" r="2" fill="url(#ink-woodcut)"/>
+        </g>
+</svg>

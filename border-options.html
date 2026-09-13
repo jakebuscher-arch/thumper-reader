@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Thumper Fairy Tale Reader — Border Styles Showcase</title>
+  <link rel="stylesheet" href="css/fairytale.css" />
+  <link rel="stylesheet" href="css/book.css" />
+  <style>
+    body {
+      background: #0f0d0b;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: #e5dcc5;
+      font-family: var(--font-serif);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Showcase Top Bar */
+    .showcase-header {
+      background: rgba(18, 15, 12, 0.96);
+      border-bottom: 1.5px solid rgba(196, 157, 72, 0.35);
+      padding: 12px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 4px;
+      background: rgba(196, 157, 72, 0.15);
+      border: 1px solid var(--gold-dark);
+      color: var(--gold-light);
+      text-decoration: none;
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      transition: all 0.2s ease;
+    }
+
+    .back-btn:hover {
+      background: var(--gold-dark);
+      color: #fff;
+    }
+
+    .showcase-title {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      letter-spacing: 0.12em;
+      color: var(--gold-light);
+      text-transform: uppercase;
+    }
+
+    .showcase-subtitle {
+      font-size: 0.8rem;
+      color: #a89f91;
+      font-style: italic;
+    }
+
+    /* Option Switcher Tabs */
+    .options-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tab-btn {
+      background: rgba(30, 25, 20, 0.8);
+      border: 1px solid rgba(196, 157, 72, 0.25);
+      color: #cfc2a8;
+      padding: 7px 14px;
+      border-radius: 4px;
+      font-family: var(--font-display);
+      font-size: 0.76rem;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn:hover {
+      background: rgba(196, 157, 72, 0.2);
+      border-color: var(--gold-primary);
+      color: #fff;
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, #a67c2e 0%, #6e4e15 100%);
+      color: #fff;
+      border-color: #ffd885;
+      box-shadow: 0 2px 8px rgba(166, 124, 46, 0.4);
+      font-weight: 700;
+    }
+
+    /* Main Showcase Stage */
+    .showcase-stage {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 20px 24px;
+      position: relative;
+    }
+
+    /* The Live Book Spread */
+    .single-view-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 1380px;
+    }
+
+    .book-spread-preview {
+      position: relative;
+      width: 100%;
+      height: 740px;
+      display: flex;
+      box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.8), 0 0 80px rgba(0, 0, 0, 0.5);
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fcf9f2;
+    }
+
+    .book-spread-preview .page {
+      width: 50%;
+      height: 100%;
+    }
+
+    /* Info Bar Beneath Spread */
+    .option-details-card {
+      margin-top: 14px;
+      width: 100%;
+      max-width: 1100px;
+      background: rgba(22, 18, 15, 0.92);
+      border: 1px solid rgba(196, 157, 72, 0.35);
+      border-radius: 6px;
+      padding: 14px 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: 20px;
+    }
+
+    .card-title {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      margin-bottom: 4px;
+      letter-spacing: 0.05em;
+    }
+
+    .card-subtitle {
+      font-size: 0.85rem;
+      color: #9c907e;
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      font-size: 0.88rem;
+      line-height: 1.45;
+      color: #d6ccb8;
+    }
+
+    .card-traits {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 0.82rem;
+      border-left: 1px solid rgba(196, 157, 72, 0.2);
+      padding-left: 16px;
+    }
+
+    .trait-item strong {
+      color: var(--gold-light);
+      font-family: var(--font-display);
+      letter-spacing: 0.04em;
+    }
+
+    /* Comparison Grid Mode */
+    .grid-view-container {
+      display: none;
+      width: 100%;
+      max-width: 1480px;
+      flex-direction: column;
+      gap: 28px;
+      padding-bottom: 40px;
+    }
+
+    .grid-item-card {
+      background: rgba(22, 18, 15, 0.85);
+      border: 1px solid rgba(196, 157, 72, 0.3);
+      border-radius: 8px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .grid-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .grid-mini-spread {
+      height: 520px;
+      width: 100%;
+      display: flex;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    .grid-mini-spread .page {
+      width: 50%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="showcase-header">
+    <div class="header-left">
+      <a href="index.html" class="back-btn">&#8592; Back to Book Reader</a>
+      <div>
+        <div class="showcase-title">Border Design Showcase</div>
+        <div class="showcase-subtitle">Comparing 5 bespoke architectural & botanical borders for Version 2.0</div>
+      </div>
+    </div>
+
+    <nav class="options-tabs">
+      <button class="tab-btn active" data-option="1">1. Kelmscott Woodcut</button>
+      <button class="tab-btn" data-option="2">2. Victorian Gold-Tooled</button>
+      <button class="tab-btn" data-option="3">3. Gothic Illuminated</button>
+      <button class="tab-btn" data-option="4">4. Renaissance Strapwork</button>
+      <button class="tab-btn" data-option="5">5. Botanical Vignette</button>
+      <button class="tab-btn" data-option="all">&#9638; Compare All 5</button>
+    </nav>
+  </header>
+
+  <main class="showcase-stage">
+    <!-- SINGLE SPREAD INTERACTIVE VIEW -->
+    <div class="single-view-container" id="singleView">
+      <div class="book-spread-preview" id="bookSpread">
+        
+        <!-- LEFT PAGE -->
+        <div class="page left-page">
+          <img id="leftBorderImg" class="page-border-overlay" src="assets/borders/options/option-1-kelmscott-woodcut.svg" alt="" />
+          <div class="page-content">
+            <div class="page-header">
+              <div class="chapter-number">Chapter 1</div>
+              <div class="chapter-title">A Rainy Day</div>
+            </div>
+
+            <div class="page-verse-container">
+              <div class="stanza">
+                <div class="verse-line first-verse-line">
+                  <span class="illuminated-cap"><span class="cap-letter">R</span></span><span class="first-word-rest">AIN</span> <span class="first-line-remaining">and damp and puddles many</span>
+                </div>
+                <div class="verse-line">Never stop the games of bunnies</div>
+                <div class="verse-line">On what may seem a dreary day</div>
+                <div class="verse-line">the Bunnies play the day away</div>
+              </div>
+
+              <div class="stanza">
+                <div class="verse-line">But one such bunny wasn't there</div>
+                <div class="verse-line">He wasn't invited, wasn't fair</div>
+                <div class="verse-line">See, not all bunnies are so kind</div>
+                <div class="verse-line">as friends of you or friends of mine.</div>
+              </div>
+
+              <div class="stanza">
+                <div class="verse-line">Thumper was a different type</div>
+                <div class="verse-line">he liked not to play, instead to write</div>
+                <div class="verse-line">The other bunnies where fast and sleek</div>
+                <div class="verse-line">Thumper liked to eat and eat.</div>
+              </div>
+
+              <div class="stanza">
+                <div class="verse-line">Out of his window Thumper gazed</div>
+                <div class="verse-line">His Imagination was set ablaze</div>
+                <div class="verse-line">All he had to do today</div>
+                <div class="verse-line">imagine a new friend with whom to play</div>
+              </div>
+
+              <div class="stanza">
+                <div class="verse-line">Not a normal bunny will do</div>
+                <div class="verse-line">What If bunnies with wings flew!</div>
+                <div class="verse-line">Soaring though the dreary skies</div>
+                <div class="verse-line">Flapping wings and soaring for miles</div>
+              </div>
+            </div>
+
+            <div class="page-footer">
+              <span class="folio-book-label">Finding God on a Dreary Day</span>
+              <span class="folio-number">1</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT PAGE -->
+        <div class="page right-page">
+          <img id="rightBorderImg" class="page-border-overlay" src="assets/borders/options/option-1-kelmscott-woodcut.svg" alt="" />
+          <div class="page-content">
+            <div class="art-plate-container">
+              <div class="art-image-frame">
+                <img src="assets/images/B01-S01-rainy-games.png" alt="Story Illustration" />
+              </div>
+            </div>
+
+            <div class="page-footer">
+              <span class="folio-book-label">Book 1</span>
+              <span class="folio-number">2</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Book Spine Shadow -->
+        <div class="book-spine"></div>
+      </div>
+
+      <!-- DETAILS CARD -->
+      <div class="option-details-card" id="detailsCard">
+        <div>
+          <h2 class="card-title" id="cardTitle">Option 1: Kelmscott Foliate Woodcut</h2>
+          <div class="card-subtitle" id="cardSubtitle">Arts & Crafts Movement / William Morris Private Press Heritage</div>
+          <p class="card-desc" id="cardDesc">
+            Engraved in deep warm sepia ink with delicate white woodcut veins and antique gold berry clusters. Dense, stylized acanthus foliage curls at the four corners, anchored by classical concentric rules and rhythmic leaf modules along all outer edges.
+          </p>
+        </div>
+        <div class="card-traits" id="cardTraits">
+          <div class="trait-item"><strong>Aesthetic Mood:</strong> Master craftsman storybook, timeless literary gravitas.</div>
+          <div class="trait-item"><strong>Corner Treatment:</strong> Heavy dual-tone acanthus leaf with gold core rosette.</div>
+          <div class="trait-item"><strong>Edge Framing:</strong> Continuous undulating foliate ribbon with crimson-and-gold berries.</div>
+          <div class="trait-item"><strong>Best Suited For:</strong> Readers who love antique, high-end collector folio editions.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPARISON ALL GRID VIEW -->
+    <div class="grid-view-container" id="gridView">
+      <!-- Injected via JavaScript -->
+    </div>
+  </main>
+
+  <script>
+    const borderData = {
+      1: {
+        title: 'Option 1: Kelmscott Foliate Woodcut',
+        subtitle: 'Arts & Crafts Movement / William Morris Private Press Heritage',
+        svg: 'assets/borders/options/option-1-kelmscott-woodcut.svg',
+        desc: 'Engraved in deep warm sepia ink with delicate white woodcut veins and antique gold berry clusters. Dense, stylized acanthus foliage curls at the four corners, anchored by classical concentric rules and rhythmic leaf modules along all outer edges.',
+        mood: 'Master craftsman storybook, timeless literary gravitas.',
+        corner: 'Heavy dual-tone acanthus leaf with gold core rosette.',
+        edge: 'Continuous undulating foliate ribbon with crimson-and-gold berries.',
+        suited: 'Readers who love antique, high-end collector folio editions.'
+      },
+      2: {
+        title: 'Option 2: Antique Victorian Gold-Tooled',
+        subtitle: '19th-Century Hardbound Gilded Leather Binding',
+        svg: 'assets/borders/options/option-2-victorian-gold-tooled.svg',
+        desc: 'Inspired by gilded leather-bound heirlooms. Multiple calibrated gold fillets (triple rules and delicate dashed pin-striping) frame the parchment, accented with elegant corner fleurons and starry eight-point rosettes.',
+        mood: 'Sophisticated, stately, warm antique museum-grade polish.',
+        corner: 'Layered brass-tooled bracket with curving acanthus palmette.',
+        edge: 'Crisp parallel fillets with rhythmic starburst rosettes at intervals.',
+        suited: 'Cleanest presentation that maximizes focus on text and art plates.'
+      },
+      3: {
+        title: 'Option 3: Medieval Gothic Psalter Illumination',
+        subtitle: '14th-Century Illuminated Manuscript / Gold Leaf Rinceaux',
+        svg: 'assets/borders/options/option-3-gothic-illuminated.svg',
+        desc: 'A true monastic illuminated psalter border. Features a solid gold-leaf bar frame surrounded by organic pen-line ivy tendrils (rinceaux) that sprout into sparkling circular gold bezants with radiating ink hairs, anchored by deep ruby quadrilobe corner medallions.',
+        mood: 'Authentic fairy-tale folklore, magical and ecclesiastical.',
+        corner: 'Rich crimson quadrilobe tile with golden intersecting petals.',
+        edge: 'Pen-drawn rinceaux tendrils with shimmering gold bezants.',
+        suited: 'Direct thematic pairing with the illuminated drop-cap initials.'
+      },
+      4: {
+        title: 'Option 4: Classical Renaissance Strapwork',
+        subtitle: '16th-Century French & Italian Typographic Ornament',
+        svg: 'assets/borders/options/option-4-renaissance-flourish.svg',
+        desc: 'Graceful architectural harmony. Fine warm-sepia and burnished bronze scrollwork corners that curl into delicate spiral volutes, accented by centered heraldic laurel palmettes at the top, bottom, and flanks.',
+        mood: 'Restrained, dignified, elegant classical fable aesthetic.',
+        corner: 'Carved strapwork volute spirals with laurel sprigs.',
+        edge: 'Thin concentric fillets with central crest palmettes.',
+        suited: 'Balancing ornate character with an open, airy page layout.'
+      },
+      5: {
+        title: 'Option 5: Storybook Botanical Watercolor Vignette',
+        subtitle: 'Hand-Drawn English Countryside / Beatrix Potter & Arthur Rackham',
+        svg: 'assets/borders/options/option-5-botanical-vignette.svg',
+        desc: 'Organic hand-drawn woodland vines curving naturally through the page margins. Features branching forest leaves in woodland green, delicate wild briar roses with crimson watercolor petals in every corner, and winding golden tendrils.',
+        mood: 'Whimsical, intimate, pastoral English fairy tale.',
+        corner: 'Curving green forest vine blooming with a 4-petal wild briar rose.',
+        edge: 'Organic curving stem lines punctuated by wild rose hips.',
+        suited: 'Direct emotional harmony with forest animals, burrowing rabbits, and nature.'
+      }
+    };
+
+    const singleView = document.getElementById('singleView');
+    const gridView = document.getElementById('gridView');
+    const leftBorderImg = document.getElementById('leftBorderImg');
+    const rightBorderImg = document.getElementById('rightBorderImg');
+    const cardTitle = document.getElementById('cardTitle');
+    const cardSubtitle = document.getElementById('cardSubtitle');
+    const cardDesc = document.getElementById('cardDesc');
+    const cardTraits = document.getElementById('cardTraits');
+    const tabBtns = document.querySelectorAll('.tab-btn');
+
+    function selectOption(opt) {
+      tabBtns.forEach(btn => {
+        if (btn.dataset.option === String(opt)) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+
+      if (opt === 'all') {
+        singleView.style.display = 'none';
+        gridView.style.display = 'flex';
+        renderGridView();
+        return;
+      }
+
+      singleView.style.display = 'flex';
+      gridView.style.display = 'none';
+
+      const data = borderData[opt];
+      if (!data) return;
+
+      leftBorderImg.src = data.svg;
+      rightBorderImg.src = data.svg;
+
+      cardTitle.textContent = data.title;
+      cardSubtitle.textContent = data.subtitle;
+      cardDesc.textContent = data.desc;
+
+      cardTraits.innerHTML = `
+        <div class="trait-item"><strong>Aesthetic Mood:</strong> ${data.mood}</div>
+        <div class="trait-item"><strong>Corner Treatment:</strong> ${data.corner}</div>
+        <div class="trait-item"><strong>Edge Framing:</strong> ${data.edge}</div>
+        <div class="trait-item"><strong>Best Suited For:</strong> ${data.suited}</div>
+      `;
+    }
+
+    function renderGridView() {
+      if (gridView.children.length > 0) return;
+
+      let html = '';
+      [1, 2, 3, 4, 5].forEach(i => {
+        const d = borderData[i];
+        html += `
+          <div class="grid-item-card">
+            <div class="grid-item-header">
+              <div>
+                <h3 style="font-family: var(--font-display); color: var(--gold-light); font-size: 1.15rem; margin: 0 0 4px 0;">${d.title}</h3>
+                <span style="color: #9c907e; font-style: italic; font-size: 0.85rem;">${d.subtitle}</span>
+              </div>
+              <button class="tab-btn" onclick="selectOption(${i})">View Full Size &#8594;</button>
+            </div>
+            <div class="grid-mini-spread">
+              <div class="page left-page">
+                <img class="page-border-overlay" src="${d.svg}" alt="" />
+                <div class="page-content">
+                  <div class="page-header">
+                    <div class="chapter-number">Chapter 1</div>
+                    <div class="chapter-title">A Rainy Day</div>
+                  </div>
+                  <div class="page-verse-container">
+                    <div class="stanza">
+                      <div class="verse-line first-verse-line">
+                        <span class="illuminated-cap"><span class="cap-letter">R</span></span><span class="first-word-rest">AIN</span> <span class="first-line-remaining">and damp and puddles many</span>
+                      </div>
+                      <div class="verse-line">Never stop the games of bunnies</div>
+                      <div class="verse-line">On what may seem a dreary day</div>
+                      <div class="verse-line">the Bunnies play the day away</div>
+                    </div>
+                    <div class="stanza">
+                      <div class="verse-line">But one such bunny wasn't there</div>
+                      <div class="verse-line">He wasn't invited, wasn't fair</div>
+                    </div>
+                  </div>
+                  <div class="page-footer">
+                    <span class="folio-book-label">Finding God on a Dreary Day</span>
+                    <span class="folio-number">1</span>
+                  </div>
+                </div>
+              </div>
+              <div class="page right-page">
+                <img class="page-border-overlay" src="${d.svg}" alt="" />
+                <div class="page-content">
+                  <div class="art-plate-container">
+                    <div class="art-image-frame">
+                      <img src="assets/images/B01-S01-rainy-games.png" alt="Story Illustration" />
+                    </div>
+                  </div>
+                  <div class="page-footer">
+                    <span class="folio-book-label">Book 1</span>
+                    <span class="folio-number">2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+      gridView.innerHTML = html;
+    }
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        selectOption(btn.dataset.option);
+      });
+    });
+
+    // Check URL param ?option=
+    const params = new URLSearchParams(window.location.search);
+    const initialOpt = params.get('option') || '1';
+    selectOption(initialOpt);
+
+    // Keyboard Shortcuts 1-5
+    window.addEventListener('keydown', (e) => {
+      if (['1', '2', '3', '4', '5'].includes(e.key)) {
+        selectOption(parseInt(e.key));
+      }
+    });
+  </script>
+</body>
+</html>

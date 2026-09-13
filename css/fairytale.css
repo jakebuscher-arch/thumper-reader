@@ -88,7 +88,7 @@ body {
   position: relative;
   z-index: 5;
   height: 100%;
-  padding: 34px 42px 28px 42px;
+  padding: 64px 52px 72px 52px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -280,7 +280,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 42px 42px 36px 42px;
+  padding: 8px 12px 12px 12px;
   box-sizing: border-box;
 }
 
