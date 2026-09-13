@@ -242,7 +242,7 @@
       <a href="index.html" class="back-btn">&#8592; Back to Book Reader</a>
       <div>
         <div class="showcase-title">Border Design Showcase</div>
-        <div class="showcase-subtitle">Comparing 5 bespoke architectural & botanical borders for Version 2.0</div>
+        <div class="showcase-subtitle">Comparing 6 bespoke architectural & botanical borders for Version 2.0</div>
       </div>
     </div>
 
@@ -252,7 +252,8 @@
       <button class="tab-btn" data-option="3">3. Gothic Illuminated</button>
       <button class="tab-btn" data-option="4">4. Renaissance Strapwork</button>
       <button class="tab-btn" data-option="5">5. Botanical Vignette</button>
-      <button class="tab-btn" data-option="all">&#9638; Compare All 5</button>
+      <button class="tab-btn" data-option="6">6. Interlocking Vine</button>
+      <button class="tab-btn" data-option="all">&#9638; Compare All 6</button>
     </nav>
   </header>
 
@@ -412,6 +413,16 @@
         corner: 'Curving green forest vine blooming with a 4-petal wild briar rose.',
         edge: 'Organic curving stem lines punctuated by wild rose hips.',
         suited: 'Direct emotional harmony with forest animals, burrowing rabbits, and nature.'
+      },
+      6: {
+        title: 'Option 6: Interlocking Double-Helix Vine & Rosette',
+        subtitle: 'Authentic Restoration of the Author’s Original Proof Border',
+        svg: 'assets/borders/options/option-6-interlocking-vine.svg',
+        desc: 'Reconstructed directly from the mathematical ReportLab vector curves of the original proof sheets. Two continuous intertwining sine-wave vines—one in forest green and one in warm antique gold—flow through all four margins, flanked by alternating angled leaves, golden fruit rings, and eight-petal corner rosettes.',
+        mood: 'Classic fairy-tale storybook, exactly matching the original manuscript proof.',
+        corner: '8-petal pointed ivory-and-gold rosette flower medallion.',
+        edge: 'Continuous intertwining double-helix vines (green & gold) with alternating leaves.',
+        suited: 'Directly fulfills the user’s request for the embellished vine border from earlier ideas.'
       }
     };
 
@@ -466,7 +477,7 @@
       if (gridView.children.length > 0) return;
 
       let html = '';
-      [1, 2, 3, 4, 5].forEach(i => {
+      [1, 2, 3, 4, 5, 6].forEach(i => {
         const d = borderData[i];
         html += `
           <div class="grid-item-card">
@@ -539,7 +550,7 @@
 
     // Keyboard Shortcuts 1-5
     window.addEventListener('keydown', (e) => {
-      if (['1', '2', '3', '4', '5'].includes(e.key)) {
+      if (['1', '2', '3', '4', '5', '6'].includes(e.key)) {
         selectOption(parseInt(e.key));
       }
     });
