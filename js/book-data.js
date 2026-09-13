@@ -1,5 +1,5 @@
 /**
- * Complete 5-Book Thumper Series Reader Data
+ * Complete 5-Book Thumper Series Reader Data (74 Spreads)
  * Faithfully transcribed verbatim from source manuscripts
  */
 window.THUMPER_COLLECTION = [
@@ -11,12 +11,14 @@ window.THUMPER_COLLECTION = [
     "borderTheme": "ivy",
     "pages": [
       {
-        "id": "B01-P01",
+        "id": "B01-N01",
         "spreadNumber": 1,
         "bookNumber": 1,
         "bookTitle": "Finding God on a Dreary Day",
         "chapter": 1,
         "chapterTitle": "A Rainy Day",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "R",
         "firstLineRest": "ain and damp and puddles many",
@@ -61,7 +63,29 @@ window.THUMPER_COLLECTION = [
               "All he had to do today",
               "imagine a new friend with whom to play"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Rainy Games",
+          "brief": "Thumper watches the other rabbits playing outside his window in the rain.",
+          "image": "assets/images/B01-S01-rainy-games.png",
+          "theologicalNote": "Contingent beings immersed in the immediate material world."
+        }
+      },
+      {
+        "id": "B01-N02",
+        "spreadNumber": 2,
+        "bookNumber": 1,
+        "bookTitle": "Finding God on a Dreary Day",
+        "chapter": 1,
+        "chapterTitle": "A Rainy Day",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Not a normal bunny will do",
+        "speakerBefore": {},
+        "stanzas": [
           {
             "chapter": 1,
             "chapterTitle": "A Rainy Day",
@@ -71,28 +95,7 @@ window.THUMPER_COLLECTION = [
               "Soaring though the dreary skies",
               "Flapping wings and soaring for miles"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Rain at the window",
-          "brief": "Thumper alone inside his cottage watches ordinary rabbits playing in rainy puddles outside. A quill and paper suggest his writing. If Frumper is suggested, use only a faint imagined form.",
-          "cast": "Thumper; distant ordinary rabbits",
-          "image": "assets/images/B01-S01-rainy-games.png",
-          "theologicalNote": "Thumper’s interior solitude mirrors the soul’s natural longing for transcendent friendship."
-        }
-      },
-      {
-        "id": "B01-P02",
-        "spreadNumber": 2,
-        "bookNumber": 1,
-        "bookTitle": "Finding God on a Dreary Day",
-        "chapter": 1,
-        "chapterTitle": "A Rainy Day",
-        "initialPrefix": "",
-        "initialLetter": "U",
-        "firstLineRest": "p and down the drafts of air",
-        "speakerBefore": {},
-        "stanzas": [
+          },
           {
             "chapter": 1,
             "chapterTitle": "A Rainy Day",
@@ -122,7 +125,29 @@ window.THUMPER_COLLECTION = [
               "What I want Frumper could aquire",
               "I could eat all the carrots I desire"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Thumper Imagines Frumper",
+          "brief": "Thumper at his desk imagining a winged friend who can fly anywhere.",
+          "image": "assets/images/B01-S02-thumper-imagines.png",
+          "theologicalNote": "The intellect's capacity to conceive of transcendent realities."
+        }
+      },
+      {
+        "id": "B01-N03",
+        "spreadNumber": 3,
+        "bookNumber": 1,
+        "bookTitle": "Finding God on a Dreary Day",
+        "chapter": 1,
+        "chapterTitle": "A Rainy Day",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "No fence would stop him from taking flight",
+        "speakerBefore": {},
+        "stanzas": [
           {
             "chapter": 1,
             "chapterTitle": "A Rainy Day",
@@ -152,28 +177,7 @@ window.THUMPER_COLLECTION = [
               "Dreary days, puddles and rain",
               "Plump the berries as juice they gain"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "The imagined flight",
-          "brief": "An imagined Frumper flies above the farm fence beneath the night sky, with carrot rows and berry bushes below. Keep the scene visibly dreamlike. The farm is empty of people; an ambiguous winged-rabbit shadow may cross a distant wall.",
-          "cast": "Frumper as imagined by Thumper",
-          "image": "assets/images/B01-S02-thumper-imagines.png",
-          "theologicalNote": "Imagining a winged rabbit: the intellect conceives possibilities that exceed ordinary woodland nature."
-        }
-      },
-      {
-        "id": "B01-P03",
-        "spreadNumber": 3,
-        "bookNumber": 1,
-        "bookTitle": "Finding God on a Dreary Day",
-        "chapter": 1,
-        "chapterTitle": "A Rainy Day",
-        "initialPrefix": "",
-        "initialLetter": "S",
-        "firstLineRest": "imple games with all the others",
-        "speakerBefore": {},
-        "stanzas": [
+          },
           {
             "chapter": 1,
             "chapterTitle": "A Rainy Day",
@@ -183,7 +187,29 @@ window.THUMPER_COLLECTION = [
               "But how could Frumper come to assist",
               "If in only in my imagination he exists?"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Longing for Miller's Farm",
+          "brief": "Thumper looking out the rainy window imagining his winged friend flying over the fence.",
+          "image": "assets/images/B01-N03.png",
+          "theologicalNote": "The desire for the ultimate good transcending natural limits."
+        }
+      },
+      {
+        "id": "B01-N04",
+        "spreadNumber": 4,
+        "bookNumber": 1,
+        "bookTitle": "Finding God on a Dreary Day",
+        "chapter": 2,
+        "chapterTitle": "Thinking Hard",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "W",
+        "firstLineRest": "hat is the difference between a “Frumper”",
+        "speakerBefore": {},
+        "stanzas": [
           {
             "chapter": 2,
             "chapterTitle": "Thinking Hard",
@@ -223,7 +249,29 @@ window.THUMPER_COLLECTION = [
               "The circle could be blue or purple",
               "But never can it be square, that’s not a circle!"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "The Square Circle",
+          "brief": "Thumper pondering contradictory shapes at his desk.",
+          "image": "assets/images/B01-S07.png",
+          "theologicalNote": "The principle of non-contradiction in classical philosophy."
+        }
+      },
+      {
+        "id": "B01-N05",
+        "spreadNumber": 5,
+        "bookNumber": 1,
+        "bookTitle": "Finding God on a Dreary Day",
+        "chapter": 2,
+        "chapterTitle": "Thinking Hard",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "So to be a friend for Thumper the rabbit",
+        "speakerBefore": {},
+        "stanzas": [
           {
             "chapter": 2,
             "chapterTitle": "Thinking Hard",
@@ -233,28 +281,7 @@ window.THUMPER_COLLECTION = [
               "Now Frumper is not contradictory",
               "So what more does he need to be"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "A square and a circle",
-          "brief": "Thumper considers a separate blue circular object and purple square on his table, questioning whether an imagined friend can exist. Frumper is not physically present.",
-          "cast": "Thumper only",
-          "image": "assets/images/B01-S06.png",
-          "theologicalNote": "Avicenna’s distinction: a circle and a square possess differing essences, yet existence is not contained in either."
-        }
-      },
-      {
-        "id": "B01-P04",
-        "spreadNumber": 4,
-        "bookNumber": 1,
-        "bookTitle": "Finding God on a Dreary Day",
-        "chapter": 2,
-        "chapterTitle": "Thinking Hard",
-        "initialPrefix": "",
-        "initialLetter": "W",
-        "firstLineRest": "hat if Thumper forgot to imagined",
-        "speakerBefore": {},
-        "stanzas": [
+          },
           {
             "chapter": 2,
             "chapterTitle": "Thinking Hard",
@@ -284,7 +311,29 @@ window.THUMPER_COLLECTION = [
               "Over a bowl of carrot stew",
               "He thinks to himself, “Well, what caused you”"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Exhaustion Over Stew",
+          "brief": "Thumper sitting thoughtfully over a bowl of carrot stew.",
+          "image": "assets/images/B01-S09.png",
+          "theologicalNote": "The limits of purely self-contained causes."
+        }
+      },
+      {
+        "id": "B01-N06",
+        "spreadNumber": 6,
+        "bookNumber": 1,
+        "bookTitle": "Finding God on a Dreary Day",
+        "chapter": 3,
+        "chapterTitle": "Essence and existence",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "M",
+        "firstLineRest": "aybe Thumper has it backwards",
+        "speakerBefore": {},
+        "stanzas": [
           {
             "chapter": 3,
             "chapterTitle": "Essence and existence",
@@ -314,28 +363,7 @@ window.THUMPER_COLLECTION = [
               "equally they could be real",
               "What’s keeping Thumper from his berry meal?"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "What makes a rabbit real",
-          "brief": "Thumper rests beside carrot stew in his cottage, looking thoughtfully toward his reflection in a small mirror. His expression conveys exhaustion and renewed curiosity.",
-          "cast": "Thumper only",
-          "image": "assets/images/B01-S10.png",
-          "theologicalNote": "Essence vs. Existence: imagining what a rabbit is does not cause a rabbit to exist."
-        }
-      },
-      {
-        "id": "B01-P05",
-        "spreadNumber": 5,
-        "bookNumber": 1,
-        "bookTitle": "Finding God on a Dreary Day",
-        "chapter": 3,
-        "chapterTitle": "Essence and existence",
-        "initialPrefix": "",
-        "initialLetter": "I",
-        "firstLineRest": "n frustration Thumper utters",
-        "speakerBefore": {},
-        "stanzas": [
+          },
           {
             "chapter": 3,
             "chapterTitle": "Essence and existence",
@@ -345,7 +373,29 @@ window.THUMPER_COLLECTION = [
               "Slicing the butter off the block",
               "Thumper has a brilliant thought"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Cutting the Butter",
+          "brief": "Thumper slicing a block of butter at the kitchen table.",
+          "image": "assets/images/B01-N06.png",
+          "theologicalNote": "Avicenna's distinction between what a thing is and that it is."
+        }
+      },
+      {
+        "id": "B01-N07",
+        "spreadNumber": 7,
+        "bookNumber": 1,
+        "bookTitle": "Finding God on a Dreary Day",
+        "chapter": 3,
+        "chapterTitle": "Essence and existence",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "There is no film on the boundary",
+        "speakerBefore": {},
+        "stanzas": [
           {
             "chapter": 3,
             "chapterTitle": "Essence and existence",
@@ -398,20 +448,21 @@ window.THUMPER_COLLECTION = [
           }
         ],
         "illustration": {
-          "title": "The butter block",
-          "brief": "Thumper cuts a slice from a solid butter block on a wooden board. A square piece and carrots clarify the analogy without diagrams or writing.",
-          "cast": "Thumper only",
+          "title": "The Cut Butter on Board",
+          "brief": "Thumper contemplating the edges of the cut butter block.",
           "image": "assets/images/B01-S11.png",
-          "theologicalNote": "The butter block analogy: a boundary cut into matter does not create being from nothing."
+          "theologicalNote": "Existence as the fundamental act of all beings."
         }
       },
       {
-        "id": "B01-P06",
-        "spreadNumber": 6,
+        "id": "B01-N08",
+        "spreadNumber": 8,
         "bookNumber": 1,
         "bookTitle": "Finding God on a Dreary Day",
         "chapter": 4,
         "chapterTitle": "Which came first",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "B",
         "firstLineRest": "ut what is it that sticks these together",
@@ -456,7 +507,29 @@ window.THUMPER_COLLECTION = [
               "Round and round and round we go",
               "it seems that even thumper can’t exist, but no!"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Puzzling Over Cause",
+          "brief": "Thumper resting his chin in his paws over the table.",
+          "image": "assets/images/B01-S13.png",
+          "theologicalNote": "No contingent thing can be the cause of its own existence."
+        }
+      },
+      {
+        "id": "B01-N09",
+        "spreadNumber": 9,
+        "bookNumber": 1,
+        "bookTitle": "Finding God on a Dreary Day",
+        "chapter": 4,
+        "chapterTitle": "Which came first",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Thumper now with his thoughts swirling",
+        "speakerBefore": {},
+        "stanzas": [
           {
             "chapter": 4,
             "chapterTitle": "Which came first",
@@ -476,32 +549,7 @@ window.THUMPER_COLLECTION = [
               "leads to a type of absurdity",
               "Only explained by one who’s nature just is To Be"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "The circle of causes",
-          "brief": "Thumper considers a circular arrangement of puzzle pieces near his cottage window. His thoughtful posture suggests the shift from frustration to understanding.",
-          "cast": "Thumper only",
-          "image": "assets/images/B01-S14.png",
-          "theologicalNote": "The circle of causes: creatures cannot cause themselves; every dependent being requires a prior cause."
-        }
-      },
-      {
-        "id": "B01-P07",
-        "spreadNumber": 7,
-        "bookNumber": 1,
-        "bookTitle": "Finding God on a Dreary Day",
-        "chapter": 4,
-        "chapterTitle": "Which came first",
-        "initialPrefix": "",
-        "initialLetter": "F",
-        "firstLineRest": "or something of this type and kind",
-        "speakerBefore": {
-          "12": "Thumper —",
-          "18": "Other bunnies —",
-          "22": "Narrator —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 4,
             "chapterTitle": "Which came first",
@@ -511,7 +559,32 @@ window.THUMPER_COLLECTION = [
               "It would not have a slice of reality",
               "But it would have it infinity!"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Light Through Clouds",
+          "brief": "Thumper at the window as sunlight breaks through the dreary clouds.",
+          "image": "assets/images/B01-S15.png",
+          "theologicalNote": "The realization of an uncaused First Cause."
+        }
+      },
+      {
+        "id": "B01-N10",
+        "spreadNumber": 10,
+        "bookNumber": 1,
+        "bookTitle": "Finding God on a Dreary Day",
+        "chapter": 5,
+        "chapterTitle": "The Search",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "W",
+        "firstLineRest": "herever could a bunny find",
+        "speakerBefore": {
+          "8": "Thumper —",
+          "14": "Other bunnies —"
+        },
+        "stanzas": [
           {
             "chapter": 5,
             "chapterTitle": "The Search",
@@ -551,7 +624,32 @@ window.THUMPER_COLLECTION = [
               "Well maybe thumper he is where",
               "no bunny would dare to enter near"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Asking the Bunnies",
+          "brief": "Thumper questioning the group of rabbits on the woodland path.",
+          "image": "assets/images/B01-S17.png",
+          "theologicalNote": "The philosopher seeking truth among those indifferent to metaphysics."
+        }
+      },
+      {
+        "id": "B01-N11",
+        "spreadNumber": 11,
+        "bookNumber": 1,
+        "bookTitle": "Finding God on a Dreary Day",
+        "chapter": 5,
+        "chapterTitle": "The Search",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "The Miller farm is close enough",
+        "speakerBefore": {
+          "0": "Other bunnies —",
+          "11": "Other bunnies —"
+        },
+        "stanzas": [
           {
             "chapter": 5,
             "chapterTitle": "The Search",
@@ -561,28 +659,7 @@ window.THUMPER_COLLECTION = [
               "Thumper may not be fast and sleek",
               "But he thought if careful he could take a peek"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Asking the other rabbits",
-          "brief": "Thumper addresses a small gathering of rabbits outside in the rain. The farm fence lies in the distance. Give the listeners distinct reactions without making Thumper smaller or younger than them.",
-          "cast": "Thumper; ordinary rabbits",
-          "image": "assets/images/B01-S17.png",
-          "theologicalNote": "The crowd’s skepticism: reductionism that refuses to seek beyond the puddle and the burrow."
-        }
-      },
-      {
-        "id": "B01-P08",
-        "spreadNumber": 8,
-        "bookNumber": 1,
-        "bookTitle": "Finding God on a Dreary Day",
-        "chapter": 5,
-        "chapterTitle": "The Search",
-        "initialPrefix": "",
-        "initialLetter": "T",
-        "firstLineRest": "he other bunnies summoned him hence",
-        "speakerBefore": {},
-        "stanzas": [
+          },
           {
             "chapter": 5,
             "chapterTitle": "The Search",
@@ -612,7 +689,29 @@ window.THUMPER_COLLECTION = [
               "The Farm was a dangerous place",
               "They feared for the trouble that awaits"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Under the Barbed Wire",
+          "brief": "Thumper crawling beneath the wire fence into the dangerous farm.",
+          "image": "assets/images/B01-S19.png",
+          "theologicalNote": "The perilous pursuit of divine truth."
+        }
+      },
+      {
+        "id": "B01-N12",
+        "spreadNumber": 12,
+        "bookNumber": 1,
+        "bookTitle": "Finding God on a Dreary Day",
+        "chapter": 6,
+        "chapterTitle": "The Farm",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "T",
+        "firstLineRest": "humper hopped from place to place",
+        "speakerBefore": {},
+        "stanzas": [
           {
             "chapter": 6,
             "chapterTitle": "The Farm",
@@ -642,31 +741,7 @@ window.THUMPER_COLLECTION = [
               "He ran and zigged and zagged and darted",
               "as he ran into land uncharted"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Beyond the fence",
-          "brief": "Thumper passes the washed-out gap beneath the farm fence while rabbits watch from safety. Visible traps establish danger. If the gun threat is suggested, show the barrel partly obscured at the edge; never add a human hand or body. An indistinct Frumper-shaped shadow is the only suggested figure.",
-          "cast": "Thumper; ordinary rabbits outside the fence",
-          "image": "assets/images/B01-S20.png",
-          "theologicalNote": "Venturing beyond the boundary fence: the moral journey and confrontation with peril."
-        }
-      },
-      {
-        "id": "B01-P09",
-        "spreadNumber": 9,
-        "bookNumber": 1,
-        "bookTitle": "Finding God on a Dreary Day",
-        "chapter": 6,
-        "chapterTitle": "The Farm",
-        "initialPrefix": "",
-        "initialLetter": "f",
-        "firstLineRest": "inally in bushes he found cover",
-        "speakerBefore": {
-          "8": "Thumper —",
-          "12": "Narrator —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 6,
             "chapterTitle": "The Farm",
@@ -676,7 +751,29 @@ window.THUMPER_COLLECTION = [
               "The berries where all around him",
               "Juicy and plump on every limb"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Traps and Berries",
+          "brief": "Thumper cautiously navigating traps and pits toward the berries.",
+          "image": "assets/images/B01-S20.png",
+          "theologicalNote": "The moral trials and temptations on the spiritual ascent."
+        }
+      },
+      {
+        "id": "B01-N13",
+        "spreadNumber": 13,
+        "bookNumber": 1,
+        "bookTitle": "Finding God on a Dreary Day",
+        "chapter": 6,
+        "chapterTitle": "The Farm",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Never has He ate so many",
+        "speakerBefore": {},
+        "stanzas": [
           {
             "chapter": 6,
             "chapterTitle": "The Farm",
@@ -716,7 +813,29 @@ window.THUMPER_COLLECTION = [
               "He could have been a better rabbit",
               "one that did the good by habit"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Sleeping Under Berries",
+          "brief": "Thumper asleep beneath the berry bush with guilty dreams.",
+          "image": "assets/images/B01-S23.png",
+          "theologicalNote": "Concupiscence and the burden of guilt after falling into sin."
+        }
+      },
+      {
+        "id": "B01-N14",
+        "spreadNumber": 14,
+        "bookNumber": 1,
+        "bookTitle": "Finding God on a Dreary Day",
+        "chapter": 6,
+        "chapterTitle": "The Farm",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "In every case he had something missing",
+        "speakerBefore": {},
+        "stanzas": [
           {
             "chapter": 6,
             "chapterTitle": "The Farm",
@@ -726,31 +845,7 @@ window.THUMPER_COLLECTION = [
               "It is not just Frumper who has non-being",
               "But me as well from what I’m seeing"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Berries and remorse",
-          "brief": "Thumper sleeps beneath berry branches. A subdued dreamlike vignette suggests the friends he left behind and his regret. Avoid depicting an actual second Thumper as present.",
-          "cast": "Thumper; dream impressions of ordinary rabbits",
-          "image": "assets/images/B01-S23.png",
-          "theologicalNote": "The trap of guilt and repentance: Thumper beneath the briars recognizes his powerlessness."
-        }
-      },
-      {
-        "id": "B01-P10",
-        "spreadNumber": 10,
-        "bookNumber": 1,
-        "bookTitle": "Finding God on a Dreary Day",
-        "chapter": 6,
-        "chapterTitle": "The Farm",
-        "initialPrefix": "",
-        "initialLetter": "N",
-        "firstLineRest": "ow the two are more alike",
-        "speakerBefore": {
-          "8": "Thumper —",
-          "10": "Narrator —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 6,
             "chapterTitle": "The Farm",
@@ -770,10 +865,34 @@ window.THUMPER_COLLECTION = [
               "To the farmhouse he makes his way",
               "a brand new courage he displays"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Awakening and Repentance",
+          "brief": "Thumper awake under the berry branches resolved to confess.",
+          "image": "assets/images/B01-S24.png",
+          "theologicalNote": "Metanoia: genuine repentance and the turning toward the Father."
+        }
+      },
+      {
+        "id": "B01-N15",
+        "spreadNumber": 15,
+        "bookNumber": 1,
+        "bookTitle": "Finding God on a Dreary Day",
+        "chapter": 7,
+        "chapterTitle": "the Farmhouse",
+        "isChapterStart": true,
+        "isDialogueOpening": true,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "“I stole the berries” He rehearses",
+        "speakerBefore": {
+          "0": "Thumper —"
+        },
+        "stanzas": [
           {
             "chapter": 7,
-            "chapterTitle": "The Escape",
+            "chapterTitle": "the Farmhouse",
             "lines": [
               "“I stole the berries” He rehearses",
               "”Trespassed too, by selfish urges”",
@@ -783,7 +902,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 7,
-            "chapterTitle": "The Escape",
+            "chapterTitle": "the Farmhouse",
             "lines": [
               "Barking, growling, and running fast",
               "towards Thumper, Miller’s farm dog dashed",
@@ -793,7 +912,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 7,
-            "chapterTitle": "The Escape",
+            "chapterTitle": "the Farmhouse",
             "lines": [
               "Thumpers girth slowed down his run",
               "wishing that dessert he shunned",
@@ -803,7 +922,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 7,
-            "chapterTitle": "The Escape",
+            "chapterTitle": "the Farmhouse",
             "lines": [
               "The Dog was now gaining fast",
               "Thumper was completely out-gassed",
@@ -813,28 +932,29 @@ window.THUMPER_COLLECTION = [
           }
         ],
         "illustration": {
-          "title": "The dog gives chase",
-          "brief": "Thumper flees the farm dog past wet berry bushes and a fence. Preserve Thumper’s reference proportions and show urgency without babyish exaggeration. Keep Frumper out of view until the following spread.",
-          "cast": "Thumper; farm dog",
+          "title": "The Farm Dog Chases",
+          "brief": "The ferocious farm dog pursuing Thumper toward the path.",
           "image": "assets/images/B01-S26.png",
-          "theologicalNote": "Pursuit by the hounds of consequence: the rush of the path where creaturely strength fails."
+          "theologicalNote": "The consequences of sin overtaking creaturely strength."
         }
       },
       {
-        "id": "B01-P11",
-        "spreadNumber": 11,
+        "id": "B01-N16",
+        "spreadNumber": 16,
         "bookNumber": 1,
         "bookTitle": "Finding God on a Dreary Day",
         "chapter": 7,
-        "chapterTitle": "The Escape",
+        "chapterTitle": "the Farmhouse",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
         "initialPrefix": "",
-        "initialLetter": "I",
-        "firstLineRest": "ts almost like he’s lighter now",
+        "initialLetter": "",
+        "firstLineRest": "Its almost like he’s lighter now",
         "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 7,
-            "chapterTitle": "The Escape",
+            "chapterTitle": "the Farmhouse",
             "lines": [
               "Its almost like he’s lighter now",
               "his toes can barley touch the ground",
@@ -844,7 +964,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 7,
-            "chapterTitle": "The Escape",
+            "chapterTitle": "the Farmhouse",
             "lines": [
               "But what is that flapping sound?",
               "As thumper’s paws come off the ground",
@@ -854,14 +974,36 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 7,
-            "chapterTitle": "The Escape",
+            "chapterTitle": "the Farmhouse",
             "lines": [
               "Soaring past the big dogs bite",
               "Now Thumper gets to share in flight",
               "Over the fence and back to his home",
               "Past the puddles where the bunnies friends roam"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Airborne Rescue",
+          "brief": "Frumper lifting Thumper into the air above the farm fence.",
+          "image": "assets/images/B01-S28.png",
+          "theologicalNote": "The intervention of unmerited Divine Grace."
+        }
+      },
+      {
+        "id": "B01-N17",
+        "spreadNumber": 17,
+        "bookNumber": 1,
+        "bookTitle": "Finding God on a Dreary Day",
+        "chapter": 8,
+        "chapterTitle": "Homecoming;",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "T",
+        "firstLineRest": "humper and Frumper became best of friends",
+        "speakerBefore": {},
+        "stanzas": [
           {
             "chapter": 8,
             "chapterTitle": "Homecoming;",
@@ -892,11 +1034,10 @@ window.THUMPER_COLLECTION = [
           }
         ],
         "illustration": {
-          "title": "Rescue and homecoming",
-          "brief": "Frumper carries Thumper safely above the fence toward home. Make their separate adult male identities, bodies, paws and wings unambiguous; Thumper is not an infant in a parent’s arms. Quiet returning rabbits can appear in the distance.",
-          "cast": "Thumper; Frumper; distant ordinary rabbits",
+          "title": "Peace at Home",
+          "brief": "Thumper and Frumper resting peacefully near home at sunset.",
           "image": "assets/images/B01-S29.png",
-          "theologicalNote": "The Christological rescue: Frumper’s wings lift Thumper freely above the fence—salvation as unmerited grace."
+          "theologicalNote": "The peace of reconciliation and communion with God."
         }
       }
     ]
@@ -909,18 +1050,21 @@ window.THUMPER_COLLECTION = [
     "borderTheme": "clockwork",
     "pages": [
       {
-        "id": "B02-P01",
-        "spreadNumber": 12,
+        "id": "B02-N01",
+        "spreadNumber": 18,
         "bookNumber": 2,
         "bookTitle": "Thumper and the Clock Maker",
         "chapter": 1,
         "chapterTitle": "The landing",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "T",
         "firstLineRest": "ick tock tick Plop!",
         "speakerBefore": {
+          "2": "Hedgehog —",
           "8": "Thumper —",
-          "12": "Narrator —"
+          "15": "Other bunnies —"
         },
         "stanzas": [
           {
@@ -962,7 +1106,31 @@ window.THUMPER_COLLECTION = [
               "And what a wild creature is a Frumper",
               "How could he just “come to be” the rabbits wonder"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Commotion at the Clock Shop",
+          "brief": "Gathered rabbits outside Hedgehog's clock shop after the landing.",
+          "image": "assets/images/B02-S01-commotion-clockshop.png",
+          "theologicalNote": "Initial skepticism toward claims of divine intervention."
+        }
+      },
+      {
+        "id": "B02-N02",
+        "spreadNumber": 19,
+        "bookNumber": 2,
+        "bookTitle": "Thumper and the Clock Maker",
+        "chapter": 1,
+        "chapterTitle": "The landing",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "The Hedgehog raps a stick against his shop",
+        "speakerBefore": {
+          "1": "Hedgehog —"
+        },
+        "stanzas": [
           {
             "chapter": 1,
             "chapterTitle": "The landing",
@@ -972,31 +1140,7 @@ window.THUMPER_COLLECTION = [
               "Im as glad for thumper as any",
               "that he has escaped these danger many"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "A commotion at the clock shop",
-          "brief": "Thumper and Frumper stand among celebrating rabbits outside Hedgehog’s shop. Hedgehog peers out with skepticism. Keep all three at plausible relative scale, using their original references.",
-          "cast": "Thumper; Frumper; Hedgehog; ordinary rabbits",
-          "image": "assets/images/B02-S01-commotion-clockshop.png",
-          "theologicalNote": "Witnessing the miraculous: wonder awakens the question of mechanical vs. divine origin."
-        }
-      },
-      {
-        "id": "B02-P02",
-        "spreadNumber": 13,
-        "bookNumber": 2,
-        "bookTitle": "Thumper and the Clock Maker",
-        "chapter": 1,
-        "chapterTitle": "The landing",
-        "initialPrefix": "",
-        "initialLetter": "B",
-        "firstLineRest": "ut there is nothing that is a miracle",
-        "speakerBefore": {
-          "0": "Hedgehog —",
-          "16": "Narrator —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 1,
             "chapterTitle": "The landing",
@@ -1036,7 +1180,33 @@ window.THUMPER_COLLECTION = [
               "You never saw a frumper, I see your confusion",
               "But that doesn’t make him a miracle that's just an illusion"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Hedgehog Addresses the Crowd",
+          "brief": "Hedgehog rapping his staff on the shop to dismiss the miracle thesis.",
+          "image": "assets/images/B02-N02.png",
+          "theologicalNote": "Materialism and naturalistic reductionism."
+        }
+      },
+      {
+        "id": "B02-N03",
+        "spreadNumber": 20,
+        "bookNumber": 2,
+        "bookTitle": "Thumper and the Clock Maker",
+        "chapter": 1,
+        "chapterTitle": "The landing",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "The bunnies headed back to their games",
+        "speakerBefore": {
+          "2": "Thumper —",
+          "4": "Hedgehog —",
+          "12": "Thumper —"
+        },
+        "stanzas": [
           {
             "chapter": 1,
             "chapterTitle": "The landing",
@@ -1046,33 +1216,7 @@ window.THUMPER_COLLECTION = [
               "But wait! he says to the Hedgehog",
               "His thoughts as unclear as the fog"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Hedgehog disputes the miracle",
-          "brief": "Hedgehog speaks from his shop doorway while Thumper listens. The other rabbits drift back to their games. Clocks frame the interior; do not illustrate Hedgehog’s mistaken claim as an actual flock of Frumpers.",
-          "cast": "Hedgehog; Thumper; distant ordinary rabbits",
-          "image": "assets/images/bunnies book 1 .png",
-          "theologicalNote": "Hedgehog’s clockmaker skepticism: the temptation of scientism and pure mechanical determinism."
-        }
-      },
-      {
-        "id": "B02-P03",
-        "spreadNumber": 14,
-        "bookNumber": 2,
-        "bookTitle": "Thumper and the Clock Maker",
-        "chapter": 1,
-        "chapterTitle": "The landing",
-        "initialPrefix": "",
-        "initialLetter": "Y",
-        "firstLineRest": "ou poor little rabbit said the clock maker",
-        "speakerBefore": {
-          "0": "Hedgehog —",
-          "8": "Thumper —",
-          "10": "Narrator —",
-          "16": "Thumper —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 1,
             "chapterTitle": "The landing",
@@ -1102,7 +1246,33 @@ window.THUMPER_COLLECTION = [
               "The Hedgehog just shrugs and walks back to the shop",
               "The clouds formed again and down the rain drops"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Dispersing Crowd and Inquiries",
+          "brief": "Thumper questioning Hedgehog outside the doorway as rain resumes.",
+          "image": "assets/images/B02-N03.png",
+          "theologicalNote": "The enduring quest for deeper causal explanations."
+        }
+      },
+      {
+        "id": "B02-N04",
+        "spreadNumber": 21,
+        "bookNumber": 2,
+        "bookTitle": "Thumper and the Clock Maker",
+        "chapter": 2,
+        "chapterTitle": "Lunch with frumper",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "B",
+        "firstLineRest": "ack at his house he's delighted to find",
+        "speakerBefore": {
+          "2": "Thumper —",
+          "4": "Thumper —",
+          "9": "Frumper —"
+        },
+        "stanzas": [
           {
             "chapter": 2,
             "chapterTitle": "Lunch with frumper",
@@ -1122,32 +1292,7 @@ window.THUMPER_COLLECTION = [
               "Were you simply blown off course",
               "Or is God truly your source"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Questions at lunch",
-          "brief": "Thumper and Frumper sit across a cottage table with carrots and butter. Thumper is troubled and Frumper attentive. They are adult male friends. Hedgehog is absent.",
-          "cast": "Thumper; Frumper only",
-          "image": "assets/images/B02-S03-lunch-table.png",
-          "theologicalNote": "Frumper’s serene wisdom: the transcendent artisan who is not merely another gear in the machine."
-        }
-      },
-      {
-        "id": "B02-P04",
-        "spreadNumber": 15,
-        "bookNumber": 2,
-        "bookTitle": "Thumper and the Clock Maker",
-        "chapter": 2,
-        "chapterTitle": "Lunch with frumper",
-        "initialPrefix": "",
-        "initialLetter": "F",
-        "firstLineRest": "rumper just laughs and leans back in his chair",
-        "speakerBefore": {
-          "0": "Frumper —",
-          "8": "Thumper —",
-          "12": "Frumper —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 2,
             "chapterTitle": "Lunch with frumper",
@@ -1167,7 +1312,32 @@ window.THUMPER_COLLECTION = [
               "You seem a little off balance what could it be",
               "Any reason you're asking these questions of me?"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Lunch in the Cottage",
+          "brief": "Thumper and Frumper sharing stew and butter at the wooden table.",
+          "image": "assets/images/B02-S03-lunch-table.png",
+          "theologicalNote": "The dialogue between faith and reason."
+        }
+      },
+      {
+        "id": "B02-N05",
+        "spreadNumber": 22,
+        "bookNumber": 2,
+        "bookTitle": "Thumper and the Clock Maker",
+        "chapter": 2,
+        "chapterTitle": "Lunch with frumper",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Hedgehog had a reason for all that transpired",
+        "speakerBefore": {
+          "0": "Thumper —",
+          "4": "Frumper —"
+        },
+        "stanzas": [
           {
             "chapter": 2,
             "chapterTitle": "Lunch with frumper",
@@ -1210,35 +1380,34 @@ window.THUMPER_COLLECTION = [
           }
         ],
         "illustration": {
-          "title": "Go learn the craft",
-          "brief": "Frumper talks with Thumper over the remains of lunch, gesturing toward the distant clock shop through the window. The exchange is between equals, with encouragement rather than a parental pose.",
-          "cast": "Thumper; Frumper only",
-          "image": "assets/images/B02-S03-lunch-table.png",
-          "theologicalNote": "Apprenticeship in order: understanding creation by participating in craftsmanship."
+          "title": "Encouragement to Apprentice",
+          "brief": "Frumper encouraging Thumper to learn the art of clockmaking.",
+          "image": "assets/images/B02-N05.png",
+          "theologicalNote": "Engaging scientific disciplines to discover higher order."
         }
       },
       {
-        "id": "B02-P05",
-        "spreadNumber": 16,
+        "id": "B02-N06",
+        "spreadNumber": 23,
         "bookNumber": 2,
         "bookTitle": "Thumper and the Clock Maker",
         "chapter": 3,
-        "chapterTitle": "Thumper and the Clock Maker",
+        "chapterTitle": "Chapter 3",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "N",
         "firstLineRest": "ext morning thumper went off to the shop",
         "speakerBefore": {
+          "3": "Hedgehog —",
           "4": "Thumper —",
           "8": "Hedgehog —",
-          "14": "Narrator —",
-          "16": "Thumper —",
-          "17": "Hedgehog —",
-          "18": "Narrator —"
+          "12": "Hedgehog —"
         },
         "stanzas": [
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "Next morning thumper went off to the shop",
               "A beautiful morning was the backdrop",
@@ -1248,7 +1417,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "It's me, it is thumper, I want to make clocks",
               "That's why I'm here, That's why I knocked",
@@ -1258,7 +1427,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "Well, normally no, the hedgehog then said",
               "As he busily grabbed things from his tool shed",
@@ -1268,17 +1437,43 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "I can't seem to find my hammer around",
               "And I can't really start working until it is found",
               "Thumper spots it on the other side of the shop",
               "Bouncing over to grab it with an excited hop"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Retrieving the Hammer",
+          "brief": "Thumper fetching Hedgehog's missing small hammer in the workshop.",
+          "image": "assets/images/B02-N06.png",
+          "theologicalNote": "Beginning the discipline of philosophical inquiry."
+        }
+      },
+      {
+        "id": "B02-N07",
+        "spreadNumber": 24,
+        "bookNumber": 2,
+        "bookTitle": "Thumper and the Clock Maker",
+        "chapter": 3,
+        "chapterTitle": "Chapter 3",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Okay what is next said thumper the rabbit",
+        "speakerBefore": {
+          "0": "Thumper —",
+          "1": "Hedgehog —",
+          "3": "Thumper —"
+        },
+        "stanzas": [
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "Okay what is next said thumper the rabbit",
               "On the shelf are some gears, find it and grab it.",
@@ -1288,44 +1483,17 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "On the workbench sits a mess of tiny pieces",
               "Springs and gears lubricants and greases",
               "He slides over his magnifying glass",
               "Picks up forceps and begins thumpers class"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "The first day in the workshop",
-          "brief": "Thumper brings a modest-sized hammer to Hedgehog beside the clock bench. Both match their reference bodies and apparent maturity. Hedgehog is not giant and Thumper is not miniature. Frumper is absent.",
-          "cast": "Thumper; Hedgehog only",
-          "image": "assets/images/B02-clockmaker-workshop.png",
-          "theologicalNote": "The workshop of gears: examining secondary causes that convey motion without generating it."
-        }
-      },
-      {
-        "id": "B02-P06",
-        "spreadNumber": 17,
-        "bookNumber": 2,
-        "bookTitle": "Thumper and the Clock Maker",
-        "chapter": 3,
-        "chapterTitle": "Thumper and the Clock Maker",
-        "initialPrefix": "",
-        "initialLetter": "E",
-        "firstLineRest": "very gear is placed with care",
-        "speakerBefore": {
-          "8": "Hedgehog —",
-          "10": "Thumper —",
-          "12": "Hedgehog —",
-          "16": "Thumper —",
-          "20": "Hedgehog —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "Every gear is placed with care",
               "As thumper and hedgehog stare",
@@ -1335,17 +1503,45 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "100 parts and pieces will take their place",
               "Before hedgehog installs the clock face",
               "When they're done they wind a spring",
               "Then hear a sound that sounds like wings"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Examining the Gears",
+          "brief": "Hedgehog inspecting tiny watch escapements under magnifying loupe.",
+          "image": "assets/images/B02-S06-magnifying-gears.png",
+          "theologicalNote": "The intricate contingent machinery of the cosmos."
+        }
+      },
+      {
+        "id": "B02-N08",
+        "spreadNumber": 25,
+        "bookNumber": 2,
+        "bookTitle": "Thumper and the Clock Maker",
+        "chapter": 3,
+        "chapterTitle": "Chapter 3",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Looks like Frumper just showed up again",
+        "speakerBefore": {
+          "0": "Hedgehog —",
+          "2": "Thumper —",
+          "4": "Hedgehog —",
+          "8": "Thumper —",
+          "12": "Hedgehog —"
+        },
+        "stanzas": [
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "Looks like Frumper just showed up again",
               "Should we put on some tea and invite him in?",
@@ -1355,7 +1551,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "Works fine for clocks when I look at things closely",
               "It does get a bit blurry for distant things mostly",
@@ -1365,7 +1561,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "Hedgehog, the frumpers you said you had seen",
               "Say more about them, describe them to me",
@@ -1375,7 +1571,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "A bit after sunset, quarter till nine",
               "Saw them leaving a cave on the shoreline",
@@ -1385,33 +1581,33 @@ window.THUMPER_COLLECTION = [
           }
         ],
         "illustration": {
-          "title": "Tiny gears and imperfect eyesight",
-          "brief": "Thumper and Hedgehog study a clock movement beneath a magnifying glass. A bird beyond the window is blurred by distance. Emphasize Hedgehog’s skilled close work; do not add Frumper to the room.",
-          "cast": "Thumper; Hedgehog only",
-          "image": "assets/images/B02-S06-magnifying-gears.png",
-          "theologicalNote": "Imperfect sight and fine adjustments: human reason studying the intricate order of the cosmos."
+          "title": "Sound of Wings at the Window",
+          "brief": "Hedgehog peering suspiciously at the twilight window.",
+          "image": "assets/images/B02-N08.png",
+          "theologicalNote": "The shadowy counterfeit of the transcendent (Proditor)."
         }
       },
       {
-        "id": "B02-P07",
-        "spreadNumber": 18,
+        "id": "B02-N09",
+        "spreadNumber": 26,
         "bookNumber": 2,
         "bookTitle": "Thumper and the Clock Maker",
         "chapter": 4,
-        "chapterTitle": "Thumper and the Clock Maker",
+        "chapterTitle": "Chapter 4",
+        "isChapterStart": true,
+        "isDialogueOpening": true,
         "initialPrefix": "",
-        "initialLetter": "Y",
-        "firstLineRest": "ou said that everything is like a clock",
+        "initialLetter": "",
+        "firstLineRest": "You said that everything is like a clock",
         "speakerBefore": {
           "0": "Thumper —",
           "8": "Hedgehog —",
-          "12": "Thumper —",
-          "20": "Hedgehog —"
+          "12": "Thumper —"
         },
         "stanzas": [
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "You said that everything is like a clock",
               "No miracles just ticks and ticks",
@@ -1421,7 +1617,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "I want to ask you about a gear",
               "How does it move from there to here",
@@ -1431,7 +1627,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "As I said each moves by what is prior",
               "I set it up and then it fires",
@@ -1441,17 +1637,43 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "Let's say I was to build a clock",
               "It had no springs to tick and tock",
               "I simply placed 1,000 gears",
               "To make it spin and count the years"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "The Clockmaker's Workshop",
+          "brief": "Thumper questioning Hedgehog amidst clocks and brass mechanisms.",
+          "image": "assets/images/B02-clockmaker-workshop.png",
+          "theologicalNote": "Aquinas's First Way: the necessity of an Unmoved Mover."
+        }
+      },
+      {
+        "id": "B02-N10",
+        "spreadNumber": 27,
+        "bookNumber": 2,
+        "bookTitle": "Thumper and the Clock Maker",
+        "chapter": 4,
+        "chapterTitle": "Chapter 4",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Could I build this in your shop?",
+        "speakerBefore": {
+          "0": "Thumper —",
+          "4": "Hedgehog —",
+          "8": "Thumper —"
+        },
+        "stanzas": [
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "Could I build this in your shop?",
               "Would it work or would it flop?",
@@ -1461,42 +1683,17 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "You'd waste your time it wouldn't have motion",
               "Adding gears is no magic potion",
               "Movement is not in themselves but through another",
               "Keep working thumper and you'll discover"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Gears without a spring",
-          "brief": "Thumper lays out several connected brass gears while Hedgehog explains why they do not move on their own. Leave an obvious empty space for the spring.",
-          "cast": "Thumper; Hedgehog only",
-          "image": "assets/images/B02-clockmaker-workshop.png",
-          "theologicalNote": "Gears without a spring: an instrument has no power to turn without an active moving principle."
-        }
-      },
-      {
-        "id": "B02-P08",
-        "spreadNumber": 19,
-        "bookNumber": 2,
-        "bookTitle": "Thumper and the Clock Maker",
-        "chapter": 4,
-        "chapterTitle": "Thumper and the Clock Maker",
-        "initialPrefix": "",
-        "initialLetter": "S",
-        "firstLineRest": "o at any moment what we need",
-        "speakerBefore": {
-          "0": "Thumper —",
-          "8": "Hedgehog —",
-          "12": "Thumper —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "So at any moment what we need",
               "Is a source of motion this I concede",
@@ -1506,17 +1703,42 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "Then let me ask you one more thing.",
               "Tell me more about the spring",
               "What's the source of It's energy",
               "When The other parts seem so beggarly"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Arranging Unpowered Gears",
+          "brief": "Thumper laying out brass gears that cannot move on their own.",
+          "image": "assets/images/B02-N10.png",
+          "theologicalNote": "The impossibility of an infinite regress of secondary movers."
+        }
+      },
+      {
+        "id": "B02-N11",
+        "spreadNumber": 28,
+        "bookNumber": 2,
+        "bookTitle": "Thumper and the Clock Maker",
+        "chapter": 4,
+        "chapterTitle": "Chapter 4",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Well, in the clock It keeps everything running",
+        "speakerBefore": {
+          "0": "Hedgehog —",
+          "4": "Thumper —"
+        },
+        "stanzas": [
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "Well, in the clock It keeps everything running",
               "It runs a long time but I must be forthcoming",
@@ -1526,7 +1748,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "Well I think we've come into agreement today",
               "Everything's like a clock at least in this way",
@@ -1536,7 +1758,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "And the power it has must be from another",
               "But no long set of gears is the cause we discovered",
@@ -1546,7 +1768,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "Some being of power without any parts",
               "Could put it together to make the whole system start",
@@ -1556,35 +1778,33 @@ window.THUMPER_COLLECTION = [
           }
         ],
         "illustration": {
-          "title": "Where motion begins",
-          "brief": "Hedgehog winds a spring as Thumper watches its connection to the clock gears. Focus on the mechanism and the two adult craftsmen in thoughtful discussion.",
-          "cast": "Thumper; Hedgehog only",
-          "image": "assets/images/B02-S06-magnifying-gears.png",
-          "theologicalNote": "Aquinas’s First Way: whatever is moved must be moved by another; the chain requires an Unmoved Mover."
+          "title": "Winding the Mainspring",
+          "brief": "Close view of Hedgehog winding the spring with a brass key.",
+          "image": "assets/images/B02-N11.png",
+          "theologicalNote": "The external source of actuality imparting motion."
         }
       },
       {
-        "id": "B02-P09",
-        "spreadNumber": 20,
+        "id": "B02-N12",
+        "spreadNumber": 29,
         "bookNumber": 2,
         "bookTitle": "Thumper and the Clock Maker",
         "chapter": 4,
-        "chapterTitle": "Thumper and the Clock Maker",
+        "chapterTitle": "Chapter 4",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
         "initialPrefix": "",
-        "initialLetter": "B",
-        "firstLineRest": "ut a gear and a spring is a thing that I see",
+        "initialLetter": "",
+        "firstLineRest": "But a gear and a spring is a thing that I see",
         "speakerBefore": {
           "0": "Hedgehog —",
           "4": "Thumper —",
-          "12": "Hedgehog —",
-          "16": "Thumper —",
-          "20": "Narrator —",
-          "22": "Frumper —"
+          "12": "Hedgehog —"
         },
         "stanzas": [
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "But a gear and a spring is a thing that I see",
               "If it can't be found with the senses how can it be?",
@@ -1594,7 +1814,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "Say hedgehog, what does a clock do",
               "Seems like it tells time to me or to you",
@@ -1604,7 +1824,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "And how does it count as it moves through the day",
               "The hands move past numbers on its display",
@@ -1614,17 +1834,44 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "It is quite late thumper, we've been working all day",
               "I quite understand if no longer you stay",
               "I have so many orders that I need to get done",
               "Clocks to be built For everyone"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Quarter to Nine",
+          "brief": "Thumper pointing to the hands on the clock face in late workshop.",
+          "image": "assets/images/B02-N12.png",
+          "theologicalNote": "The reality of time and measure in creation."
+        }
+      },
+      {
+        "id": "B02-N13",
+        "spreadNumber": 30,
+        "bookNumber": 2,
+        "bookTitle": "Thumper and the Clock Maker",
+        "chapter": 5,
+        "chapterTitle": "Chapter 5",
+        "isChapterStart": true,
+        "isDialogueOpening": true,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "I'll get frumper he can help too",
+        "speakerBefore": {
+          "0": "Thumper —",
+          "2": "Frumper —",
+          "8": "Hedgehog —",
+          "10": "Frumper —"
+        },
+        "stanzas": [
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "I'll get frumper he can help too",
               "That way we can all work not only you",
@@ -1634,42 +1881,17 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "Frumper folds his wings and ducks his head",
               "As he entered The shop, in he sped",
               "I've been known to make a clock or two",
               "Let's work tonight until we're through"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Late evening help arrives",
-          "brief": "Frumper folds his feathered wings to enter the workshop as Thumper and Hedgehog look up from their work. The clock and dark window establish the late hour. Avoid a maternal entrance or childlike proportions.",
-          "cast": "Thumper; Hedgehog; Frumper",
-          "image": "assets/images/Frumper .png",
-          "theologicalNote": "Evening grace: Frumper arrives to supply what finite creaturely weakness cannot finish."
-        }
-      },
-      {
-        "id": "B02-P10",
-        "spreadNumber": 21,
-        "bookNumber": 2,
-        "bookTitle": "Thumper and the Clock Maker",
-        "chapter": 5,
-        "chapterTitle": "Thumper and the Clock Maker",
-        "initialPrefix": "",
-        "initialLetter": "F",
-        "firstLineRest": "irst I need to understand",
-        "speakerBefore": {
-          "4": "Hedgehog —",
-          "6": "Frumper —",
-          "8": "Narrator —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "First I need to understand",
               "Before we even make a plan",
@@ -1679,17 +1901,41 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "I have a large order for a wedding",
               "Pocket watches the groomsmen are getting",
               "Oh they'll love those watches I am certain",
               "Said frumper as he brushed past the curtains"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Frumper Enters the Workshop",
+          "brief": "Frumper folding his wings and entering the workshop to assist.",
+          "image": "assets/images/B02-N13.png",
+          "theologicalNote": "Grace cooperates with nature in human vocation."
+        }
+      },
+      {
+        "id": "B02-N14",
+        "spreadNumber": 31,
+        "bookNumber": 2,
+        "bookTitle": "Thumper and the Clock Maker",
+        "chapter": 5,
+        "chapterTitle": "Chapter 5",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "As thumper worked his mind wandered",
+        "speakerBefore": {
+          "10": "Frumper —"
+        },
+        "stanzas": [
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "As thumper worked his mind wandered",
               "There's no box of intention or love he pondered",
@@ -1699,7 +1945,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "The noise in the workshop was now interrupted",
               "As the light of the dawn through the window erupted",
@@ -1709,7 +1955,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "Frumper throws one in a box",
               "As thumper packs and ships and stocks",
@@ -1719,7 +1965,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "Frumper looks up with a smile",
               "Plops in one clock and hands a pile",
@@ -1729,11 +1975,10 @@ window.THUMPER_COLLECTION = [
           }
         ],
         "illustration": {
-          "title": "The watches are finished",
-          "brief": "Dawn lights the workshop. Frumper places a finished pocket watch into a box while Thumper handles filled boxes and Hedgehog looks over the completed order. The surprising abundance is conveyed through boxes, not floating magic symbols.",
-          "cast": "Thumper; Frumper; Hedgehog",
-          "image": "assets/images/Frumper Flying Sky.png",
-          "theologicalNote": "The completion of the watches: harmonious order achieved through divine assistance and human labor."
+          "title": "Dawn's Plentiful Watches",
+          "brief": "Dawn light over boxes of finished pocket watches.",
+          "image": "assets/images/B02-N14.png",
+          "theologicalNote": "The divine bounty overflowing through faithful cooperation."
         }
       }
     ]
@@ -1741,17 +1986,19 @@ window.THUMPER_COLLECTION = [
   {
     "bookNumber": 3,
     "title": "Thumpers Bad Day",
-    "theme": "The Problem of Evil, Contingency, and Divine Providence",
-    "subtitle": "Suffering, Natural Order & the Divine Measuring Rod",
-    "borderTheme": "storm",
+    "theme": "The Problem of Evil, Free Will, and Suffering",
+    "subtitle": "An Allegory on Evil, Goodness, and Divine Providence",
+    "borderTheme": "oak",
     "pages": [
       {
-        "id": "B03-P01",
-        "spreadNumber": 22,
+        "id": "B03-N01",
+        "spreadNumber": 32,
         "bookNumber": 3,
         "bookTitle": "Thumpers Bad Day",
         "chapter": 1,
-        "chapterTitle": "Thumpers Bad Day",
+        "chapterTitle": "Chapter 1",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "A",
         "firstLineRest": "fter a night without a wink of sleep",
@@ -1759,7 +2006,7 @@ window.THUMPER_COLLECTION = [
         "stanzas": [
           {
             "chapter": 1,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 1",
             "lines": [
               "After a night without a wink of sleep",
               "Thumper boils water and drops in tea to steep",
@@ -1769,7 +2016,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 1,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 1",
             "lines": [
               "Off to bed he goes",
               "Wearing his night time clothes",
@@ -1779,17 +2026,39 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 1,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 1",
             "lines": [
               "But there was something that he forgot",
               "It was the boiling water pot!",
               "He had never turned it off",
               "Soon thumper began to cough"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "The Boiling Pot",
+          "brief": "Sleepy Thumper upstairs in bed while pot boils on woodstove below.",
+          "image": "assets/images/B03-N01.png",
+          "theologicalNote": "The origin of natural evil through creaturely fallibility."
+        }
+      },
+      {
+        "id": "B03-N02",
+        "spreadNumber": 33,
+        "bookNumber": 3,
+        "bookTitle": "Thumpers Bad Day",
+        "chapter": 1,
+        "chapterTitle": "Chapter 1",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Smoke came up from under the door",
+        "speakerBefore": {},
+        "stanzas": [
           {
             "chapter": 1,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 1",
             "lines": [
               "Smoke came up from under the door",
               "As flames were raging below his floor",
@@ -1799,42 +2068,17 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 1,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 1",
             "lines": [
               "His paw reaches for the door knob",
               "But it burns him bad and starts to throb",
               "He breaks the glass of his window",
               "Jumps down upon the bushes below"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Escape from the burning cottage",
-          "brief": "Thumper escapes his smoking bedroom window toward the bushes below as fire glows inside. His source-specified nightclothes are permitted for this scene. Convey danger without changing his reference body or adding graphic injury.",
-          "cast": "Thumper only",
-          "image": "assets/images/signal-2026-08-06-12-02-24-200.png",
-          "theologicalNote": "The lightning strike: the reality of suffering and the apparent cruelty of physical nature."
-        }
-      },
-      {
-        "id": "B03-P02",
-        "spreadNumber": 23,
-        "bookNumber": 3,
-        "bookTitle": "Thumpers Bad Day",
-        "chapter": 1,
-        "chapterTitle": "Thumpers Bad Day",
-        "initialPrefix": "",
-        "initialLetter": "F",
-        "firstLineRest": "illed with thorns he's pierced all over",
-        "speakerBefore": {
-          "14": "First bunny —",
-          "16": "Narrator —",
-          "17": "Second bunny —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 1,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 1",
             "lines": [
               "Filled with thorns he's pierced all over",
               "He crawls from the bushes to a patch of clover",
@@ -1844,14 +2088,41 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 1,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 1",
             "lines": [
               "He crawls and swats and swings then falls",
               "Into the ashes of his home's burnt walls",
               "Then a bunny comes with news that's frightening",
               "His friend frumper was just hit by lightning!"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Escape Into Thorns",
+          "brief": "Thumper escaping burning cottage into thorns as messenger arrives.",
+          "image": "assets/images/B03-N02.png",
+          "theologicalNote": "The sudden catastrophe of suffering and pain."
+        }
+      },
+      {
+        "id": "B03-N03",
+        "spreadNumber": 34,
+        "bookNumber": 3,
+        "bookTitle": "Thumpers Bad Day",
+        "chapter": 2,
+        "chapterTitle": "visitors",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "S",
+        "firstLineRest": "till in the ashes he looks at his leg",
+        "speakerBefore": {
+          "2": "Thumper —",
+          "6": "First bunny —",
+          "9": "Second bunny —",
+          "13": "Third bunny —"
+        },
+        "stanzas": [
           {
             "chapter": 2,
             "chapterTitle": "visitors",
@@ -1881,37 +2152,7 @@ window.THUMPER_COLLECTION = [
               "All that bad luck at once might be a sign",
               "You've made somebody angry someone divine"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Among the ashes",
-          "brief": "Thumper sits distressed beside the ruins of his cottage while two rabbits offer unwelcome explanations. His injured leg rests visibly but without exposed bone or gore.",
-          "cast": "Thumper; visiting ordinary rabbits",
-          "image": "assets/images/B03-cottage-ashes.png",
-          "theologicalNote": "Job among the ashes: well-meaning neighbors offering false blame and shallow theological answers."
-        }
-      },
-      {
-        "id": "B03-P03",
-        "spreadNumber": 24,
-        "bookNumber": 3,
-        "bookTitle": "Thumpers Bad Day",
-        "chapter": 2,
-        "chapterTitle": "visitors",
-        "initialPrefix": "",
-        "initialLetter": "B",
-        "firstLineRest": "efore thumper objected one more rabbit came",
-        "speakerBefore": {
-          "0": "Narrator —",
-          "1": "Third bunny —",
-          "4": "Hedgehog —",
-          "6": "Narrator —",
-          "8": "Hedgehog —",
-          "10": "Thumper —",
-          "16": "Narrator —",
-          "17": "Hedgehog —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 2,
             "chapterTitle": "visitors",
@@ -1921,7 +2162,35 @@ window.THUMPER_COLLECTION = [
               "Is there even a difference between good and bad",
               "Maybe it's all in the perspective you've had"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Three Unhelpful Rabbits",
+          "brief": "Injured Thumper in ashes with three critical visitor rabbits.",
+          "image": "assets/images/B03-N03.png",
+          "theologicalNote": "Job's comforters offering shallow theodicies."
+        }
+      },
+      {
+        "id": "B03-N04",
+        "spreadNumber": 35,
+        "bookNumber": 3,
+        "bookTitle": "Thumpers Bad Day",
+        "chapter": 2,
+        "chapterTitle": "visitors",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Silence! get out of here! leave him alone!",
+        "speakerBefore": {
+          "0": "Hedgehog —",
+          "4": "Hedgehog —",
+          "6": "Thumper —",
+          "13": "Hedgehog —",
+          "16": "Hedgehog —"
+        },
+        "stanzas": [
           {
             "chapter": 2,
             "chapterTitle": "visitors",
@@ -1961,31 +2230,7 @@ window.THUMPER_COLLECTION = [
               "The past was painful but now it is gone",
               "The future's not here to fixate upon"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Hedgehog offers help",
-          "brief": "Hedgehog kneels beside Thumper, making a simple leg splint from his staff while firmly sending the intrusive visitors away. Preserve Hedgehog’s mature reference appearance.",
-          "cast": "Hedgehog; Thumper; retreating rabbits",
-          "image": "assets/images/Hedgehog.png",
-          "theologicalNote": "Hedgehog’s friendship: practical solidarity in the midst of tragedy and devastation."
-        }
-      },
-      {
-        "id": "B03-P04",
-        "spreadNumber": 25,
-        "bookNumber": 3,
-        "bookTitle": "Thumpers Bad Day",
-        "chapter": 2,
-        "chapterTitle": "visitors",
-        "initialPrefix": "",
-        "initialLetter": "I",
-        "firstLineRest": "n each present moment you have enough trouble",
-        "speakerBefore": {
-          "4": "Narrator —",
-          "12": "Mole —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 2,
             "chapterTitle": "visitors",
@@ -1995,7 +2240,33 @@ window.THUMPER_COLLECTION = [
               "Don't borrow more from the past or the future",
               "He says as he fixes a gash with a suture"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Hedgehog Splints the Leg",
+          "brief": "Hedgehog binding Thumper's broken leg with staff splint.",
+          "image": "assets/images/B03-N04.png",
+          "theologicalNote": "True charity and practical compassion amidst suffering."
+        }
+      },
+      {
+        "id": "B03-N05",
+        "spreadNumber": 36,
+        "bookNumber": 3,
+        "bookTitle": "Thumpers Bad Day",
+        "chapter": 3,
+        "chapterTitle": "action",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "A",
+        "firstLineRest": "s thumper is laying in the ashes still",
+        "speakerBefore": {
+          "4": "Mole —",
+          "6": "Thumper —",
+          "7": "Mole —"
+        },
+        "stanzas": [
           {
             "chapter": 3,
             "chapterTitle": "action",
@@ -2038,27 +2309,26 @@ window.THUMPER_COLLECTION = [
           }
         ],
         "illustration": {
-          "title": "Mole tumbles into the conversation",
-          "brief": "Mole has rolled from an opening in a grassy slope and comes to rest beside Thumper. The ruined cottage remains behind them. Mole wears his reference overalls and is cheerful without caricature.",
-          "cast": "Mole; Thumper",
-          "image": "assets/images/Mole.png",
-          "theologicalNote": "Mole’s wisdom: the patient underground roots of ancestral faith and resilience."
+          "title": "Mole Tumbles In",
+          "brief": "Mole tumbling from hillside burrow with cheerful encouragement.",
+          "image": "assets/images/B03-N05.png",
+          "theologicalNote": "Resilience and the proper response to fallen nature."
         }
       },
       {
-        "id": "B03-P05",
-        "spreadNumber": 26,
+        "id": "B03-N06",
+        "spreadNumber": 37,
         "bookNumber": 3,
         "bookTitle": "Thumpers Bad Day",
         "chapter": 3,
         "chapterTitle": "action",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
         "initialPrefix": "",
-        "initialLetter": "Y",
-        "firstLineRest": "ou shape your thoughts through a choice of your will",
+        "initialLetter": "",
+        "firstLineRest": "You shape your thoughts through a choice of your will",
         "speakerBefore": {
-          "8": "Narrator —",
-          "12": "Squirrel —",
-          "18": "Narrator —"
+          "0": "Mole —"
         },
         "stanzas": [
           {
@@ -2090,7 +2360,32 @@ window.THUMPER_COLLECTION = [
               "Then mole burrowed off with a wave of his claw",
               "Thumper felt proud of the progress he saw"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Drawing the Blueprints",
+          "brief": "Thumper drawing house plans while Mole digs foundation trench.",
+          "image": "assets/images/B03-N06.png",
+          "theologicalNote": "Sub-creation and rebuilding with hope and purpose."
+        }
+      },
+      {
+        "id": "B03-N07",
+        "spreadNumber": 38,
+        "bookNumber": 3,
+        "bookTitle": "Thumpers Bad Day",
+        "chapter": 4,
+        "chapterTitle": "The remedies",
+        "isChapterStart": true,
+        "isDialogueOpening": true,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Hey thumper it's squirrel! how are you doing?",
+        "speakerBefore": {
+          "0": "Squirrel —",
+          "4": "Squirrel —"
+        },
+        "stanzas": [
           {
             "chapter": 4,
             "chapterTitle": "The remedies",
@@ -2120,33 +2415,7 @@ window.THUMPER_COLLECTION = [
               "He talked and he laughed more than he cried",
               "After Time with his friend he felt better inside"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Making plans and taking a rest",
-          "brief": "Choose the blueprint moment: Thumper with splinted leg draws a new house plan while Mole begins the foundation. Squirrel may approach carrying her picnic basket, linking the next scene naturally.",
-          "cast": "Thumper; Mole; approaching Squirrel",
-          "image": "assets/images/Squirel .png",
-          "theologicalNote": "The communion of friends: Squirrel brings fresh water, reminding the soul of creaturely goodness."
-        }
-      },
-      {
-        "id": "B03-P06",
-        "spreadNumber": 27,
-        "bookNumber": 3,
-        "bookTitle": "Thumpers Bad Day",
-        "chapter": 4,
-        "chapterTitle": "The remedies",
-        "initialPrefix": "",
-        "initialLetter": "T",
-        "firstLineRest": "hey looked up at the sky as they laid on the ground",
-        "speakerBefore": {
-          "6": "Songbird —",
-          "10": "Narrator —",
-          "11": "Squirrel —",
-          "14": "Narrator —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 4,
             "chapterTitle": "The remedies",
@@ -2156,7 +2425,32 @@ window.THUMPER_COLLECTION = [
               "Repeated again and again was the song of a bird",
               "It was singing before but it's the first time he heard"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Squirrel's Riverside Picnic",
+          "brief": "Squirrel helping Thumper relax by mountain stream with wine.",
+          "image": "assets/images/B03-N07.png",
+          "theologicalNote": "Aquinas's remedies for sorrow: friends, rest, and simple goods."
+        }
+      },
+      {
+        "id": "B03-N08",
+        "spreadNumber": 39,
+        "bookNumber": 3,
+        "bookTitle": "Thumpers Bad Day",
+        "chapter": 4,
+        "chapterTitle": "The remedies",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Squirrel tempts him nearer with a piece of a scone",
+        "speakerBefore": {
+          "4": "Songbird —",
+          "9": "Squirrel —"
+        },
+        "stanzas": [
           {
             "chapter": 4,
             "chapterTitle": "The remedies",
@@ -2194,7 +2488,32 @@ window.THUMPER_COLLECTION = [
               "But he's not solved the puzzle of why things go wrong",
               "If there's a good, all-knowing God, who also is strong"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Songbird on the Bough",
+          "brief": "Squirrel offering crumb of scone to songbird on the willow branch.",
+          "image": "assets/images/B03-N08.png",
+          "theologicalNote": "The music of creation declaring providence even in trial."
+        }
+      },
+      {
+        "id": "B03-N09",
+        "spreadNumber": 40,
+        "bookNumber": 3,
+        "bookTitle": "Thumpers Bad Day",
+        "chapter": 5,
+        "chapterTitle": "Frumper's adventure",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "B",
+        "firstLineRest": "ack at the place where his home once stood",
+        "speakerBefore": {
+          "8": "Frumper —",
+          "12": "Thumper —"
+        },
+        "stanzas": [
           {
             "chapter": 5,
             "chapterTitle": "Frumper's adventure",
@@ -2204,31 +2523,7 @@ window.THUMPER_COLLECTION = [
               "The tree where the bird perched wasn't around",
               "Someone had cut it down to the ground"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "A bird’s view of the bad day",
-          "brief": "Squirrel and Thumper rest beside the river with a picnic. A small songbird perches close to a piece of scone, drawing their attention. Thumper’s leg remains splinted.",
-          "cast": "Thumper; Squirrel; songbird",
-          "image": "assets/images/Squirel .png",
-          "theologicalNote": "The bird’s broader perspective: providence works across unseen webs of cause and effect."
-        }
-      },
-      {
-        "id": "B03-P07",
-        "spreadNumber": 28,
-        "bookNumber": 3,
-        "bookTitle": "Thumpers Bad Day",
-        "chapter": 5,
-        "chapterTitle": "Frumper's adventure",
-        "initialPrefix": "",
-        "initialLetter": "W",
-        "firstLineRest": "here the mole had popped through the hill",
-        "speakerBefore": {
-          "8": "Thumper —",
-          "12": "Frumper —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 5,
             "chapterTitle": "Frumper's adventure",
@@ -2258,7 +2553,31 @@ window.THUMPER_COLLECTION = [
               "You had a bad day where you were",
               "lightning burnt off most of your fur"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Singed Frumper at Sawmill",
+          "brief": "Frumper with singed fur carrying pine boards beside sawmill.",
+          "image": "assets/images/B03-N09.png",
+          "theologicalNote": "The divine willingness to share in creaturely suffering."
+        }
+      },
+      {
+        "id": "B03-N10",
+        "spreadNumber": 41,
+        "bookNumber": 3,
+        "bookTitle": "Thumpers Bad Day",
+        "chapter": 5,
+        "chapterTitle": "Frumper's adventure",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "You wouldn't believe the adventure I was on",
+        "speakerBefore": {
+          "0": "Frumper —"
+        },
+        "stanzas": [
           {
             "chapter": 5,
             "chapterTitle": "Frumper's adventure",
@@ -2288,31 +2607,7 @@ window.THUMPER_COLLECTION = [
               "Then my fur stood on end It was ready to flash",
               "The fawn was still stuck despite how it would thrash"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Frumper recounts the storm",
-          "brief": "Use Frumper’s recalled rescue as a clearly separate memory scene: a fawn trapped beneath a fallen tree, its mother nearby, storm rain extinguishing a forest fire. Frumper prepares to rise into the storm.",
-          "cast": "Frumper; doe; fawn",
-          "image": "assets/images/Frumper Flying Sky.png",
-          "theologicalNote": "Frumper’s storm: the mysterious preservation of life through the violent tempest."
-        }
-      },
-      {
-        "id": "B03-P08",
-        "spreadNumber": 29,
-        "bookNumber": 3,
-        "bookTitle": "Thumpers Bad Day",
-        "chapter": 5,
-        "chapterTitle": "Frumper's adventure",
-        "initialPrefix": "",
-        "initialLetter": "I",
-        "firstLineRest": " surged towards the sky with all of my might",
-        "speakerBefore": {
-          "8": "Thumper —",
-          "16": "Narrator —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 5,
             "chapterTitle": "Frumper's adventure",
@@ -2332,7 +2627,34 @@ window.THUMPER_COLLECTION = [
               "The joy that I had when I saw it survived",
               "Helped me stand up again as at last I revived"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Intercepting Lightning",
+          "brief": "Frumper diving through storm to catch lightning above pinned fawn.",
+          "image": "assets/images/B03-N10.png",
+          "theologicalNote": "Vicarious sacrifice and heroic intervention against death."
+        }
+      },
+      {
+        "id": "B03-N11",
+        "spreadNumber": 42,
+        "bookNumber": 3,
+        "bookTitle": "Thumpers Bad Day",
+        "chapter": 6,
+        "chapterTitle": "thumpers question",
+        "isChapterStart": true,
+        "isDialogueOpening": true,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "That is an adventure that much I concede",
+        "speakerBefore": {
+          "0": "Thumper —",
+          "10": "Frumper —",
+          "11": "Thumper —",
+          "12": "Frumper —"
+        },
+        "stanzas": [
           {
             "chapter": 6,
             "chapterTitle": "thumpers question",
@@ -2375,27 +2697,26 @@ window.THUMPER_COLLECTION = [
           }
         ],
         "illustration": {
-          "title": "A question and a fly",
-          "brief": "Back at the rebuilding site, Frumper opens a paw to show a tiny fly as Thumper leans in. Frumper has singed fur from the lightning but retains his mature male identity and feathered wings; no graphic burns.",
-          "cast": "Thumper; Frumper; tiny fly",
-          "image": "assets/images/Frumper .png",
-          "theologicalNote": "The fly and the rabbit: human understanding of evil is limited by creaturely horizon and scale."
+          "title": "The Fly on the Paw",
+          "brief": "Singed Frumper gently blowing a live fly from his open paw.",
+          "image": "assets/images/B03-N11.png",
+          "theologicalNote": "God's minute governance over even the smallest creature."
         }
       },
       {
-        "id": "B03-P09",
-        "spreadNumber": 30,
+        "id": "B03-N12",
+        "spreadNumber": 43,
         "bookNumber": 3,
         "bookTitle": "Thumpers Bad Day",
         "chapter": 6,
         "chapterTitle": "thumpers question",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
         "initialPrefix": "",
-        "initialLetter": "B",
-        "firstLineRest": "ut a fly to a bunny is just barely a hop",
+        "initialLetter": "",
+        "firstLineRest": "But a fly to a bunny is just barely a hop",
         "speakerBefore": {
-          "0": "Frumper —",
-          "10": "Narrator —",
-          "12": "Frumper —"
+          "0": "Frumper —"
         },
         "stanzas": [
           {
@@ -2427,7 +2748,31 @@ window.THUMPER_COLLECTION = [
               "Thumper perked up his ears to here the solution",
               "His bad day would at least reach its resolution"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "The Mountain of Wisdom",
+          "brief": "Quiet conversation on timber beam looking out toward mountains.",
+          "image": "assets/images/B03-N12.png",
+          "theologicalNote": "The perspective of eternity resolving temporal struggles."
+        }
+      },
+      {
+        "id": "B03-N13",
+        "spreadNumber": 44,
+        "bookNumber": 3,
+        "bookTitle": "Thumpers Bad Day",
+        "chapter": 7,
+        "chapterTitle": "the universe",
+        "isChapterStart": true,
+        "isDialogueOpening": true,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Everything has a nature and it imitates God",
+        "speakerBefore": {
+          "0": "Frumper —"
+        },
+        "stanzas": [
           {
             "chapter": 7,
             "chapterTitle": "the universe",
@@ -2457,28 +2802,7 @@ window.THUMPER_COLLECTION = [
               "But in the nature of fire and all that God makes",
               "Is a whisper of him and the way he creates"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "The nature of fire",
-          "brief": "Frumper and Thumper talk beside a small controlled working fire or stove at the rebuilding site. Tools, wood and the landscape support the discussion of how created things behave.",
-          "cast": "Thumper; Frumper",
-          "image": "assets/images/Frumper .png",
-          "theologicalNote": "The nature of fire: fire acts according to its God-given nature; evil is privation of the good."
-        }
-      },
-      {
-        "id": "B03-P10",
-        "spreadNumber": 31,
-        "bookNumber": 3,
-        "bookTitle": "Thumpers Bad Day",
-        "chapter": 7,
-        "chapterTitle": "the universe",
-        "initialPrefix": "",
-        "initialLetter": "A",
-        "firstLineRest": "nd look around Thumper and see what he has done",
-        "speakerBefore": {},
-        "stanzas": [
+          },
           {
             "chapter": 7,
             "chapterTitle": "the universe",
@@ -2498,7 +2822,31 @@ window.THUMPER_COLLECTION = [
               "Where is the roof! And the stairs? Where do I put my bed",
               "That’s like a baker who judges flour as if it is bread"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Judging Unfinished Framing",
+          "brief": "Frumper gesturing toward bare rafters of the incomplete cottage.",
+          "image": "assets/images/B03-N13.png",
+          "theologicalNote": "Do not judge the finished work by the unfinished foundation."
+        }
+      },
+      {
+        "id": "B03-N14",
+        "spreadNumber": 45,
+        "bookNumber": 3,
+        "bookTitle": "Thumpers Bad Day",
+        "chapter": 7,
+        "chapterTitle": "the universe",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "We don’t sit at the start of the world reading Gods mind",
+        "speakerBefore": {
+          "0": "Frumper —"
+        },
+        "stanzas": [
           {
             "chapter": 7,
             "chapterTitle": "the universe",
@@ -2538,31 +2886,7 @@ window.THUMPER_COLLECTION = [
               "God knows all that is and anything that can be",
               "But we aren’t built in abstraction but instead as a “Me”"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "An unfinished house",
-          "brief": "Thumper and Frumper stand beside the emerging timber frame beneath a broad sky. The structure is visibly unfinished, supporting the comparison between judging the beginning and seeing the whole work.",
-          "cast": "Thumper; Frumper",
-          "image": "assets/images/Thumper .png",
-          "theologicalNote": "The foundation stone: rebuilding life not on illusion, but on true metaphysical understanding."
-        }
-      },
-      {
-        "id": "B03-P11",
-        "spreadNumber": 32,
-        "bookNumber": 3,
-        "bookTitle": "Thumpers Bad Day",
-        "chapter": 7,
-        "chapterTitle": "the universe",
-        "initialPrefix": "",
-        "initialLetter": "O",
-        "firstLineRest": "ur choices of will come after we are created",
-        "speakerBefore": {
-          "4": "Narrator —",
-          "12": "Frumper —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 7,
             "chapterTitle": "the universe",
@@ -2572,10 +2896,35 @@ window.THUMPER_COLLECTION = [
               "No middle knowledge of what possible creatures might do",
               "Your choices to love come from an actual you"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Lightning Scars and Love",
+          "brief": "Thumper studying Frumper's scars in conversation about freedom.",
+          "image": "assets/images/B03-N14.png",
+          "theologicalNote": "Genuine love requires genuine creaturely freedom and choice."
+        }
+      },
+      {
+        "id": "B03-N15",
+        "spreadNumber": 46,
+        "bookNumber": 3,
+        "bookTitle": "Thumpers Bad Day",
+        "chapter": 8,
+        "chapterTitle": "Chapter 8",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "T",
+        "firstLineRest": "humper was dazed by the flurry of replies",
+        "speakerBefore": {
+          "5": "Thumper —",
+          "6": "Frumper —"
+        },
+        "stanzas": [
           {
             "chapter": 8,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 8",
             "lines": [
               "Thumper was dazed by the flurry of replies",
               "He wanted to someday become just as wise",
@@ -2585,7 +2934,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 8,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 8",
             "lines": [
               "Frumper threw him a board and asked him the dimension",
               "Maybe 10ft he guessed with apprehension",
@@ -2595,7 +2944,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 8,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 8",
             "lines": [
               "The thing that you need is a measuring rod",
               "To stretch out to length of the boards that we sawed",
@@ -2605,50 +2954,51 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 8,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 8",
             "lines": [
               "Sometimes what we suffer is deserved by our sin",
               "God doesn’t want us to continue as bad as we’ve been",
               "To be good is to be happy to be bad is to be sad",
               "He is teaching us to live happily as our heavenly Dad"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "The Measuring Rod",
+          "brief": "Frumper holding notched wooden rod against pine timber board.",
+          "image": "assets/images/B03-N15.png",
+          "theologicalNote": "The objective standard of goodness and justice."
+        }
+      },
+      {
+        "id": "B03-N16",
+        "spreadNumber": 47,
+        "bookNumber": 3,
+        "bookTitle": "Thumpers Bad Day",
+        "chapter": 8,
+        "chapterTitle": "Chapter 8",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Its better to suffer evil than ever to do it",
+        "speakerBefore": {
+          "0": "Frumper —"
+        },
+        "stanzas": [
           {
             "chapter": 8,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 8",
             "lines": [
               "Its better to suffer evil than ever to do it",
               "It can be pain that keeps us from going through with it",
               "Or maybe as simple as the handle of the door",
               "Your burn was a warning that kept you from more"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "The measuring rod",
-          "brief": "Frumper holds a measuring rod alongside a board while Thumper studies its length. Use the construction task to ground the conversation, without text labels or abstract theological symbols.",
-          "cast": "Thumper; Frumper",
-          "image": "assets/images/Frumper .png",
-          "theologicalNote": "The measuring rod: justice, virtue, and truth must be measured by an objective divine standard."
-        }
-      },
-      {
-        "id": "B03-P12",
-        "spreadNumber": 33,
-        "bookNumber": 3,
-        "bookTitle": "Thumpers Bad Day",
-        "chapter": 8,
-        "chapterTitle": "Thumpers Bad Day",
-        "initialPrefix": "",
-        "initialLetter": "S",
-        "firstLineRest": "ometimes we know we have done nothing ill",
-        "speakerBefore": {
-          "20": "Narrator —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 8,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 8",
             "lines": [
               "Sometimes we know we have done nothing ill",
               "But there can be a reason for bad things even still",
@@ -2658,7 +3008,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 8,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 8",
             "lines": [
               "Your not a victim but a hero when driven by love",
               "Compassion for others images he who’s above",
@@ -2668,17 +3018,41 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 8,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 8",
             "lines": [
               "Some things must simply pass out of existence",
               "Not everything gets eternal persistence",
               "God give material things a time to be present",
               "But if all existed at once that would hardly be pleasant"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "The Lesson of the Hot Handle",
+          "brief": "Frumper drawing attention to Thumper's burned paw from the door.",
+          "image": "assets/images/B03-N16.png",
+          "theologicalNote": "Suffering evil vs. doing evil: moral integrity."
+        }
+      },
+      {
+        "id": "B03-N17",
+        "spreadNumber": 48,
+        "bookNumber": 3,
+        "bookTitle": "Thumpers Bad Day",
+        "chapter": 8,
+        "chapterTitle": "Chapter 8",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "But you. Thumper. Look at what has occurred.",
+        "speakerBefore": {
+          "0": "Frumper —"
+        },
+        "stanzas": [
           {
             "chapter": 8,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 8",
             "lines": [
               "But you. Thumper. Look at what has occurred.",
               "In the course of just one day you secured",
@@ -2688,7 +3062,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 8,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 8",
             "lines": [
               "Your home. Reimagined and now built with your friend",
               "Answers to questions that you didn’t intend",
@@ -2698,7 +3072,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 8,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 8",
             "lines": [
               "In Silence they built his house in a field",
               "Thumper felt his leg had been suddenly healed",
@@ -2708,11 +3082,10 @@ window.THUMPER_COLLECTION = [
           }
         ],
         "illustration": {
-          "title": "Building together",
-          "brief": "Thumper and Frumper finish the cottage on the hill. Thumper now stands comfortably on his healed leg. They work as adult friends of believable scale, with pride in the completed task.",
-          "cast": "Thumper; Frumper",
-          "image": "assets/images/B03-cottage-ashes.png",
-          "theologicalNote": "The temple rebuilt: community and grace restoring what catastrophe had torn away."
+          "title": "Carrying Cedar Boards Healed",
+          "brief": "Thumper walking firmly carrying heavy cedar boards uphill.",
+          "image": "assets/images/B03-N17.png",
+          "theologicalNote": "The final restoration, healing, and resurrection of joy."
         }
       }
     ]
@@ -2720,24 +3093,26 @@ window.THUMPER_COLLECTION = [
   {
     "bookNumber": 4,
     "title": "Thumpers Inferno",
-    "theme": "The Nature of Hell, Deception, and Redemption from Below",
-    "subtitle": "The Inferno of Self-Will & the Light of the Torchbearer",
-    "borderTheme": "inferno",
+    "theme": "Sin, Deception, Pride, and the Nature of Hell",
+    "subtitle": "An Allegory on the Seven Deadly Sins & Spiritual Blindness",
+    "borderTheme": "filigree",
     "pages": [
       {
-        "id": "B04-P01",
-        "spreadNumber": 34,
+        "id": "B04-N01",
+        "spreadNumber": 49,
         "bookNumber": 4,
         "bookTitle": "Thumpers Inferno",
         "chapter": 1,
         "chapterTitle": "The Rumbling",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "M",
         "firstLineRest": "ole and hedgehog starred intently",
         "speakerBefore": {
+          "2": "Mole —",
           "4": "Hedgehog —",
-          "8": "Mole —",
-          "10": "Narrator —"
+          "8": "Mole —"
         },
         "stanzas": [
           {
@@ -2769,7 +3144,29 @@ window.THUMPER_COLLECTION = [
               "Hedgehog logged the data from the chart",
               "Mole headed outside to do his part"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Seismometer in the Shop",
+          "brief": "Hedgehog and Mole examining seismometer pendulum and trace.",
+          "image": "assets/images/B04-N01.png",
+          "theologicalNote": "Discerning spiritual signs and the rumblings of judgment."
+        }
+      },
+      {
+        "id": "B04-N02",
+        "spreadNumber": 50,
+        "bookNumber": 4,
+        "bookTitle": "Thumpers Inferno",
+        "chapter": 1,
+        "chapterTitle": "The Rumbling",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "He took a path he dug before",
+        "speakerBefore": {},
+        "stanzas": [
           {
             "chapter": 1,
             "chapterTitle": "The Rumbling",
@@ -2789,28 +3186,7 @@ window.THUMPER_COLLECTION = [
               "He smashed against the volcano floor",
               "He had never been this deep before"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "The ground begins to move",
-          "brief": "Mole and Hedgehog study a seismometer and its paper trace in the workshop. A map and probes suggest the volcano expedition. Use this moment rather than crowding Mole’s later fall into the same picture.",
-          "cast": "Mole; Hedgehog",
-          "image": "assets/images/Mole.png",
-          "theologicalNote": "Tremors in the earth: the subterranean instability of sin and spiritual unrest."
-        }
-      },
-      {
-        "id": "B04-P02",
-        "spreadNumber": 35,
-        "bookNumber": 4,
-        "bookTitle": "Thumpers Inferno",
-        "chapter": 1,
-        "chapterTitle": "The Rumbling",
-        "initialPrefix": "",
-        "initialLetter": "H",
-        "firstLineRest": "e caught his breath after the fall",
-        "speakerBefore": {},
-        "stanzas": [
+          },
           {
             "chapter": 1,
             "chapterTitle": "The Rumbling",
@@ -2830,10 +3206,37 @@ window.THUMPER_COLLECTION = [
               "Mole limped off to find a way out",
               "A tunnel to safety, an old lava spout"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Mole's Cavern Fall",
+          "brief": "Mole fallen into deep dark volcanic fissure under high ceiling.",
+          "image": "assets/images/B04-N02.png",
+          "theologicalNote": "The descent into the underworld of spiritual peril."
+        }
+      },
+      {
+        "id": "B04-N03",
+        "spreadNumber": 51,
+        "bookNumber": 4,
+        "bookTitle": "Thumpers Inferno",
+        "chapter": 2,
+        "chapterTitle": "Chapter 2",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "S",
+        "firstLineRest": "taring at the clock Hedgehog fidgeted",
+        "speakerBefore": {
+          "3": "Raven —",
+          "4": "Hedgehog —",
+          "8": "Squirrel —",
+          "10": "Hedgehog —"
+        },
+        "stanzas": [
           {
             "chapter": 2,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 2",
             "lines": [
               "Staring at the clock Hedgehog fidgeted",
               "He ought to be back form the probe that he visited",
@@ -2843,7 +3246,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 2,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 2",
             "lines": [
               "In the volcano? He asked as the bird few away",
               "He grabbed rope and supplies without a moments delay",
@@ -2853,55 +3256,56 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 2,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 2",
             "lines": [
               "Hedgehog what’s wrong, where are you speeding",
               "I’ll go with you, what help are you’re needing?",
               "Go and get Frumper we need to find mole",
               "There are all sorts of evils at work in that hole"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "The warning at the window",
-          "brief": "A raven alerts Hedgehog at his shop window. Hedgehog reaches for rope and supplies; Squirrel waits just outside ready to help. Mole remains off-scene, trapped underground.",
-          "cast": "Hedgehog; raven; Squirrel",
-          "image": "assets/images/Squirel .png",
-          "theologicalNote": "The warning voice: discernment of spirits before entering treacherous depths."
-        }
-      },
-      {
-        "id": "B04-P03",
-        "spreadNumber": 36,
-        "bookNumber": 4,
-        "bookTitle": "Thumpers Inferno",
-        "chapter": 2,
-        "chapterTitle": "Thumpers Inferno",
-        "initialPrefix": "",
-        "initialLetter": "S",
-        "firstLineRest": "he darted and jumped and ran and leaped",
-        "speakerBefore": {
-          "4": "Frumper —",
-          "8": "Squirrel —",
-          "9": "Frumper —",
-          "10": "Hedgehog —",
-          "12": "Thumper —",
-          "13": "Narrator —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 2,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 2",
             "lines": [
               "She darted and jumped and ran and leaped",
               "She got to the house and out both bunnies stepped",
               "They caught up to hedgehog at the volcano’s rim",
               "They stared down the hole and their faced grew grim"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "At the Volcano Rim",
+          "brief": "Rescue party with coiled rope peering into the smoking pit.",
+          "image": "assets/images/B04-N03.png",
+          "theologicalNote": "The harrowing of hell: stepping into danger to save the lost."
+        }
+      },
+      {
+        "id": "B04-N04",
+        "spreadNumber": 52,
+        "bookNumber": 4,
+        "bookTitle": "Thumpers Inferno",
+        "chapter": 2,
+        "chapterTitle": "Chapter 2",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "I’ll fly you each to the bottom but listen to me",
+        "speakerBefore": {
+          "0": "Frumper —",
+          "4": "Squirrel —",
+          "5": "Frumper —",
+          "6": "Hedgehog —",
+          "8": "Thumper —",
+          "17": "Bat —"
+        },
+        "stanzas": [
           {
             "chapter": 2,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 2",
             "lines": [
               "I’ll fly you each to the bottom but listen to me",
               "Don’t trust your eyes and the things that you see",
@@ -2911,7 +3315,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 2,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 2",
             "lines": [
               "“I see eyes in the walls” Squirrel said when she landed",
               "“Don't look at them back” Frumper quickly commanded",
@@ -2921,7 +3325,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 2,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 2",
             "lines": [
               "“Blood” said thumper,  mole went this direction",
               "Tracking the drops through each tunnels intersection",
@@ -2931,53 +3335,54 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 2,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 2",
             "lines": [
               "They came to a cave full of bats upside down",
               "Which flipped right-side up when Frumper was around",
               "They screeched when they saw him and darted in panic",
               "An eruption of fear that itself was volcanic"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Into the volcano",
-          "brief": "Frumper leads Thumper, Hedgehog and Squirrel through a volcanic tunnel with a torch. They stay close; distant rats’ eyes and retreating bats suggest danger. Mole is not yet with them.",
-          "cast": "Frumper; Thumper; Hedgehog; Squirrel; distant bats and rats",
-          "image": "assets/images/B04-torch-cavern.png",
-          "theologicalNote": "Descent into the dark abyss: Frumper leads with the unextinguished flame of divine light."
-        }
-      },
-      {
-        "id": "B04-P04",
-        "spreadNumber": 37,
-        "bookNumber": 4,
-        "bookTitle": "Thumpers Inferno",
-        "chapter": 2,
-        "chapterTitle": "Thumpers Inferno",
-        "initialPrefix": "",
-        "initialLetter": "O",
-        "firstLineRest": "ne shouted his name as he clawed out of sight",
-        "speakerBefore": {
-          "12": "Squirrel —",
-          "14": "Narrator —",
-          "16": "Frumper —",
-          "17": "Narrator —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 2,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 2",
             "lines": [
               "One shouted his name as he clawed out of sight",
               "“A creature of day not a creature of night!”",
               "And other such phrases torn through the gloom",
               "As the bats disappeared and they came to a room"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Descent Into the Gloom",
+          "brief": "Frumper leading companions with blazing torch along blood trail.",
+          "image": "assets/images/B04-N04.png",
+          "theologicalNote": "Light penetrating into infernal darkness."
+        }
+      },
+      {
+        "id": "B04-N05",
+        "spreadNumber": 53,
+        "bookNumber": 4,
+        "bookTitle": "Thumpers Inferno",
+        "chapter": 3,
+        "chapterTitle": "Chapter 3",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "T",
+        "firstLineRest": "humper could hardly believe what he saw",
+        "speakerBefore": {
+          "6": "Cave bunnies —",
+          "7": "Thumper —",
+          "8": "Squirrel —",
+          "12": "Frumper —"
+        },
+        "stanzas": [
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "Thumper could hardly believe what he saw",
               "He rubbed his eyes with the back of his paw",
@@ -2987,7 +3392,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "One tossed a loaf to another who motioned to thumper",
               "She drizzled on honey and caked it with butter",
@@ -2997,7 +3402,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "Feast? Said Squirrel all I see is darkness",
               "Rocks on the ground, smoke, grime, and starkness",
@@ -3007,7 +3412,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "“Put it down Thumper” he yelled over to him",
               "But Frumper looked gaunt and dangerously thin",
@@ -3017,31 +3422,31 @@ window.THUMPER_COLLECTION = [
           }
         ],
         "illustration": {
-          "title": "The deceptive feast",
-          "brief": "Thumper is drawn toward what appears to be a grassy feast. Frumper’s torch reveals bare volcanic rock at one edge of that illusion. Compose the two readings clearly as deception and revelation, not two separate real worlds.",
-          "cast": "Thumper; Frumper; Squirrel; deceived rabbits",
-          "image": "assets/images/bunnies book 1 .png",
-          "theologicalNote": "The banquet of illusions: sin promises fulfillment but offers only ashes and hollow stone."
+          "title": "Glamour of the Cave Rabbits",
+          "brief": "Thumper reaching for false honey-bread exposed as stone-chewing.",
+          "image": "assets/images/B04-N05.png",
+          "theologicalNote": "The deceit of sin: gluttony and false sensory satisfaction."
         }
       },
       {
-        "id": "B04-P05",
-        "spreadNumber": 38,
+        "id": "B04-N06",
+        "spreadNumber": 54,
         "bookNumber": 4,
         "bookTitle": "Thumpers Inferno",
         "chapter": 3,
-        "chapterTitle": "Thumpers Inferno",
+        "chapterTitle": "Chapter 3",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
         "initialPrefix": "",
-        "initialLetter": "H",
-        "firstLineRest": "e couldn’t see it, but in the light to the flame",
+        "initialLetter": "",
+        "firstLineRest": "He couldn’t see it, but in the light to the flame",
         "speakerBefore": {
-          "8": "Frumper —",
-          "10": "Narrator —"
+          "8": "Frumper —"
         },
         "stanzas": [
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "He couldn’t see it, but in the light to the flame",
               "The bunnies faces were painful and twisted with shame",
@@ -3051,7 +3456,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "Frumper swooped over to thumper and whispered a word",
               "He handed him some berries but the rest was not heard",
@@ -3061,17 +3466,43 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 3,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 3",
             "lines": [
               "“Don’t think about warning or changing their minds”",
               "“If you find them down here then they want to be blind”",
               "With that Frumper lead them on, further below",
               "Thumper still could here the chorus just like an echo"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Real Berries in Torchlight",
+          "brief": "Frumper handing real berries as jagged stone falls from paw.",
+          "image": "assets/images/B04-N06.png",
+          "theologicalNote": "True spiritual nourishment awakening the soul from delusion."
+        }
+      },
+      {
+        "id": "B04-N07",
+        "spreadNumber": 55,
+        "bookNumber": 4,
+        "bookTitle": "Thumpers Inferno",
+        "chapter": 4,
+        "chapterTitle": "Chapter 4",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "T",
+        "firstLineRest": "he decent was steep and they clung to the walls",
+        "speakerBefore": {
+          "10": "Bat —",
+          "12": "Bat —",
+          "15": "Bat —"
+        },
+        "stanzas": [
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "The decent was steep and they clung to the walls",
               "In the dark and smoke there were slips there where falls",
@@ -3081,46 +3512,17 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "Squirrel was exhausted as she walked in the rear",
               "The dark of the volcano drained her of her cheer",
               "She stepped off the path, not that she knew",
               "But out of the shadows a new danger grew"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "The rock drops from his paw",
-          "brief": "Frumper offers Thumper berries as a stone falls from Thumper’s paw. Torchlight reveals the barren cave and distressed rabbits. Squirrel and Hedgehog wait along the descending path.",
-          "cast": "Thumper; Frumper; Hedgehog; Squirrel; distant rabbits",
-          "image": "assets/images/Thumper .png",
-          "theologicalNote": "The stone falls: the moment of moral clarity where false promises are recognized."
-        }
-      },
-      {
-        "id": "B04-P06",
-        "spreadNumber": 39,
-        "bookNumber": 4,
-        "bookTitle": "Thumpers Inferno",
-        "chapter": 4,
-        "chapterTitle": "Thumpers Inferno",
-        "initialPrefix": "",
-        "initialLetter": "A",
-        "firstLineRest": " bat slowly stepped out of the shadows",
-        "speakerBefore": {
-          "2": "Bat —",
-          "4": "Bat —",
-          "5": "Narrator —",
-          "11": "Squirrel —",
-          "12": "Bat —",
-          "14": "Squirrel —",
-          "16": "Narrator —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "A bat slowly stepped out of the shadows",
               "She saw him ahead and with fear she froze",
@@ -3130,17 +3532,44 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "Take a peek, you don’t need to believe me",
               "She crept over closer to see what she could see",
               "Sure enough a big slide could bring her to the ground",
               "“I thought that squirrels where the nimblest creatures around”"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Temptation on the Precipice",
+          "brief": "Sly bat coaxing weary Squirrel toward the smooth slide.",
+          "image": "assets/images/B04-N07.png",
+          "theologicalNote": "Sloth and the seductive ease of the downward path."
+        }
+      },
+      {
+        "id": "B04-N08",
+        "spreadNumber": 56,
+        "bookNumber": 4,
+        "bookTitle": "Thumpers Inferno",
+        "chapter": 4,
+        "chapterTitle": "Chapter 4",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "The Bat smiled, “you where lagging behind”",
+        "speakerBefore": {
+          "0": "Bat —",
+          "3": "Squirrel —",
+          "4": "Bat —",
+          "6": "Squirrel —"
+        },
+        "stanzas": [
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "The Bat smiled, “you where lagging behind”",
               "“Saw you tripping over rocks like you where blind”",
@@ -3150,7 +3579,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "“Close? He will catch you at the end”",
               "“You would be listening to the words of your friend”",
@@ -3160,7 +3589,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "Frumper stopped so fast the rest ran into him",
               "Squirrel was running off a cliff and had reached the brim",
@@ -3170,7 +3599,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 4,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 4",
             "lines": [
               "The light from the torch cut through the illusion",
               "As she stoped on the edge of the lethal delusion",
@@ -3180,31 +3609,36 @@ window.THUMPER_COLLECTION = [
           }
         ],
         "illustration": {
-          "title": "The false slide",
-          "brief": "Squirrel stops at the lip of a cliff as Frumper’s raised torch exposes the fatal drop beneath a fading false slide. A bat retreats into shadow. Keep the image legible as a warning and rescue.",
-          "cast": "Squirrel; Frumper; bat; Thumper and Hedgehog behind",
-          "image": "assets/images/Squirel .png",
-          "theologicalNote": "The false slide: the smooth, enticing descent of vice that accelerates into entrapment."
+          "title": "Torch Reveals the Abyss",
+          "brief": "Frumper's torch exposing fatal drop and open pit beneath slide.",
+          "image": "assets/images/B04-N08.png",
+          "theologicalNote": "Truth unmasking the deadly end of temptation."
         }
       },
       {
-        "id": "B04-P07",
-        "spreadNumber": 40,
+        "id": "B04-N09",
+        "spreadNumber": 57,
         "bookNumber": 4,
         "bookTitle": "Thumpers Inferno",
         "chapter": 5,
-        "chapterTitle": "Thumpers Inferno",
+        "chapterTitle": "Chapter 5",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "A",
         "firstLineRest": " burst of fresh air at last hit their faces",
         "speakerBefore": {
-          "4": "Hedgehog —",
-          "6": "Narrator —"
+          "2": "Hedgehog —",
+          "7": "Proditor —",
+          "8": "Proditor —",
+          "10": "Hedgehog —",
+          "12": "Proditor —",
+          "14": "Hedgehog —"
         },
         "stanzas": [
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "A burst of fresh air at last hit their faces",
               "As they walked by a shaft in the darkest of places",
@@ -3214,7 +3648,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "I set a probe by this place in the ground long ago",
               "I wonder what, if I found it, the reading might show",
@@ -3224,7 +3658,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "He tapped it like a drumstick on the base of a rock",
               "What is it? A clock? Can it tick can it tock",
@@ -3234,17 +3668,45 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "What is all this stuff why are you down here",
               "A growl in his voice on his face a sneer",
               "I'll say it simply so you'll understand",
               "Your volcano could blow and destroy both our lands"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Proditor with the Probe",
+          "brief": "Dog-sized Proditor sneering with red eyes tapping metal probe.",
+          "image": "assets/images/B04-N09.png",
+          "theologicalNote": "Pride and intellectual cynicism mocking truth."
+        }
+      },
+      {
+        "id": "B04-N10",
+        "spreadNumber": 58,
+        "bookNumber": 4,
+        "bookTitle": "Thumpers Inferno",
+        "chapter": 5,
+        "chapterTitle": "Chapter 5",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "What? Said the bat with a look of surprise",
+        "speakerBefore": {
+          "0": "Proditor —",
+          "5": "Proditor —",
+          "8": "Proditor —",
+          "12": "Proditor —",
+          "14": "Thumper —"
+        },
+        "stanzas": [
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "What? Said the bat with a look of surprise",
               "He would have known he was acting if he had looked in his eyes",
@@ -3254,40 +3716,15 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "The great bat then commanded in a thundering voice",
               "Bring forth the throne And the ropes and the hoist"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "The probe and the false offer",
-          "brief": "Hedgehog confronts a bat holding his probe near a vertical shaft. The creature offers a throne and hoisting ropes; Hedgehog has not yet been tied. Keep Proditor consistent with his reference if visible in the shadows.",
-          "cast": "Hedgehog; bat; distant Proditor",
-          "image": "assets/images/B04-proditor-giant.png",
-          "theologicalNote": "Proditor’s sophistry: the adversary who exploits legitimate needs to offer enslaving bargains."
-        }
-      },
-      {
-        "id": "B04-P08",
-        "spreadNumber": 41,
-        "bookNumber": 4,
-        "bookTitle": "Thumpers Inferno",
-        "chapter": 5,
-        "chapterTitle": "Thumpers Inferno",
-        "initialPrefix": "",
-        "initialLetter": "W",
-        "firstLineRest": "e will hoist you up the shaft above the volcano",
-        "speakerBefore": {
-          "0": "Bat —",
-          "8": "Thumper —",
-          "9": "Narrator —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "We will hoist you up the shaft above the volcano",
               "Then you shout down commands and will surely obey you"
@@ -3295,7 +3732,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "Say dig and will dig or stop and will stop",
               "We can't have the volcano blowing its top",
@@ -3305,17 +3742,42 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "Bow your head now it's all part of the harness",
               "Let me tighten that knot your Royal Highness",
               "What's that sound said thumper That evil laughter",
               "Hedgehog was strung up like a puppet up by the rafters"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Puppet in the Shaft",
+          "brief": "Hedgehog suspended by cords in mocking puppet coronation.",
+          "image": "assets/images/B04-N10.png",
+          "theologicalNote": "Vainglory and the mockery of creaturely pride."
+        }
+      },
+      {
+        "id": "B04-N11",
+        "spreadNumber": 59,
+        "bookNumber": 4,
+        "bookTitle": "Thumpers Inferno",
+        "chapter": 5,
+        "chapterTitle": "Chapter 5",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "The bats were moving his limbs with strings And mocking",
+        "speakerBefore": {
+          "17": "Hedgehog —",
+          "18": "Squirrel —"
+        },
+        "stanzas": [
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "The bats were moving his limbs with strings And mocking",
               "But they covered his mouth to stop him from talking",
@@ -3325,7 +3787,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "Frumper flew in, The bats again retreated",
               "But Proditor had not yet conceded",
@@ -3335,41 +3797,17 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "Frumper had flown up the cave to its roof",
               "Waiting by a stalagtite while relaxing aloof",
               "Proditor turned out his claws and charged at his foe",
               "Frumper snapped off a stalagtite as it drop below"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "The puppet trap",
-          "brief": "Bats suspend Hedgehog on cords in the cavern while Frumper flies toward the roof to rescue him. Proditor watches below with black fur, red eyes and his reference dark clothing. Hedgehog remains adult-sized.",
-          "cast": "Hedgehog; Frumper; Proditor; bats; Thumper and Squirrel below",
-          "image": "assets/images/B04-proditor-giant.png",
-          "theologicalNote": "The puppet strings: the true nature of sin revealed as bondage under the rafters of despair."
-        }
-      },
-      {
-        "id": "B04-P09",
-        "spreadNumber": 42,
-        "bookNumber": 4,
-        "bookTitle": "Thumpers Inferno",
-        "chapter": 5,
-        "chapterTitle": "Thumpers Inferno",
-        "initialPrefix": "",
-        "initialLetter": "I",
-        "firstLineRest": "t sunk in his chest and pinned him to the earth",
-        "speakerBefore": {
-          "16": "Mole —",
-          "18": "Narrator —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "It sunk in his chest and pinned him to the earth",
               "Then frumper asked hedgehog to drop his cords and come forth",
@@ -3379,17 +3817,45 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 5,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 5",
             "lines": [
               "Hedgehog took a rock and hurled it at the bat",
               "You deceitful horrid creature why don’t you take that!",
               "Squirrel whispered to Thumper “how did mole get through”",
               "I can’t imagine, Thumper can you?"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Stalactite Crushes Proditor",
+          "brief": "Frumper dropping stalactite pinning Proditor as cords slacken.",
+          "image": "assets/images/B04-N11.png",
+          "theologicalNote": "The sudden overthrow of demonic deception."
+        }
+      },
+      {
+        "id": "B04-N12",
+        "spreadNumber": 60,
+        "bookNumber": 4,
+        "bookTitle": "Thumpers Inferno",
+        "chapter": 6,
+        "chapterTitle": "Chapter 6",
+        "isChapterStart": true,
+        "isDialogueOpening": true,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Its then that squirrel heard it, “Why how do you do”",
+        "speakerBefore": {
+          "0": "Mole —",
+          "1": "Squirrel —",
+          "5": "Mole —",
+          "12": "Hedgehog & Mole —",
+          "15": "Mole —"
+        },
+        "stanzas": [
           {
             "chapter": 6,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 6",
             "lines": [
               "Its then that squirrel heard it, “Why how do you do”",
               "“Mole, is it really, is it actually you!”",
@@ -3399,7 +3865,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 6,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 6",
             "lines": [
               "How did you make it through all the traps?",
               "Why, Look right here on my eyes at these flaps",
@@ -3409,48 +3875,52 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 6,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 6",
             "lines": [
               "I won’t let these creatures get into my head",
               "Don’t care about a word that the dark creatures said",
               "Thumper hoisted his friend mole friend onto his back",
               "But as they turned to leave they saw a red glow in the black"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Mole is found",
-          "brief": "The group gathers around Mole, who demonstrates how he closed his eyes and ears to resist deception. Frumper and Hedgehog have rejoined the group. Proditor’s defeat may remain out of frame.",
-          "cast": "Mole; Thumper; Frumper; Hedgehog; Squirrel",
-          "image": "assets/images/Mole.png",
-          "theologicalNote": "Mole in the pit: no soul is abandoned by the faithful shepherd in the labyrinth of darkness."
-        }
-      },
-      {
-        "id": "B04-P10",
-        "spreadNumber": 43,
-        "bookNumber": 4,
-        "bookTitle": "Thumpers Inferno",
-        "chapter": 6,
-        "chapterTitle": "Thumpers Inferno",
-        "initialPrefix": "",
-        "initialLetter": "H",
-        "firstLineRest": "edgehog and mole at the same time yelled eruption!",
-        "speakerBefore": {},
-        "stanzas": [
+          },
           {
             "chapter": 6,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 6",
             "lines": [
               "Hedgehog and mole at the same time yelled eruption!",
               "They where correct in this fearful deduction",
               "They where trapped by the magma blocking their way",
               "“I crawled down here to find a tunnel to the bay”"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Finding Mole with Eye Flaps",
+          "brief": "Mole found smiling with ear/eye flaps as lava approaches.",
+          "image": "assets/images/B04-N12.png",
+          "theologicalNote": "Spiritual prudence guarding the senses from seduction."
+        }
+      },
+      {
+        "id": "B04-N13",
+        "spreadNumber": 61,
+        "bookNumber": 4,
+        "bookTitle": "Thumpers Inferno",
+        "chapter": 6,
+        "chapterTitle": "Chapter 6",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Maybe we can find it and escape towards the sea",
+        "speakerBefore": {
+          "0": "Mole —",
+          "3": "Thumper —"
+        },
+        "stanzas": [
           {
             "chapter": 6,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 6",
             "lines": [
               "Maybe we can find it and escape towards the sea",
               "They each searched the cavern to find a way to get free",
@@ -3460,7 +3930,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 6,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 6",
             "lines": [
               "The smoke was drifting around a great boulder",
               "Squirrel pushed at the side but if was far to much for her",
@@ -3470,7 +3940,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 6,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 6",
             "lines": [
               "Magma lit him up red as he raced with great speed",
               "Into the rock is where his path would lead",
@@ -3480,7 +3950,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 6,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 6",
             "lines": [
               "They walked up to safety towards the light of the sun",
               "Thankful that this ordeal was finally done",
@@ -3490,7 +3960,7 @@ window.THUMPER_COLLECTION = [
           },
           {
             "chapter": 6,
-            "chapterTitle": "",
+            "chapterTitle": "Chapter 6",
             "lines": [
               "Frumper lit a fire and Thumper caught a fish",
               "They talked and they laughed as they finished the dish"
@@ -3498,11 +3968,10 @@ window.THUMPER_COLLECTION = [
           }
         ],
         "illustration": {
-          "title": "The passage to safety",
-          "brief": "Frumper breaks the boulder blocking the escape tunnel while Thumper, carrying Mole, follows with Hedgehog and Squirrel. Red magma lights the cavern behind and daylight lies ahead.",
-          "cast": "Frumper; Thumper; Mole; Hedgehog; Squirrel",
-          "image": "assets/images/B04-torch-cavern.png",
-          "theologicalNote": "Ascent toward the dawn: following the winged guide up through the chimney of redemption."
+          "title": "Breaching the Sea Tunnel",
+          "brief": "Frumper shattering boulder opening tunnel to daylight and ocean.",
+          "image": "assets/images/B04-N13.png",
+          "theologicalNote": "Liberation and triumph over the infernal abyss."
         }
       }
     ]
@@ -3510,17 +3979,19 @@ window.THUMPER_COLLECTION = [
   {
     "bookNumber": 5,
     "title": "Necessary Beetles",
-    "theme": "Contingency, Necessity, and the Christian Social Order",
-    "subtitle": "Avicenna’s Proof of the Necessary Existent & the True Banquet",
-    "borderTheme": "scarab",
+    "theme": "Justice, Mercy, Idolatry, and the Beatific Vision",
+    "subtitle": "An Allegory on Idolatry, Modernity, and the Eternal Banquet",
+    "borderTheme": "laurel",
     "pages": [
       {
-        "id": "B05-P01",
-        "spreadNumber": 44,
+        "id": "B05-N01",
+        "spreadNumber": 62,
         "bookNumber": 5,
         "bookTitle": "Necessary Beetles",
         "chapter": 1,
         "chapterTitle": "The Entrance",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "I",
         "firstLineRest": "ts not a pleasant sound to hear a weasel sing",
@@ -3555,7 +4026,32 @@ window.THUMPER_COLLECTION = [
               "But when they come to town their on good behavior",
               "They seem like the type of thing you want as your neighbor"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Weasels on Rat-Drawn Wagon",
+          "brief": "Ragged weasels riding wooden wagon pulled by rats down forest road.",
+          "image": "assets/images/B05-N01.png",
+          "theologicalNote": "The arrival of sophistry, greed, and moral corruption."
+        }
+      },
+      {
+        "id": "B05-N02",
+        "spreadNumber": 63,
+        "bookNumber": 5,
+        "bookTitle": "Necessary Beetles",
+        "chapter": 1,
+        "chapterTitle": "The Entrance",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "In fact, they come with a solution for all that you need",
+        "speakerBefore": {
+          "5": "Hedgehog —",
+          "11": "Hedgehog —"
+        },
+        "stanzas": [
           {
             "chapter": 1,
             "chapterTitle": "The Entrance",
@@ -3575,33 +4071,7 @@ window.THUMPER_COLLECTION = [
               "But soon he’s surrounded then tossed in this shop",
               "They board up the door and drive nails through the top"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "The weasels arrive",
-          "brief": "A rat-drawn wagon of ragged weasel merchants stops near Hedgehog’s clock shop. Hedgehog blocks their way with a firm stance. Introduce the weasels as cunning adult creatures without changing the established cast.",
-          "cast": "Hedgehog; weasels; wagon-pulling rats",
-          "image": "assets/images/B05-weasels-cart.png",
-          "theologicalNote": "The arrival of the sophists: weasels peddling counterfeit solutions to gullible seekers."
-        }
-      },
-      {
-        "id": "B05-P02",
-        "spreadNumber": 45,
-        "bookNumber": 5,
-        "bookTitle": "Necessary Beetles",
-        "chapter": 1,
-        "chapterTitle": "The Entrance",
-        "initialPrefix": "",
-        "initialLetter": "L",
-        "firstLineRest": "aughing they head off back on their way",
-        "speakerBefore": {
-          "4": "Weasel —",
-          "6": "Narrator —",
-          "8": "Weasel —",
-          "16": "Narrator —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 1,
             "chapterTitle": "The Entrance",
@@ -3611,7 +4081,34 @@ window.THUMPER_COLLECTION = [
               "Through the door they hear hedgehog still yelling",
               "Turn around now they won’t buy what you’re selling!"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Boarding Up the Shop",
+          "brief": "Weasel hammering boards across clock shop door trapping Hedgehog.",
+          "image": "assets/images/B05-N02.png",
+          "theologicalNote": "Silencing the voice of reason and tradition."
+        }
+      },
+      {
+        "id": "B05-N03",
+        "spreadNumber": 64,
+        "bookNumber": 5,
+        "bookTitle": "Necessary Beetles",
+        "chapter": 2,
+        "chapterTitle": "Pets",
+        "isChapterStart": true,
+        "isDialogueOpening": true,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Get your beetles! Come buy a pet!",
+        "speakerBefore": {
+          "0": "Weasel —",
+          "4": "Weasel —",
+          "8": "Weasel —",
+          "13": "Weasel —"
+        },
+        "stanzas": [
           {
             "chapter": 2,
             "chapterTitle": "Pets",
@@ -3651,28 +4148,7 @@ window.THUMPER_COLLECTION = [
               "Maybe that would be enough for a beetle that needs food",
               "For a necessary beetle such an offer is rude"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Necessary beetles for sale",
-          "brief": "Weasel merchants display beetles in glass containers on their wagon while rabbits offer coins. Hedgehog’s boarded shop can be seen behind. No sales lettering needs to be painted into the image.",
-          "cast": "Weasels; ordinary rabbits; beetles",
-          "image": "assets/images/B05-weasels-cart.png",
-          "theologicalNote": "The market of contingent novelties: consumerism trying to buy necessity in temporary trinkets."
-        }
-      },
-      {
-        "id": "B05-P03",
-        "spreadNumber": 46,
-        "bookNumber": 5,
-        "bookTitle": "Necessary Beetles",
-        "chapter": 2,
-        "chapterTitle": "Pets",
-        "initialPrefix": "",
-        "initialLetter": "T",
-        "firstLineRest": "he weasels looks at each other with delight",
-        "speakerBefore": {},
-        "stanzas": [
+          },
           {
             "chapter": 2,
             "chapterTitle": "Pets",
@@ -3692,7 +4168,36 @@ window.THUMPER_COLLECTION = [
               "But night was upon them and the selling had ceased",
               "He had not changed their minds no, not in the least."
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Selling Beetles from the Cart",
+          "brief": "Weasels peddling beetle jars as necessary pets to rabbit crowd.",
+          "image": "assets/images/B05-weasels-cart.png",
+          "theologicalNote": "Idolatry: worshipping created things rather than the Creator."
+        }
+      },
+      {
+        "id": "B05-N04",
+        "spreadNumber": 65,
+        "bookNumber": 5,
+        "bookTitle": "Necessary Beetles",
+        "chapter": 3,
+        "chapterTitle": "The light of the moon",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "T",
+        "firstLineRest": "hats when he heard it, a sound from a bush",
+        "speakerBefore": {
+          "2": "Sina —",
+          "6": "Sina —",
+          "8": "Sina —",
+          "14": "Sina —",
+          "16": "Weasel —",
+          "18": "Weasel —"
+        },
+        "stanzas": [
           {
             "chapter": 3,
             "chapterTitle": "The light of the moon",
@@ -3732,36 +4237,7 @@ window.THUMPER_COLLECTION = [
               "“Ooopsss, I squashed one was it not necessary",
               "Passing out of existence it doesn’t seem very\""
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Sina in the moonlight",
-          "brief": "Thumper watches as Sina, a long dark-scaled snake, coils near a weasel and the beetle containers beside a tree. Crescent moonlight catches the scales. Establish Sina’s design as a proposal for review.",
-          "cast": "Thumper; Sina; one weasel; beetles",
-          "image": "assets/images/B05-sina-black-snake.png",
-          "theologicalNote": "Sina in the moonlight: the profound philosophical dialectic between the intellect and the serpent."
-        }
-      },
-      {
-        "id": "B05-P04",
-        "spreadNumber": 47,
-        "bookNumber": 5,
-        "bookTitle": "Necessary Beetles",
-        "chapter": 3,
-        "chapterTitle": "The light of the moon",
-        "initialPrefix": "“",
-        "initialLetter": "O",
-        "firstLineRest": "h, that one is contingent they all look alike”",
-        "speakerBefore": {
-          "0": "Weasel —",
-          "1": "Narrator —",
-          "4": "Sina —",
-          "7": "Thumper —",
-          "8": "Sina —",
-          "16": "Narrator —",
-          "19": "Thumper —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 3,
             "chapterTitle": "The light of the moon",
@@ -3771,7 +4247,37 @@ window.THUMPER_COLLECTION = [
               "Why, another will hatch, I’ll give it to you",
               "Sina wound up so close that he slid on his shoe"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Sina Under Crescent Moon",
+          "brief": "Black snake Sina coiling around weasel by river willow tree.",
+          "image": "assets/images/B05-N04.png",
+          "theologicalNote": "Prudence confronting deceit under the natural light of truth."
+        }
+      },
+      {
+        "id": "B05-N05",
+        "spreadNumber": 66,
+        "bookNumber": 5,
+        "bookTitle": "Necessary Beetles",
+        "chapter": 3,
+        "chapterTitle": "The light of the moon",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "“So slick weasels but that’s proof you aren’t truthful",
+        "speakerBefore": {
+          "0": "Sina —",
+          "2": "Weasel —",
+          "3": "Thumper —",
+          "4": "Sina —",
+          "8": "Sina —",
+          "15": "Thumper —",
+          "16": "Thumper —"
+        },
+        "stanzas": [
           {
             "chapter": 3,
             "chapterTitle": "The light of the moon",
@@ -3824,31 +4330,31 @@ window.THUMPER_COLLECTION = [
           }
         ],
         "illustration": {
-          "title": "The question under pressure",
-          "brief": "Thumper concentrates on Sina’s question while the snake restrains the weasel in coils. Show urgency through faces and posture, without an exaggerated strangulation close-up. Keep Thumper mature and proportionate.",
-          "cast": "Thumper; Sina; restrained weasel",
-          "image": "assets/images/B05-sina-black-snake.png",
-          "theologicalNote": "Avicenna’s Third Way: a collection of contingent beings remains contingent; aggregate cannot create necessity."
+          "title": "Tightened Coils and Logic",
+          "brief": "Sina constricting weasel as Thumper pleads with raised paw.",
+          "image": "assets/images/B05-N05.png",
+          "theologicalNote": "The dialectic of justice, mercy, and logical necessity."
         }
       },
       {
-        "id": "B05-P05",
-        "spreadNumber": 48,
+        "id": "B05-N06",
+        "spreadNumber": 67,
         "bookNumber": 5,
         "bookTitle": "Necessary Beetles",
         "chapter": 3,
         "chapterTitle": "The light of the moon",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
         "initialPrefix": "",
-        "initialLetter": "M",
-        "firstLineRest": "aybe the causes make a circle this is how it prevails",
+        "initialLetter": "",
+        "firstLineRest": "Maybe the causes make a circle this is how it prevails",
         "speakerBefore": {
-          "2": "Narrator —",
+          "0": "Thumper —",
           "3": "Sina —",
           "4": "Thumper —",
           "7": "Sina —",
-          "8": "Narrator —",
           "9": "Thumper —",
-          "18": "Narrator —"
+          "19": "Sina —"
         },
         "stanzas": [
           {
@@ -3900,7 +4406,34 @@ window.THUMPER_COLLECTION = [
               "The weasel fell to his knees as he struggled for breath",
               "So long thumper, Sina said as he uncoiled and left"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Sina Releases the Weasel",
+          "brief": "Weasel gasping on knees as Sina uncoils and slips away into night.",
+          "image": "assets/images/B05-S05-weasel-released.png",
+          "theologicalNote": "Justice tempered with mercy; the refutation of circularity."
+        }
+      },
+      {
+        "id": "B05-N07",
+        "spreadNumber": 68,
+        "bookNumber": 5,
+        "bookTitle": "Necessary Beetles",
+        "chapter": 4,
+        "chapterTitle": "the elixir",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "M",
+        "firstLineRest": "ole met the weasels as they sold an elixir",
+        "speakerBefore": {
+          "2": "Weasels —",
+          "6": "Weasels —",
+          "10": "Weasels —",
+          "13": "Weasels —"
+        },
+        "stanzas": [
           {
             "chapter": 4,
             "chapterTitle": "the elixir",
@@ -3910,33 +4443,7 @@ window.THUMPER_COLLECTION = [
               "Look at your homes, your cloths, your food!",
               "Why are you the only one without wealth accrued?"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "The weasel is released",
-          "brief": "Sina uncoils and slips toward the river as the relieved weasel kneels beside the tree. Thumper stands firm, having finished his argument. The next scam can remain out of frame.",
-          "cast": "Thumper; Sina; one weasel",
-          "image": "assets/images/B05-S05-weasel-released.png",
-          "theologicalNote": "The impossibility of infinite regress: dependent causes must terminate in a Self-Existent Being."
-        }
-      },
-      {
-        "id": "B05-P06",
-        "spreadNumber": 49,
-        "bookNumber": 5,
-        "bookTitle": "Necessary Beetles",
-        "chapter": 4,
-        "chapterTitle": "the elixir",
-        "initialPrefix": "",
-        "initialLetter": "Y",
-        "firstLineRest": "ou, there in the crowd do you not work hard?",
-        "speakerBefore": {
-          "0": "Weasel —",
-          "6": "Narrator —",
-          "12": "Weasel —",
-          "14": "Narrator —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 4,
             "chapterTitle": "the elixir",
@@ -3966,7 +4473,32 @@ window.THUMPER_COLLECTION = [
               "Then minutes thereafter he came back into view",
               "He had a ring on his finger and his clothes where all new"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Selling the Elixir",
+          "brief": "Weasels selling miracle potion as rabbit flaunts stolen vest.",
+          "image": "assets/images/B05-N07.png",
+          "theologicalNote": "Consumerism and the illusion of instant transformation."
+        }
+      },
+      {
+        "id": "B05-N08",
+        "spreadNumber": 69,
+        "bookNumber": 5,
+        "bookTitle": "Necessary Beetles",
+        "chapter": 4,
+        "chapterTitle": "the elixir",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "Behold! Gentile rabbits, the elixir’s effective",
+        "speakerBefore": {
+          "0": "Weasels —",
+          "12": "Rabbits —"
+        },
+        "stanzas": [
           {
             "chapter": 4,
             "chapterTitle": "the elixir",
@@ -3996,31 +4528,7 @@ window.THUMPER_COLLECTION = [
               "Mole went back to the town and saw it all looted",
               "Now all the the bunnies argued and disputed"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "The elixir’s false wealth",
-          "brief": "Mole watches rabbits return to the wagon carrying clothing and trinkets taken from their neighbors. Weasels offer a flask as the first quarrel breaks out. Convey confusion rather than a festive success.",
-          "cast": "Mole; weasels; arguing ordinary rabbits",
-          "image": "assets/images/B05-weasels-cart.png",
-          "theologicalNote": "The counterfeit elixir: false transhumanism and empty promises to transcend natural essence."
-        }
-      },
-      {
-        "id": "B05-P07",
-        "spreadNumber": 50,
-        "bookNumber": 5,
-        "bookTitle": "Necessary Beetles",
-        "chapter": 4,
-        "chapterTitle": "the elixir",
-        "initialPrefix": "",
-        "initialLetter": "I",
-        "firstLineRest": "ts mine! No, its mine! You have enough",
-        "speakerBefore": {
-          "8": "Weasel —",
-          "16": "Narrator —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 4,
             "chapterTitle": "the elixir",
@@ -4030,7 +4538,34 @@ window.THUMPER_COLLECTION = [
               "They fought and they stole and they ruined the town",
               "The ones that didn’t drink hid with mole in the ground"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Riot in Looted Town",
+          "brief": "Mole sheltering sensible rabbits while crowd fights over stolen goods.",
+          "image": "assets/images/B05-N08.png",
+          "theologicalNote": "The social disintegration caused by unchecked covetousness."
+        }
+      },
+      {
+        "id": "B05-N09",
+        "spreadNumber": 70,
+        "bookNumber": 5,
+        "bookTitle": "Necessary Beetles",
+        "chapter": 5,
+        "chapterTitle": "Swim like a fish",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "S",
+        "firstLineRest": "quirrel wasn’t in town when the weasels arrived",
+        "speakerBefore": {
+          "3": "Weasels —",
+          "4": "Weasels —",
+          "8": "Weasels —",
+          "20": "Squirrel —"
+        },
+        "stanzas": [
           {
             "chapter": 5,
             "chapterTitle": "Swim like a fish",
@@ -4080,34 +4615,7 @@ window.THUMPER_COLLECTION = [
               "As they laid on the bank of the river they cried",
               "The trick of the weasels meant that all almost died"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "Squirrel rescues the rabbits",
-          "brief": "From a low branch Squirrel pulls a rabbit out of the current while other rescued rabbits rest on the bank. Crude pasted-on fins reveal the scam. Do not portray the fins as actually functional.",
-          "cast": "Squirrel; ordinary rabbits with false fins",
-          "image": "assets/images/Squirel .png",
-          "theologicalNote": "Squirrel’s rescue: saving those who fell victim to false promises of effortless transformation."
-        }
-      },
-      {
-        "id": "B05-P08",
-        "spreadNumber": 51,
-        "bookNumber": 5,
-        "bookTitle": "Necessary Beetles",
-        "chapter": 5,
-        "chapterTitle": "Swim like a fish",
-        "initialPrefix": "",
-        "initialLetter": "W",
-        "firstLineRest": "here’s is Frumper, Squirrel said as she glanced overhead",
-        "speakerBefore": {
-          "0": "Squirrel —",
-          "2": "Narrator —",
-          "10": "Hedgehog —",
-          "12": "Rabbit —",
-          "13": "Hedgehog —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 5,
             "chapterTitle": "Swim like a fish",
@@ -4115,7 +4623,37 @@ window.THUMPER_COLLECTION = [
               "Where’s is Frumper, Squirrel said as she glanced overhead",
               "He must come to save us. Or the evil will spread"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Rescuing Rabbits with Fins",
+          "brief": "Squirrel on tree branch pulling wet rabbits with fake fins from river.",
+          "image": "assets/images/B05-N09.png",
+          "theologicalNote": "The deadly folly of trying to transcend one's created nature."
+        }
+      },
+      {
+        "id": "B05-N10",
+        "spreadNumber": 71,
+        "bookNumber": 5,
+        "bookTitle": "Necessary Beetles",
+        "chapter": 6,
+        "chapterTitle": "Hedgehog strikes back",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "H",
+        "firstLineRest": "edgehog’s hammer burst through the door",
+        "speakerBefore": {
+          "5": "Weasels —",
+          "7": "Hedgehog —",
+          "8": "Hedgehog —",
+          "10": "Rabbit —",
+          "11": "Hedgehog —",
+          "12": "Hedgehog —",
+          "16": "Hedgehog —"
+        },
+        "stanzas": [
           {
             "chapter": 6,
             "chapterTitle": "Hedgehog strikes back",
@@ -4168,25 +4706,31 @@ window.THUMPER_COLLECTION = [
           }
         ],
         "illustration": {
-          "title": "Hedgehog confronts the wagon",
-          "brief": "Hedgehog stands on the wagon with his hammer, confronting the weasels and warning the crowd. His mature reference appearance and realistic relative size are essential. Frumper is absent.",
-          "cast": "Hedgehog; weasels; ordinary rabbits",
-          "image": "assets/images/Hedgehog.png",
-          "theologicalNote": "Hedgehog’s hammer of truth: the courage of the righteous artisan defending the vulnerable flock."
+          "title": "Hedgehog Confronts Wagon",
+          "brief": "Hedgehog wielding hammer atop wagon exposing the swindle.",
+          "image": "assets/images/B05-N10.png",
+          "theologicalNote": "Righteous indignation and the defense of truth."
         }
       },
       {
-        "id": "B05-P09",
-        "spreadNumber": 52,
+        "id": "B05-N11",
+        "spreadNumber": 72,
         "bookNumber": 5,
         "bookTitle": "Necessary Beetles",
         "chapter": 6,
         "chapterTitle": "Hedgehog strikes back",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
         "initialPrefix": "",
-        "initialLetter": "W",
-        "firstLineRest": "ith a twirl of his hammer he narrowed his gaze",
+        "initialLetter": "",
+        "firstLineRest": "With a twirl of his hammer he narrowed his gaze",
         "speakerBefore": {
-          "0": "Narrator —"
+          "1": "Hedgehog —",
+          "2": "Buyer —",
+          "3": "Hedgehog —",
+          "5": "Hedgehog —",
+          "7": "Weasels —",
+          "13": "Weasel —"
         },
         "stanzas": [
           {
@@ -4228,7 +4772,32 @@ window.THUMPER_COLLECTION = [
               "The rest where run out of town with the help of the crowd",
               "Hedgehog scolded them all that they were ever allowed"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Hammer Smashes Beetle Box",
+          "brief": "Hedgehog smashing glass display box and curling into defensive ball.",
+          "image": "assets/images/B05-N11.png",
+          "theologicalNote": "The destruction of idols and victory of genuine substance."
+        }
+      },
+      {
+        "id": "B05-N12",
+        "spreadNumber": 73,
+        "bookNumber": 5,
+        "bookTitle": "Necessary Beetles",
+        "chapter": 7,
+        "chapterTitle": "Desolation",
+        "isChapterStart": true,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "T",
+        "firstLineRest": "he town was in ruins and there was nothing to eat",
+        "speakerBefore": {
+          "14": "Rabbits —",
+          "15": "Thumper —"
+        },
+        "stanzas": [
           {
             "chapter": 7,
             "chapterTitle": "Desolation",
@@ -4248,30 +4817,7 @@ window.THUMPER_COLLECTION = [
               "The clouds whistled in, turned gray, and rain dropped",
               "Not a game had been played not a rabbit had hopped"
             ]
-          }
-        ],
-        "illustration": {
-          "title": "The swindlers flee",
-          "brief": "Sina emerges from the river as the weasels retreat and the crowd rallies behind Hedgehog. Broken beetle containers and scattered belongings show the cost of the deception without glorifying the brawl.",
-          "cast": "Hedgehog; Sina; fleeing weasels; ordinary rabbits",
-          "image": "assets/images/B05-sina-black-snake.png",
-          "theologicalNote": "The dispersal of lies: falsehood melts away when confronted by steadfast metaphysical reality."
-        }
-      },
-      {
-        "id": "B05-P10",
-        "spreadNumber": 53,
-        "bookNumber": 5,
-        "bookTitle": "Necessary Beetles",
-        "chapter": 7,
-        "chapterTitle": "Desolation",
-        "initialPrefix": "",
-        "initialLetter": "T",
-        "firstLineRest": "humper looked in his pantry to find something to share",
-        "speakerBefore": {
-          "20": "Frumper —"
-        },
-        "stanzas": [
+          },
           {
             "chapter": 7,
             "chapterTitle": "Desolation",
@@ -4291,7 +4837,32 @@ window.THUMPER_COLLECTION = [
               "Don’’t go there! Said one. “Please no” said another",
               "“Its the one place with food” solemnly spoke Thumper"
             ]
-          },
+          }
+        ],
+        "illustration": {
+          "title": "Desolation in Ruined Town",
+          "brief": "Thumper carrying empty basket toward Miller's farm gate.",
+          "image": "assets/images/B05-N12.png",
+          "theologicalNote": "The poverty of spirit preceding entry into the Kingdom."
+        }
+      },
+      {
+        "id": "B05-N13",
+        "spreadNumber": 74,
+        "bookNumber": 5,
+        "bookTitle": "Necessary Beetles",
+        "chapter": 7,
+        "chapterTitle": "Desolation",
+        "isChapterStart": false,
+        "isDialogueOpening": false,
+        "initialPrefix": "",
+        "initialLetter": "",
+        "firstLineRest": "The Gate was already open when he went towards the house.",
+        "speakerBefore": {
+          "11": "Frumper Miller —",
+          "12": "Frumper Miller —"
+        },
+        "stanzas": [
           {
             "chapter": 7,
             "chapterTitle": "Desolation",
@@ -4334,11 +4905,10 @@ window.THUMPER_COLLECTION = [
           }
         ],
         "illustration": {
-          "title": "The open door and the invitation",
-          "brief": "Frumper opens his farmhouse door to Thumper, revealing a welcoming banquet hall beyond. He is the farmer, an adult male winged rabbit matching the original reference, never human. Suggest the manuscript’s one-and-three description with a subtle unified light-and-shadow composition around the single recognizable Frumper; leave this interpretation explicitly proposed for review.",
-          "cast": "Thumper; Frumper only",
-          "image": "assets/images/B05-frumper-banquet.png",
-          "theologicalNote": "The open door of Frumper Miller: the Eschatological Banquet and the Eucharistic invitation to come and dine."
+          "title": "The Sacred Banquet Hall",
+          "brief": "Frumper Miller welcoming Thumper into golden glowing banquet hall.",
+          "image": "assets/images/B05-N13.png",
+          "theologicalNote": "The Beatific Vision: the eternal feast of divine communion."
         }
       }
     ]

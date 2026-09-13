@@ -172,33 +172,40 @@ class ThumperApp {
       verseHtml += `<div class="stanza">`;
       stanza.lines.forEach((line, lineIdx) => {
         const speaker = page.speakerBefore ? page.speakerBefore[String(globalLineIdx)] : null;
-        if (speaker) {
+        if (speaker && !speaker.toLowerCase().includes('narrator')) {
           verseHtml += `<div class="speaker-badge"><span class="fleuron">❧</span> ${this.escapeHtml(speaker)} <span class="fleuron">☙</span></div>`;
         }
 
         if (isFirstLine) {
           isFirstLine = false;
-          const initialLetter = page.initialLetter;
-          const restOfFirstLine = page.firstLineRest;
-          const prefix = page.initialPrefix || '';
-          
-          const firstSpaceIdx = restOfFirstLine.indexOf(' ');
-          let firstWordRest = '';
-          let remainingLine = '';
-          if (firstSpaceIdx !== -1) {
-            firstWordRest = restOfFirstLine.substring(0, firstSpaceIdx);
-            remainingLine = restOfFirstLine.substring(firstSpaceIdx + 1);
-          } else {
-            firstWordRest = restOfFirstLine;
-            remainingLine = '';
-          }
+          if (page.initialLetter) {
+            const initialLetter = page.initialLetter;
+            const restOfFirstLine = page.firstLineRest;
+            const prefix = page.initialPrefix || '';
+            
+            const firstSpaceIdx = restOfFirstLine.indexOf(' ');
+            let firstWordRest = '';
+            let remainingLine = '';
+            if (firstSpaceIdx !== -1) {
+              firstWordRest = restOfFirstLine.substring(0, firstSpaceIdx);
+              remainingLine = restOfFirstLine.substring(firstSpaceIdx + 1);
+            } else {
+              firstWordRest = restOfFirstLine;
+              remainingLine = '';
+            }
 
-          verseHtml += `
-            <div class="verse-line first-verse-line">
-              ${prefix ? `<span class="first-line-prefix">${this.escapeHtml(prefix)}</span>` : ''}
-              <span class="illuminated-cap"><span class="cap-letter">${initialLetter}</span></span><span class="first-word-rest">${this.escapeHtml(firstWordRest)}</span>${remainingLine ? ` <span class="first-line-remaining">${this.escapeHtml(remainingLine)}</span>` : ''}
-            </div>
-          `;
+            verseHtml += `
+              <div class="verse-line first-verse-line">
+                ${prefix ? `<span class="first-line-prefix">${this.escapeHtml(prefix)}</span>` : ''}
+                <span class="illuminated-cap"><span class="cap-letter">${initialLetter}</span></span><span class="first-word-rest">${this.escapeHtml(firstWordRest)}</span>${remainingLine ? ` <span class="first-line-remaining">${this.escapeHtml(remainingLine)}</span>` : ''}
+              </div>
+            `;
+          } else if (page.isDialogueOpening) {
+            verseHtml += `<div class="dialogue-opening-divider"><span class="header-fleuron">❧ ❖ ☙</span></div>`;
+            verseHtml += `<div class="verse-line">${this.escapeHtml(line)}</div>`;
+          } else {
+            verseHtml += `<div class="verse-line">${this.escapeHtml(line)}</div>`;
+          }
         } else if (lineIdx === 0 && stanzaIdx > 0) {
           // Rubricated illuminated capital for each subsequent stanza opening line
           const match = line.match(/^([“"']?)([A-Za-z])(.*)$/);
@@ -220,12 +227,22 @@ class ThumperApp {
       verseHtml += `</div>`;
     });
 
+    let headerHtml = '';
+    const rawTitle = (page.chapterTitle || '').trim();
+    if (!rawTitle || rawTitle.toLowerCase().startsWith('chapter ')) {
+      headerHtml = `<div class="chapter-title">Chapter ${page.chapter}</div>`;
+    } else {
+      headerHtml = `
+        <div class="chapter-number">Chapter ${page.chapter}</div>
+        <div class="chapter-title">${this.escapeHtml(rawTitle)}</div>
+      `;
+    }
+
     this.leftPageEl.innerHTML = `
       <img src="${borderFile}" class="page-border-overlay" alt="" />
       <div class="page-content">
         <div class="page-header">
-          <div class="chapter-number">Chapter ${page.chapter}</div>
-          <div class="chapter-title">${this.escapeHtml(page.chapterTitle)}</div>
+          ${headerHtml}
           <div class="header-divider"><span class="header-fleuron">❧ ❖ ☙</span></div>
         </div>
 
@@ -271,67 +288,11 @@ class ThumperApp {
   }
 
   fitVerseText() {
+    // Single uniform classic serif scale across all spreads (no per-spread jumping)
     const container = this.leftPageEl.querySelector('.page-verse-container');
     if (!container) return;
-
-    const availableHeight = container.clientHeight;
-    const availableWidth = container.clientWidth;
-    if (availableHeight <= 0 || availableWidth <= 0) return;
-
-    const stanzas = Array.from(container.querySelectorAll('.stanza'));
-    const cap = container.querySelector('.illuminated-cap');
-    const capLetter = cap ? cap.querySelector('.cap-letter') : null;
-
-    // Helper to apply candidate font size, line-height, stanza gap, and drop-cap
-    const applyCandidate = (fontSize) => {
-      // Smooth interpolation:
-      // Small/dense spreads (~12-14px) get tighter line-height (1.23) and compact stanza gaps (2-3px)
-      // Large/light spreads (~17-21px) get generous line-height (1.40) and airy stanza gaps (8-12px)
-      const t = Math.max(0, Math.min(1, (fontSize - 11.0) / (20.0 - 11.0)));
-      const lh = (1.23 + t * 0.17).toFixed(3);
-      const stanzaMargin = (1.5 + t * 7.5).toFixed(1);
-
-      container.style.fontSize = fontSize.toFixed(2) + 'px';
-      container.style.lineHeight = lh;
-
-      for (let s = 0; s < stanzas.length; s++) {
-        stanzas[s].style.marginTop = s === 0 ? '0px' : `${stanzaMargin}px`;
-        stanzas[s].style.marginBottom = `${stanzaMargin}px`;
-      }
-
-      if (cap) {
-        const capSize = Math.round(fontSize * 2.15);
-        cap.style.width = capSize + 'px';
-        cap.style.height = capSize + 'px';
-        if (capLetter) {
-          capLetter.style.fontSize = Math.round(fontSize * 1.5) + 'px';
-        }
-      }
-    };
-
-    // Binary search for maximum font size that fits without any overflow
-    let low = 10.0;
-    let high = 22.0;
-    let bestSize = 10.5;
-
-    for (let i = 0; i < 14; i++) {
-      const mid = (low + high) / 2;
-      applyCandidate(mid);
-
-      // Check strictly against container bounds (within 1px tolerance)
-      const fits = (container.scrollHeight <= availableHeight + 1) && 
-                   (container.scrollWidth <= availableWidth + 1);
-
-      if (fits) {
-        bestSize = mid;
-        low = mid; // Fit! Try larger to fill more
-      } else {
-        high = mid; // Overflows, reduce
-      }
-    }
-
-    // Apply winning size
-    applyCandidate(bestSize);
+    container.style.fontSize = '';
+    container.style.lineHeight = '';
   }
 
   renderTOC() {
@@ -348,13 +309,19 @@ class ThumperApp {
       `;
 
       book.pages.forEach((page) => {
-        const spreadIdx = this.spreads.findIndex(s => s.pageData.id === page.id);
-        html += `
-          <li class="toc-item" data-index="${spreadIdx}" onclick="window.thumperApp.goToSpread(${spreadIdx}); window.thumperApp.closeTOC();">
-            <span class="toc-item-title">${this.escapeHtml(page.chapterTitle)} · Spread ${spreadIdx + 1}</span>
-            <span class="toc-item-num">p. ${spreadIdx * 2 + 1}</span>
-          </li>
-        `;
+        if (page.isChapterStart) {
+          const spreadIdx = this.spreads.findIndex(s => s.pageData.id === page.id);
+          let titleDisplay = page.chapterTitle ? `Chapter ${page.chapter}: ${page.chapterTitle}` : `Chapter ${page.chapter}`;
+          if (page.chapterTitle && page.chapterTitle.toLowerCase().startsWith('chapter ')) {
+            titleDisplay = page.chapterTitle;
+          }
+          html += `
+            <li class="toc-item" data-index="${spreadIdx}" onclick="window.thumperApp.goToSpread(${spreadIdx}); window.thumperApp.closeTOC();">
+              <span class="toc-item-title">${this.escapeHtml(titleDisplay)}</span>
+              <span class="toc-item-num">Spread ${spreadIdx + 1} · p. ${spreadIdx * 2 + 1}</span>
+            </li>
+          `;
+        }
       });
 
       html += `
@@ -368,9 +335,16 @@ class ThumperApp {
 
   highlightActiveTOC() {
     const items = document.querySelectorAll('.toc-item');
+    const curSpread = this.spreads[this.currentSpreadIndex];
+    if (!curSpread) return;
+    const curBook = curSpread.bookNumber;
+    const curChapter = curSpread.pageData.chapter;
+
     items.forEach((it) => {
       const idx = parseInt(it.getAttribute('data-index'));
-      it.classList.toggle('active', idx === this.currentSpreadIndex);
+      const targetSpread = this.spreads[idx];
+      const isActive = targetSpread && targetSpread.bookNumber === curBook && targetSpread.pageData.chapter === curChapter;
+      it.classList.toggle('active', isActive);
     });
   }
 
