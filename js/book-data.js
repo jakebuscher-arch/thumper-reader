@@ -4493,7 +4493,7 @@ window.THUMPER_COLLECTION = [
         "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "",
-        "firstLineRest": "Behold! Gentile rabbits, the elixir’s effective",
+        "firstLineRest": "Behold! gentle rabbits, the elixir’s effective",
         "speakerBefore": {
           "0": "Weasels —",
           "12": "Rabbits —"
@@ -4503,7 +4503,7 @@ window.THUMPER_COLLECTION = [
             "chapter": 4,
             "chapterTitle": "the elixir",
             "lines": [
-              "Behold! Gentile rabbits, the elixir’s effective",
+              "Behold! gentle rabbits, the elixir’s effective",
               "Only pay when your rich, its all retrospective",
               "The bunnies lined up and each took a swallow",
               "Mole thought the promise sounded curiously hollow"

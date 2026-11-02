@@ -109,7 +109,7 @@ spread_definitions = [
     ("B05-N05", 5, 3, "The light of the moon", 18, 22, 20, "So slick weasels but that’s proof you aren’t truthful", "But how can a part cause the whole that itself it is in?"),
     ("B05-N06", 5, 3, "The light of the moon", 23, 27, 20, "Maybe the causes make a circle this is how it prevails", "So long thumper, Sina said as he uncoiled and left"),
     ("B05-N07", 5, 4, "the elixir", 28, 31, 16, "Mole met the weasels as they sold an elixir", "He had a ring on his finger and his clothes where all new"),
-    ("B05-N08", 5, 4, "the elixir", 32, 35, 16, "Behold! Gentile rabbits, the elixir’s effective", "The ones that didn’t drink hid with mole in the ground"),
+    ("B05-N08", 5, 4, "the elixir", 32, 35, 16, "Behold! gentle rabbits, the elixir’s effective", "The ones that didn’t drink hid with mole in the ground"),
     ("B05-N09", 5, 5, "Swim like a fish", 36, 41, 22, "Squirrel wasn’t in town when the weasels arrived", "He must come to save us. Or the evil will spread"),
     ("B05-N10", 5, 6, "Hedgehog strikes back", 42, 46, 20, "Hedgehog’s hammer burst through the door", "Rivers don’t care about the things that you wish"),
     ("B05-N11", 5, 6, "Hedgehog strikes back", 47, 50, 16, "With a twirl of his hammer he narrowed his gaze", "Hedgehog scolded them all that they were ever allowed"),

@@ -453,7 +453,7 @@ Image: REPLACE; create assets/images/B05-N07.png. Legacy assignments: B05-P05 �
 Direction: The weasels stand on their recognizable wagon selling an ELIXIR to a rabbit crowd while Mole watches skeptically. Show an actual flask being offered/drunk and a newly dressed rabbit returning with a ring; remove beetle jars as the focal merchandise. No magic gold emerging from the bottle: the apparent wealth is stolen, not conjured.
 
 B05-N08 | Chapter 4 — the elixir | S032–S035 | 16 lines
-Text: “Behold! Gentile rabbits, the elixir’s effective” → “The ones that didn’t drink hid with mole in the ground”
+Text: “Behold! gentle rabbits, the elixir’s effective” → “The ones that didn’t drink hid with mole in the ground”
 Speakers: Weasels S32.1–2. S33–34 narrated discovery. Quarreling rabbits S35.1–2, not weasels or Mole; S35.3–4 narration.
 Image: REPLACE; create assets/images/B05-N08.png. Legacy assignments: B05-P06 → B05-weasels-cart.png; B05-P07 → Squirel .png.
 Direction: Mole points out that one rabbit wears another’s clothes and ring; rabbits argue and grab stolen food and possessions in the looted town. In the foreground Mole shelters the rabbits who refused the elixir in an underground refuge. Include stolen garments/ring and visible damage; no prosperous market, Squirrel portrait or generic wagon shot.

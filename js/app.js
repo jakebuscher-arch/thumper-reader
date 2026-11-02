@@ -24,14 +24,35 @@ class ThumperApp {
         this.phoneSubPage = 1;
       }
     } else {
-      // Restore saved reading position
-      const saved = localStorage.getItem('thumper_reading_spread');
+      // Restore saved reading position safely
+      const saved = this.getStoredSpread();
       if (saved !== null && !isNaN(parseInt(saved))) {
         this.currentSpreadIndex = Math.min(Math.max(0, parseInt(saved)), this.spreads.length - 1);
       }
     }
 
     this.renderCurrentSpread();
+  }
+
+  getStoredSpread() {
+    try {
+      if (typeof window !== 'undefined' && 'localStorage' in window && window.localStorage) {
+        return window.localStorage.getItem('thumper_reading_spread');
+      }
+    } catch (e) {
+      // Storage unavailable or restricted (private browsing / in-app browser)
+    }
+    return null;
+  }
+
+  setStoredSpread(index) {
+    try {
+      if (typeof window !== 'undefined' && 'localStorage' in window && window.localStorage) {
+        window.localStorage.setItem('thumper_reading_spread', index);
+      }
+    } catch (e) {
+      // Storage unavailable or restricted
+    }
   }
 
   isPhone() {
@@ -167,12 +188,26 @@ class ThumperApp {
 
     if (this.btnFullscreen) {
       this.btnFullscreen.addEventListener('click', () => {
-        if (!document.fullscreenElement) {
-          document.documentElement.requestFullscreen().catch(() => {});
-          this.btnFullscreen.innerHTML = '⤓ Normal';
-        } else {
-          document.exitFullscreen().catch(() => {});
-          this.btnFullscreen.innerHTML = '⛶ Fullscreen';
+        try {
+          const isFs = document.fullscreenElement || document.webkitFullscreenElement;
+          if (!isFs) {
+            const el = document.documentElement;
+            if (el.requestFullscreen) {
+              el.requestFullscreen().catch(() => {});
+            } else if (el.webkitRequestFullscreen) {
+              el.webkitRequestFullscreen();
+            }
+            this.btnFullscreen.innerHTML = '⤓ Normal';
+          } else {
+            if (document.exitFullscreen) {
+              document.exitFullscreen().catch(() => {});
+            } else if (document.webkitExitFullscreen) {
+              document.webkitExitFullscreen();
+            }
+            this.btnFullscreen.innerHTML = '⛶ Fullscreen';
+          }
+        } catch (e) {
+          // Fullscreen not supported or restricted on mobile Safari
         }
       });
     }
@@ -223,7 +258,7 @@ class ThumperApp {
     if (index < 0 || index >= this.totalSpreads) return;
     this.currentSpreadIndex = index;
     this.phoneSubPage = subPage;
-    localStorage.setItem('thumper_reading_spread', index);
+    this.setStoredSpread(index);
     this.updateLocationHash();
     this.renderCurrentSpread();
   }
@@ -507,6 +542,18 @@ class ThumperApp {
   }
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-  window.thumperApp = new ThumperApp();
-});
+function initThumperReader() {
+  try {
+    if (!window.thumperApp) {
+      window.thumperApp = new ThumperApp();
+    }
+  } catch (err) {
+    console.error('Failed to initialize Thumper reader:', err);
+  }
+}
+
+if (document.readyState === 'loading') {
+  window.addEventListener('DOMContentLoaded', initThumperReader);
+} else {
+  initThumperReader();
+}
