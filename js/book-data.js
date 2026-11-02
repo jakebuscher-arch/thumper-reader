@@ -580,10 +580,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "W",
         "firstLineRest": "herever could a bunny find",
-        "speakerBefore": {
-          "8": "Thumper —",
-          "14": "Other bunnies —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 5,
@@ -645,10 +642,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "The Miller farm is close enough",
-        "speakerBefore": {
-          "0": "Other bunnies —",
-          "11": "Other bunnies —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 5,
@@ -882,13 +876,11 @@ window.THUMPER_COLLECTION = [
         "chapter": 7,
         "chapterTitle": "the Farmhouse",
         "isChapterStart": true,
-        "isDialogueOpening": true,
+        "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "“I stole the berries” He rehearses",
-        "speakerBefore": {
-          "0": "Thumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 7,
@@ -1061,11 +1053,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "T",
         "firstLineRest": "ick tock tick Plop!",
-        "speakerBefore": {
-          "2": "Hedgehog —",
-          "8": "Thumper —",
-          "15": "Other bunnies —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 1,
@@ -1127,9 +1115,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "The Hedgehog raps a stick against his shop",
-        "speakerBefore": {
-          "1": "Hedgehog —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 1,
@@ -1201,11 +1187,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "The bunnies headed back to their games",
-        "speakerBefore": {
-          "2": "Thumper —",
-          "4": "Hedgehog —",
-          "12": "Thumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 1,
@@ -1267,11 +1249,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "B",
         "firstLineRest": "ack at his house he's delighted to find",
-        "speakerBefore": {
-          "2": "Thumper —",
-          "4": "Thumper —",
-          "9": "Frumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 2,
@@ -1333,10 +1311,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "Hedgehog had a reason for all that transpired",
-        "speakerBefore": {
-          "0": "Thumper —",
-          "4": "Frumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 2,
@@ -1398,12 +1373,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "N",
         "firstLineRest": "ext morning thumper went off to the shop",
-        "speakerBefore": {
-          "3": "Hedgehog —",
-          "4": "Thumper —",
-          "8": "Hedgehog —",
-          "12": "Hedgehog —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 3,
@@ -1465,11 +1435,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "Okay what is next said thumper the rabbit",
-        "speakerBefore": {
-          "0": "Thumper —",
-          "1": "Hedgehog —",
-          "3": "Thumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 3,
@@ -1531,13 +1497,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "Looks like Frumper just showed up again",
-        "speakerBefore": {
-          "0": "Hedgehog —",
-          "2": "Thumper —",
-          "4": "Hedgehog —",
-          "8": "Thumper —",
-          "12": "Hedgehog —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 3,
@@ -1595,15 +1555,11 @@ window.THUMPER_COLLECTION = [
         "chapter": 4,
         "chapterTitle": "Chapter 4",
         "isChapterStart": true,
-        "isDialogueOpening": true,
+        "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "You said that everything is like a clock",
-        "speakerBefore": {
-          "0": "Thumper —",
-          "8": "Hedgehog —",
-          "12": "Thumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 4,
@@ -1665,11 +1621,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "Could I build this in your shop?",
-        "speakerBefore": {
-          "0": "Thumper —",
-          "4": "Hedgehog —",
-          "8": "Thumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 4,
@@ -1731,10 +1683,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "Well, in the clock It keeps everything running",
-        "speakerBefore": {
-          "0": "Hedgehog —",
-          "4": "Thumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 4,
@@ -1796,11 +1745,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "But a gear and a spring is a thing that I see",
-        "speakerBefore": {
-          "0": "Hedgehog —",
-          "4": "Thumper —",
-          "12": "Hedgehog —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 4,
@@ -1858,16 +1803,11 @@ window.THUMPER_COLLECTION = [
         "chapter": 5,
         "chapterTitle": "Chapter 5",
         "isChapterStart": true,
-        "isDialogueOpening": true,
+        "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "I'll get frumper he can help too",
-        "speakerBefore": {
-          "0": "Thumper —",
-          "2": "Frumper —",
-          "8": "Hedgehog —",
-          "10": "Frumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 5,
@@ -1929,9 +1869,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "As thumper worked his mind wandered",
-        "speakerBefore": {
-          "10": "Frumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 5,
@@ -2116,12 +2054,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "S",
         "firstLineRest": "till in the ashes he looks at his leg",
-        "speakerBefore": {
-          "2": "Thumper —",
-          "6": "First bunny —",
-          "9": "Second bunny —",
-          "13": "Third bunny —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 2,
@@ -2183,13 +2116,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "Silence! get out of here! leave him alone!",
-        "speakerBefore": {
-          "0": "Hedgehog —",
-          "4": "Hedgehog —",
-          "6": "Thumper —",
-          "13": "Hedgehog —",
-          "16": "Hedgehog —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 2,
@@ -2261,11 +2188,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "A",
         "firstLineRest": "s thumper is laying in the ashes still",
-        "speakerBefore": {
-          "4": "Mole —",
-          "6": "Thumper —",
-          "7": "Mole —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 3,
@@ -2327,9 +2250,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "You shape your thoughts through a choice of your will",
-        "speakerBefore": {
-          "0": "Mole —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 3,
@@ -2377,14 +2298,11 @@ window.THUMPER_COLLECTION = [
         "chapter": 4,
         "chapterTitle": "The remedies",
         "isChapterStart": true,
-        "isDialogueOpening": true,
+        "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "Hey thumper it's squirrel! how are you doing?",
-        "speakerBefore": {
-          "0": "Squirrel —",
-          "4": "Squirrel —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 4,
@@ -2446,10 +2364,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "Squirrel tempts him nearer with a piece of a scone",
-        "speakerBefore": {
-          "4": "Songbird —",
-          "9": "Squirrel —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 4,
@@ -2509,10 +2424,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "B",
         "firstLineRest": "ack at the place where his home once stood",
-        "speakerBefore": {
-          "8": "Frumper —",
-          "12": "Thumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 5,
@@ -2574,9 +2486,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "You wouldn't believe the adventure I was on",
-        "speakerBefore": {
-          "0": "Frumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 5,
@@ -2644,16 +2554,11 @@ window.THUMPER_COLLECTION = [
         "chapter": 6,
         "chapterTitle": "thumpers question",
         "isChapterStart": true,
-        "isDialogueOpening": true,
+        "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "That is an adventure that much I concede",
-        "speakerBefore": {
-          "0": "Thumper —",
-          "10": "Frumper —",
-          "11": "Thumper —",
-          "12": "Frumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 6,
@@ -2715,9 +2620,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "But a fly to a bunny is just barely a hop",
-        "speakerBefore": {
-          "0": "Frumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 6,
@@ -2765,13 +2668,11 @@ window.THUMPER_COLLECTION = [
         "chapter": 7,
         "chapterTitle": "the universe",
         "isChapterStart": true,
-        "isDialogueOpening": true,
+        "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "Everything has a nature and it imitates God",
-        "speakerBefore": {
-          "0": "Frumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 7,
@@ -2843,9 +2744,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "We don’t sit at the start of the world reading Gods mind",
-        "speakerBefore": {
-          "0": "Frumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 7,
@@ -2917,10 +2816,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "T",
         "firstLineRest": "humper was dazed by the flurry of replies",
-        "speakerBefore": {
-          "5": "Thumper —",
-          "6": "Frumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 8,
@@ -2982,9 +2878,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "Its better to suffer evil than ever to do it",
-        "speakerBefore": {
-          "0": "Frumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 8,
@@ -3046,9 +2940,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "But you. Thumper. Look at what has occurred.",
-        "speakerBefore": {
-          "0": "Frumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 8,
@@ -3109,11 +3001,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "M",
         "firstLineRest": "ole and hedgehog starred intently",
-        "speakerBefore": {
-          "2": "Mole —",
-          "4": "Hedgehog —",
-          "8": "Mole —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 1,
@@ -3227,12 +3115,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "S",
         "firstLineRest": "taring at the clock Hedgehog fidgeted",
-        "speakerBefore": {
-          "3": "Raven —",
-          "4": "Hedgehog —",
-          "8": "Squirrel —",
-          "10": "Hedgehog —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 2,
@@ -3294,14 +3177,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "I’ll fly you each to the bottom but listen to me",
-        "speakerBefore": {
-          "0": "Frumper —",
-          "4": "Squirrel —",
-          "5": "Frumper —",
-          "6": "Hedgehog —",
-          "8": "Thumper —",
-          "17": "Bat —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 2,
@@ -3373,12 +3249,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "T",
         "firstLineRest": "humper could hardly believe what he saw",
-        "speakerBefore": {
-          "6": "Cave bunnies —",
-          "7": "Thumper —",
-          "8": "Squirrel —",
-          "12": "Frumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 3,
@@ -3440,9 +3311,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "He couldn’t see it, but in the light to the flame",
-        "speakerBefore": {
-          "8": "Frumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 3,
@@ -3494,11 +3363,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "T",
         "firstLineRest": "he decent was steep and they clung to the walls",
-        "speakerBefore": {
-          "10": "Bat —",
-          "12": "Bat —",
-          "15": "Bat —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 4,
@@ -3560,12 +3425,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "The Bat smiled, “you where lagging behind”",
-        "speakerBefore": {
-          "0": "Bat —",
-          "3": "Squirrel —",
-          "4": "Bat —",
-          "6": "Squirrel —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 4,
@@ -3627,14 +3487,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "A",
         "firstLineRest": " burst of fresh air at last hit their faces",
-        "speakerBefore": {
-          "2": "Hedgehog —",
-          "7": "Proditor —",
-          "8": "Proditor —",
-          "10": "Hedgehog —",
-          "12": "Proditor —",
-          "14": "Hedgehog —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 5,
@@ -3696,13 +3549,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "What? Said the bat with a look of surprise",
-        "speakerBefore": {
-          "0": "Proditor —",
-          "5": "Proditor —",
-          "8": "Proditor —",
-          "12": "Proditor —",
-          "14": "Thumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 5,
@@ -3770,10 +3617,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "The bats were moving his limbs with strings And mocking",
-        "speakerBefore": {
-          "17": "Hedgehog —",
-          "18": "Squirrel —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 5,
@@ -3841,17 +3685,11 @@ window.THUMPER_COLLECTION = [
         "chapter": 6,
         "chapterTitle": "Chapter 6",
         "isChapterStart": true,
-        "isDialogueOpening": true,
+        "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "Its then that squirrel heard it, “Why how do you do”",
-        "speakerBefore": {
-          "0": "Mole —",
-          "1": "Squirrel —",
-          "5": "Mole —",
-          "12": "Hedgehog & Mole —",
-          "15": "Mole —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 6,
@@ -3913,10 +3751,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "Maybe we can find it and escape towards the sea",
-        "speakerBefore": {
-          "0": "Mole —",
-          "3": "Thumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 6,
@@ -4047,10 +3882,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "In fact, they come with a solution for all that you need",
-        "speakerBefore": {
-          "5": "Hedgehog —",
-          "11": "Hedgehog —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 1,
@@ -4098,16 +3930,11 @@ window.THUMPER_COLLECTION = [
         "chapter": 2,
         "chapterTitle": "Pets",
         "isChapterStart": true,
-        "isDialogueOpening": true,
+        "isDialogueOpening": false,
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "Get your beetles! Come buy a pet!",
-        "speakerBefore": {
-          "0": "Weasel —",
-          "4": "Weasel —",
-          "8": "Weasel —",
-          "13": "Weasel —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 2,
@@ -4189,14 +4016,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "T",
         "firstLineRest": "hats when he heard it, a sound from a bush",
-        "speakerBefore": {
-          "2": "Sina —",
-          "6": "Sina —",
-          "8": "Sina —",
-          "14": "Sina —",
-          "16": "Weasel —",
-          "18": "Weasel —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 3,
@@ -4268,15 +4088,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "“So slick weasels but that’s proof you aren’t truthful",
-        "speakerBefore": {
-          "0": "Sina —",
-          "2": "Weasel —",
-          "3": "Thumper —",
-          "4": "Sina —",
-          "8": "Sina —",
-          "15": "Thumper —",
-          "16": "Thumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 3,
@@ -4348,14 +4160,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "Maybe the causes make a circle this is how it prevails",
-        "speakerBefore": {
-          "0": "Thumper —",
-          "3": "Sina —",
-          "4": "Thumper —",
-          "7": "Sina —",
-          "9": "Thumper —",
-          "19": "Sina —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 3,
@@ -4427,12 +4232,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "M",
         "firstLineRest": "ole met the weasels as they sold an elixir",
-        "speakerBefore": {
-          "2": "Weasels —",
-          "6": "Weasels —",
-          "10": "Weasels —",
-          "13": "Weasels —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 4,
@@ -4494,10 +4294,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "Behold! gentle rabbits, the elixir’s effective",
-        "speakerBefore": {
-          "0": "Weasels —",
-          "12": "Rabbits —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 4,
@@ -4559,12 +4356,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "S",
         "firstLineRest": "quirrel wasn’t in town when the weasels arrived",
-        "speakerBefore": {
-          "3": "Weasels —",
-          "4": "Weasels —",
-          "8": "Weasels —",
-          "20": "Squirrel —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 5,
@@ -4644,15 +4436,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "H",
         "firstLineRest": "edgehog’s hammer burst through the door",
-        "speakerBefore": {
-          "5": "Weasels —",
-          "7": "Hedgehog —",
-          "8": "Hedgehog —",
-          "10": "Rabbit —",
-          "11": "Hedgehog —",
-          "12": "Hedgehog —",
-          "16": "Hedgehog —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 6,
@@ -4724,14 +4508,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "With a twirl of his hammer he narrowed his gaze",
-        "speakerBefore": {
-          "1": "Hedgehog —",
-          "2": "Buyer —",
-          "3": "Hedgehog —",
-          "5": "Hedgehog —",
-          "7": "Weasels —",
-          "13": "Weasel —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 6,
@@ -4793,10 +4570,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "T",
         "firstLineRest": "he town was in ruins and there was nothing to eat",
-        "speakerBefore": {
-          "14": "Rabbits —",
-          "15": "Thumper —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 7,
@@ -4858,10 +4632,7 @@ window.THUMPER_COLLECTION = [
         "initialPrefix": "",
         "initialLetter": "",
         "firstLineRest": "The Gate was already open when he went towards the house.",
-        "speakerBefore": {
-          "11": "Frumper Miller —",
-          "12": "Frumper Miller —"
-        },
+        "speakerBefore": {},
         "stanzas": [
           {
             "chapter": 7,

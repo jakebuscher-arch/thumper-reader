@@ -304,11 +304,6 @@ class ThumperApp {
     page.stanzas.forEach((stanza, stanzaIdx) => {
       verseHtml += `<div class="stanza">`;
       stanza.lines.forEach((line, lineIdx) => {
-        const speaker = page.speakerBefore ? page.speakerBefore[String(globalLineIdx)] : null;
-        if (speaker && !speaker.toLowerCase().includes('narrator')) {
-          verseHtml += `<div class="speaker-badge"><span class="fleuron">❧</span> ${this.escapeHtml(speaker)} <span class="fleuron">☙</span></div>`;
-        }
-
         if (isFirstLine) {
           isFirstLine = false;
           if (page.initialLetter) {
@@ -333,9 +328,6 @@ class ThumperApp {
                 <span class="illuminated-cap"><span class="cap-letter">${initialLetter}</span></span><span class="first-word-rest">${this.escapeHtml(firstWordRest)}</span>${remainingLine ? ` <span class="first-line-remaining">${this.escapeHtml(remainingLine)}</span>` : ''}
               </div>
             `;
-          } else if (page.isDialogueOpening) {
-            verseHtml += `<div class="dialogue-opening-divider"><span class="header-fleuron">❧ ❖ ☙</span></div>`;
-            verseHtml += `<div class="verse-line">${this.escapeHtml(line)}</div>`;
           } else {
             verseHtml += `<div class="verse-line">${this.escapeHtml(line)}</div>`;
           }
